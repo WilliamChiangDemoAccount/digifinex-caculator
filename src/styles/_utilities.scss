@@ -13,6 +13,10 @@
     &--#{$class}:#{$class} {
       @content;
     }
+
+    &--not-#{$class}:not(:#{$class}) {
+      @content;
+    }
   }
 }
 
@@ -130,12 +134,12 @@
 
     @for $width from 1 to 1000 {
       &-#{$width} {
-        border-style: solid;
+        border-style: solid !important;
         border-width: #{$width}px !important;
       }
       @each $position in $positions {
         &-#{$position}-#{$width} {
-          border-style: solid;
+          border-style: solid !important;
           border-#{$position}-width: #{$width}px !important;
         }
       }

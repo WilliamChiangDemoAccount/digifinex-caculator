@@ -1,6 +1,68 @@
 @import "~styles/variables";
+@import "~styles/utilities";
 
-header[data-testid="header"] {
-  height: $header-height;
+.component-header {
+  height: 3.75rem;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  &__logo {
+    margin-right: 50px;
+    cursor: pointer;
+  }
+
+  &__language {
+    height: 1.875rem;
+    & > img {
+      &:first-of-type {
+        width: 20px;
+        height: 20px;
+      }
+
+      &:last-of-type {
+        width: 12px;
+        cursor: pointer;
+      }
+    }
+
+    & > ul {
+      position: absolute;
+      top: 1.875rem;
+      left: 50%;
+      transform: translateX(-50%);
+      & > li {
+        cursor: pointer;
+        &:not(:last-of-type) {
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+  }
+
+  &__item {
+    height: 2rem;
+    &:not(:last-of-type) {
+      margin-right: 1.5rem;
+    }
+  }
+}
+
+@each $level, $value in $grid-breakpoints {
+  @include generateStyleByBreakpoint($level) {
+    .component-header {
+      @if ($level == "lg" or $level == "xl") {
+        height: 110px;
+        &__item {
+          &:not(:last-of-type) {
+            margin-right: 3rem;
+          }
+        }
+
+        &__logo {
+          margin-right: 70px;
+        }
+      }
+      &__container {
+        max-width: getContainerWidth($level, $value);
+      }
+    }
+  }
 }

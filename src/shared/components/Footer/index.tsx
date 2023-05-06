@@ -7,8 +7,11 @@ interface Props extends IBaseComponentProp { }
 
 const Footer = forwardRef<HTMLDivElement>((prop: Props, ref) => (<footer ref={ref}
     data-testid='footer'
-    className='d-flex flex-row align-items-center px-5'
->Footer Worked!
+    className='bg-black-2 px-5 component-footer'
+>
+    <section className='component-footer__container'>
+        Footer Worked!
+    </section>
 </footer>));
 
 export default Footer;

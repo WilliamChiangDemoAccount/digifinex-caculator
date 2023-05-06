@@ -1,4 +1,4 @@
-@function getContainerWidth($break-point, $value) {
+@function getContainerWidth($break-point) {
   @if (map-has-key($container-max-widths, $break-point)) {
     @return map-get($container-max-widths, $break-point);
   }

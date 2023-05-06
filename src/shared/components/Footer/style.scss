@@ -1,5 +1,19 @@
 @import "~styles/variables";
+@import "~styles/utilities";
 
-footer[data-testid="footer"] {
-  height: $footer-height;
+.component-footer {
+  height: 724px;
+  &__container {
+    padding: 4.375rem 6.5rem 3.5rem;
+  }
+}
+
+@each $level in map-keys($grid-breakpoints) {
+  @include generateStyleByBreakpoint($level) {
+    .component-footer {
+      &__container {
+        max-width: getContainerWidth($level);
+      }
+    }
+  }
 }

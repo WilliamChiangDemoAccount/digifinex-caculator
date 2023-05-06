@@ -55,6 +55,31 @@ export const routeMap = new Map<ProductModule, RouteConfig>([
         }
       ],
     } as RouteConfig,
+  ],
+  [
+    ProductModule.Main,
+    {
+      path: '',
+      i18n: 'pages.main.menu',
+      component: React.lazy(() => import(`@modules/main/pages/MainPage`)),
+      children: [
+        {
+          path: 'about',
+          i18n: 'pages.about.menu',
+          component: React.lazy(() => import(`@modules/main/pages/IntroductionPage`)),
+        },
+        {
+          path: 'esop',
+          i18n: 'pages.esop.menu',
+          component: React.lazy(() => import(`@modules/main/pages/EsopPage`)),
+        },
+        {
+          path: 'trust',
+          i18n: 'pages.trust.menu',
+          component: React.lazy(() => import(`@modules/main/pages/TrustPage`)),
+        }
+      ]
+    } as RouteConfig
   ]
 ]);
 
@@ -84,7 +109,7 @@ export const NestRoute = (
     key={currentPath}
     path={currentPath}
     element={
-      enabled ? <Component /> : <Navigate to='/401' state={{ from: location }} replace />
+      enabled ? <Component /> : <Navigate to='/' state={{ from: location }} replace />
     } />
   ];
 };

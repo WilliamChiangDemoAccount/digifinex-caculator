@@ -40,13 +40,14 @@ html {
     @include generateThemeColor($light-theme);
     @include generateShadow($box-shadow-light);
   }
+  @include generateBaseStyle();
 }
 
 body {
   padding: 0;
   margin: 0;
   overflow-anchor: none;
-  overflow: hidden;
+  overflow: hidden auto;
   font-family: "Open sans", "SF pro" !important;
   &:lang(zh-CN) {
     font-family: "Noto Sans SC", "Noto Sans TC", "Microsoft YaHei",
@@ -79,15 +80,12 @@ input {
   }
 }
 
-@include generateBaseStyle();
-
-@each $level, $value in $grid-breakpoints {
-  @media screen and (min-width: $value) {
+@each $level in map-keys($grid-breakpoints) {
+  @include generateStyleByBreakpoint($level) {
     main {
       box-sizing: content-box;
-      max-width: getContainerWidth($level, $value);
+      max-width: getContainerWidth($level);
       margin: 0 auto;
-      height: calc(100vh - #{$header-height});
     }
     @include generateBaseStyle($level);
   }

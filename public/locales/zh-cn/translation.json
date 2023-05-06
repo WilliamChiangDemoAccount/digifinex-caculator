@@ -1,0 +1,24 @@
+{
+    "pages": {
+        "main": {
+            "menu": "首頁"
+        },
+        "esop": {
+            "menu": "ESOP"
+        },
+        "about": {
+            "menu": "關於我們"
+        },
+        "trust": {
+            "menu": "柏盛信託"
+        },
+        "services": {
+            "menu": "增值服務"
+        }
+    },
+    "languages": {
+        "en": "English",
+        "zh-tw": "繁體中文",
+        "zh-cn": "简体中文"
+    }
+}
