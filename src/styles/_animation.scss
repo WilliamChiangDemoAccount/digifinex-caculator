@@ -1,0 +1,64 @@
+$animations: fade-in-top, fade-in-right, fade-in-bottom, fade-in-left, zoom-in,
+  zoom-out;
+
+@keyframes fade-in-top {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes fade-in-right {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes fade-in-bottom {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes fade-in-left {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes zoom-in {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoom-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(0);
+    opacity: 0;
+  }
+}

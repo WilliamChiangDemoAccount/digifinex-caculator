@@ -1,0 +1,178 @@
+$main-colors-light: (
+  1: #f7f9f8,
+  2: #1e1e1e,
+);
+
+$main-colors-dark: (
+  2: #f7f9f8,
+  1: #1e1e1e,
+);
+
+$orange-light: (
+  primary: #ff7a00,
+  secondary: #ff4f03,
+  hover: #ff8617,
+  active: #eb7000,
+);
+
+$green-light: (
+  primary: #0aa03d,
+  secondary: #77b867,
+);
+
+$red-light: (
+  primary: #c01818,
+  secondary: #e14b51,
+);
+
+$yellow-light: (
+  light: #fdecc1,
+);
+
+$grey-light: (
+  light: #d9d9d9,
+);
+
+$blue-light: (
+  primary: #097ab7,
+  secondary: #56a9d5,
+  light: #e4f1f2,
+  active: #0369a0,
+);
+
+$orange-dark: (
+  primary: #e66e00,
+  secondary: #ffc896,
+  hover: #df5c00,
+  active: #eb7000,
+);
+
+$green-dark: (
+  primary: #77b867,
+  secondary: #8dd37b,
+);
+
+$red-dark: (
+  primary: #e14b51,
+  secondary: #c01818,
+);
+
+$yellow-dark: (
+  light: #e7c265,
+);
+
+$grey-dark: (
+  light: #bbbbbb,
+);
+
+$blue-dark: (
+  primary: #37bafb,
+  secondary: #53a2cd,
+  light: #caecf1,
+  active: #35a5f6,
+);
+
+$fill-colors-light: (
+  0: #000000,
+  1: #ffffff,
+  2: #f9f9f9,
+  3: #f4f4f4,
+  4: #eeeeee,
+  5: #dddddd,
+  6: #d8d8d8,
+  7: #cccccc,
+);
+
+$fill-colors-dark: (
+  7: #68696d,
+  6: #545859,
+  5: #484b4d,
+  4: #3c3f40,
+  3: #22292e,
+  2: #1a2227,
+  1: #2a3033,
+  0: #ffffff,
+);
+
+$line-colors-light: (
+  4: #999999,
+  3: #d8d8d8,
+  2: #f2f2f2,
+  1: #f4f4f4,
+);
+
+$line-colors-dark: (
+  4: #999999,
+  3: #666666,
+  2: #555555,
+  1: #444444,
+);
+
+$text-colors-light: (
+  7: #333333,
+  6: #454545,
+  5: #666666,
+  4: #999999,
+  3: #bbbbbb,
+  2: #c9c9c9,
+  1: #ffffff,
+);
+
+$text-colors-dark: (
+  7: #f0f3f4,
+  6: #dddddd,
+  5: #a5aeb0,
+  4: #8d9496,
+  3: #686e71,
+  2: #40464a,
+  1: #1a2227,
+);
+
+$icon-colors-light: (
+  3: #333333,
+  2: #666666,
+  1: #c3c3c3,
+);
+
+$icon-colors-dark: (
+  3: #fafafa,
+  2: #b0b0b0,
+  1: #8c8c8c,
+);
+
+$box-shadow-light: (
+  1: 0px 8px 12px rgba(0, 0, 0, 0.03),
+  2: 0px 4px 20px rgba(0, 0, 0, 0.1),
+);
+
+$box-shadow-dark: (
+  2: 0px 4px 20px rgba(0, 0, 0, 0.9),
+);
+
+$light-theme: (
+  main: $main-colors-light,
+  fill: $fill-colors-light,
+  line: $line-colors-light,
+  text: $text-colors-light,
+  icon: $icon-colors-light,
+  "green": $green-light,
+  "blue": $blue-light,
+  "orange": $orange-light,
+  "yellow": $yellow-light,
+  "grey": $grey-light,
+  "red": $red-light,
+);
+
+$dark-theme: (
+  main: $main-colors-dark,
+  fill: $fill-colors-dark,
+  line: $line-colors-dark,
+  text: $text-colors-dark,
+  icon: $icon-colors-dark,
+  "green": $green-dark,
+  "blue": $blue-dark,
+  "orange": $orange-dark,
+  "yellow": $yellow-dark,
+  "grey": $grey-dark,
+  "red": $red-dark,
+);

@@ -1,0 +1,34 @@
+@function getContainerWidth($break-point, $value) {
+  @if (map-has-key($container-max-widths, $break-point)) {
+    @return map-get($container-max-widths, $break-point);
+  }
+  @return 100%;
+}
+
+@function mapReverse($map) {
+  $result: null;
+
+  @if type-of($map) == "map" {
+    $keys: map-keys($map);
+    $map-reversed: ();
+
+    @for $i from length($keys) through 1 {
+      $map-reversed: map-merge(
+        $map-reversed,
+        (
+          nth($keys, $i): map-get($map, nth($keys, $i)),
+        )
+      );
+    }
+
+    @if type-of($map-reversed) == "map" {
+      $result: $map-reversed;
+    } @else {
+      @warn 'There was an error reversing the order of "#{$map}"';
+    }
+  } @else {
+    @warn '"#{$map}" is not a valid map';
+  }
+
+  @return $result;
+}

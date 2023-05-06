@@ -1,0 +1,199 @@
+@mixin generateStyleByPseudoElement {
+  @each $pseudo-element in "before", "after" {
+    &__#{$pseudo-element} {
+      &::#{$pseudo-element} {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin generateStyleByPseudoClass {
+  @each $class in $pseudo-class {
+    &--#{$class}:#{$class} {
+      @content;
+    }
+  }
+}
+
+@mixin generateStyleByBreakpoint($break-point: "md") {
+  @media screen and (min-width: map-get($grid-breakpoints, $break-point)) {
+    @content;
+  }
+}
+
+@mixin generateBaseStyle($break-point: "") {
+  @if ($break-point == "") {
+    @include generateText();
+    @include generateBorder();
+    @include generateLayer();
+    @include generateCursor();
+    @include generateAnimation();
+  } @else {
+    @include generateTextByBreakpoint($break-point);
+    @include generateBorderByBreakpoint($break-point);
+    @include generateLayerByBreakpoint($break-point);
+  }
+}
+
+@mixin generateThemeColor($theme) {
+  @each $type, $map in $theme {
+    @each $level, $color in $map {
+      @each $usage, $prop in $color-usages {
+        .#{$usage}-#{$type}-#{$level} {
+          #{$prop}: $color !important;
+          @include generateOpacityStyle($prop, $color);
+          @include generateStyleByPseudoClass {
+            #{$prop}: $color !important;
+          }
+          @include generateStyleByPseudoElement {
+            #{$prop}: $color !important;
+            @include generateOpacityStyle($prop, $color);
+            @include generateStyleByPseudoClass {
+              #{$prop}: $color !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin generateOpacityStyle($prop, $color) {
+  @for $opacity from 10 to 100 {
+    $alphaCode: $color + #{$opacity};
+    &_#{$opacity} {
+      #{$prop}: $alphaCode !important;
+      @include generateStyleByPseudoClass {
+        #{$prop}: $alphaCode !important;
+      }
+    }
+  }
+}
+
+@mixin generateText {
+  // title and content label setting
+  @each $key, $value in $text-level {
+    #{$key} {
+      font-size: $value !important;
+      line-height: 1.5 * $value !important;
+      @if ($key != "p" and $key != "small") {
+        font-weight: bold !important;
+      }
+    }
+  }
+
+  @each $key, $value in $font-level {
+    .font-#{$key} {
+      font-size: $value !important;
+    }
+  }
+}
+
+@mixin generateTextByBreakpoint($break-point) {
+  @each $key, $value in $font-level {
+    .font-#{$break-point}-#{$key} {
+      font-size: $value !important;
+    }
+  }
+}
+
+@mixin generateLayer {
+  .layer {
+    @each $key, $value in $layer-level {
+      &-#{$key} {
+        position: relative;
+        z-index: $value !important;
+      }
+    }
+  }
+}
+
+@mixin generateLayerByBreakpoint($break-point) {
+  .layer {
+    @each $key, $value in $layer-level {
+      &-#{$break-point}-#{$key} {
+        position: relative;
+        z-index: $value !important;
+      }
+    }
+  }
+}
+
+@mixin generateBorder {
+  .border {
+    @each $key, $value in $border-radius-map {
+      &-radius-#{$key} {
+        border-radius: $value !important;
+      }
+    }
+
+    @for $width from 1 to 1000 {
+      &-#{$width} {
+        border-style: solid;
+        border-width: #{$width}px !important;
+      }
+      @each $position in $positions {
+        &-#{$position}-#{$width} {
+          border-style: solid;
+          border-#{$position}-width: #{$width}px !important;
+        }
+      }
+    }
+  }
+}
+
+@mixin generateBorderByBreakpoint($break-point) {
+  .border {
+    @each $key, $value in $border-radius-map {
+      &-radius-#{$break-point}-#{$key} {
+        border-radius: $value !important;
+      }
+    }
+
+    @for $width from 1 to $max-number {
+      &-#{$break-point}-#{$width} {
+        border-width: #{$width}px !important;
+      }
+      @each $position in $positions {
+        &-#{$position}-#{$break-point}-#{$width} {
+          border-#{$position}-width: #{$width}px !important;
+        }
+      }
+    }
+  }
+}
+
+@mixin generateCursor {
+  .cursor {
+    &-default {
+      cursor: default;
+    }
+    @each $key, $file in $cursors {
+      $path: "../assets/img/cursor/" + $file;
+      &-#{$key} {
+        cursor: url($path), auto;
+      }
+    }
+  }
+}
+
+@mixin generateShadow($map) {
+  .shadow {
+    @each $level, $value in $map {
+      &-#{$level} {
+        box-shadow: $value;
+      }
+    }
+  }
+}
+
+@mixin generateAnimation() {
+  .animation {
+    @each $animation in $animations {
+      &-#{$animation} {
+        animation: #{$animation} 0.5s forwards;
+      }
+    }
+  }
+}

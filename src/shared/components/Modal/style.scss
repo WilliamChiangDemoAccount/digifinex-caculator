@@ -1,0 +1,10 @@
+@import "~styles/variables";
+
+.component-modal {
+  min-width: 280px;
+  &__action-bar {
+    &:empty {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@import "~styles/variables";
+
+.dialog-example {
+  width: 50vw;
+  margin-top: 45px;
+  &__closebtn {
+    top: 0.5rem;
+    right: 0.75rem;
+  }
+}

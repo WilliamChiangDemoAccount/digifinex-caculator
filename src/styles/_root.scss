@@ -1,0 +1,104 @@
+// 全局設定
+
+* {
+  padding: 0;
+  margin: 0;
+  transition: 0.25s;
+  [data-required]:empty:before {
+    content: "-";
+  }
+  [data-static] {
+    transition: 0s !important;
+  }
+}
+
+ul,
+ol {
+  list-style-position: inside;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+//擋掉原本chrome內建的date picker
+input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+html {
+  font-size: 16px; //1rem
+  &[theme="dark"] body {
+    color: map-get(map-get($dark-theme, main), 2);
+    background-color: map-get(map-get($dark-theme, main), 1);
+    @include generateThemeColor($dark-theme);
+    @include generateShadow($box-shadow-dark);
+  }
+  &[theme="light"] body {
+    color: map-get(map-get($light-theme, main), 2);
+    background-color: map-get(map-get($light-theme, main), 1);
+    @include generateThemeColor($light-theme);
+    @include generateShadow($box-shadow-light);
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-anchor: none;
+  overflow: hidden;
+  font-family: "Open sans", "SF pro" !important;
+  &:lang(zh-CN) {
+    font-family: "Noto Sans SC", "Noto Sans TC", "Microsoft YaHei",
+      "Microsoft jhenghei" !important;
+  }
+  &:lang(zh-HK) {
+    font-family: "Noto Sans TC", "PingFang TC", "Microsoft jhenghei" !important;
+  }
+}
+
+input {
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    appearance: none;
+  }
+  &[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
+
+@include generateStyleByBreakpoint("xl") {
+  html {
+    font-size: 18px;
+  }
+}
+
+@include generateStyleByBreakpoint("xxl") {
+  html {
+    font-size: 28px;
+  }
+}
+
+@include generateBaseStyle();
+
+@each $level, $value in $grid-breakpoints {
+  @media screen and (min-width: $value) {
+    main {
+      box-sizing: content-box;
+      max-width: getContainerWidth($level, $value);
+      margin: 0 auto;
+      height: calc(100vh - #{$header-height});
+    }
+    @include generateBaseStyle($level);
+  }
+}
+
+.code-snippet {
+  @extend .bg-fill-3;
+  @extend .border;
+  @extend .border-line-3;
+  @extend .text-orange-primary;
+  @extend .border-radius-sm;
+  @extend .py-1;
+  @extend .px-2;
+}
