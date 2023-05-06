@@ -29,7 +29,7 @@ const Toast = ({ testId, onClose, message, status, timeout, handleOnClose }: ITo
     
     return <div
         data-testid={testId}
-        className='d-flex flex-row align-items-center bg-fill-1 px-8 py-3 shadow-2 border-radius-sm component-toast'
+        className='d-flex flex-row align-items-center bg-white-2 px-8 py-3 shadow-2 border-radius-sm component-toast'
     >
         <p className='font-sm'>{message}</p>
     </div>;

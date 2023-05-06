@@ -12,7 +12,7 @@ interface Props extends IBaseOverlay {
 const DialogExample = ({ testId, title, onClose }: Props) => {
     return (<div
         data-testid={testId}
-        className='bg-fill-2 p-5 shadow-2 position-relative dialog-example'
+        className='bg-white-2 p-5 shadow-2 position-relative dialog-example'
     >
         <h3 className="text-center">{title}</h3>
         <button className="position-absolute dialog-example__closebtn" onClick={() => onClose(testId!)}>X</button>

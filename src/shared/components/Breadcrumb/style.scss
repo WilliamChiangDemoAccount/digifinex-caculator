@@ -1,0 +1,14 @@
+@import "~styles/variables";
+
+.psgp-breadcrumb {
+  a {
+    &:not(:last-of-type)::after {
+      content: ">";
+      width: 0.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 10px;
+    }
+  }
+}

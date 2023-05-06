@@ -8,9 +8,12 @@ import Header from "@shared/components/Header";
 import Footer from "@shared/components/Footer";
 import React, { useEffect, useRef, useState } from "react";
 import Overlay from "@shared/components/Overlay";
+import { useBreadcrumb } from "@shared/hooks/useBreadcrumb";
+import Breadcrumb from "@shared/components/Breadcrumb";
 
 function App() {
   const { defaultPath } = getEnvConfig();
+  const { configs } = useBreadcrumb();
   const headerRef = useRef<HTMLDivElement>(null);
   const breadcrumbRef = useRef<HTMLDivElement>(null);
   const footerRef = useRef<HTMLDivElement>(null);
@@ -42,6 +45,7 @@ function App() {
   return <>
     <Header ref={headerRef} />
     <main className="d-flex flex-column">
+      {configs.length > 0 && <Breadcrumb ref={breadcrumbRef} />}
       <section
         className="px-5"
         style={{

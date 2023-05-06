@@ -1,143 +1,75 @@
-$main-colors-light: (
-  1: #f7f9f8,
-  2: #1e1e1e,
+$white-light: (
+  1: #ffffff,
+  2: #f9f9f9,
 );
 
-$main-colors-dark: (
-  2: #f7f9f8,
-  1: #1e1e1e,
+$white-dark: (
+  1: #ffffff,
+  2: #f9f9f9,
+);
+
+$black-light: (
+  1: #232323,
+  2: #454545,
+);
+
+$black-dark: (
+  1: #232323,
+  2: #454545,
 );
 
 $orange-light: (
-  primary: #ff7a00,
-  secondary: #ff4f03,
-  hover: #ff8617,
-  active: #eb7000,
-);
-
-$green-light: (
-  primary: #0aa03d,
-  secondary: #77b867,
-);
-
-$red-light: (
-  primary: #c01818,
-  secondary: #e14b51,
-);
-
-$yellow-light: (
-  light: #fdecc1,
-);
-
-$grey-light: (
-  light: #d9d9d9,
-);
-
-$blue-light: (
-  primary: #097ab7,
-  secondary: #56a9d5,
-  light: #e4f1f2,
-  active: #0369a0,
+  1: #ff7a00,
 );
 
 $orange-dark: (
-  primary: #e66e00,
-  secondary: #ffc896,
-  hover: #df5c00,
-  active: #eb7000,
+  1: #e66e00,
+);
+
+$green-light: (
+  1: #0aa03d,
+  2: #77b867,
 );
 
 $green-dark: (
-  primary: #77b867,
-  secondary: #8dd37b,
+  1: #77b867,
+  2: #8dd37b,
+);
+
+$red-light: (
+  1: #ef2500,
 );
 
 $red-dark: (
-  primary: #e14b51,
-  secondary: #c01818,
+  1: #ef2500,
+);
+
+$yellow-light: (
+  1: #ffd707,
 );
 
 $yellow-dark: (
-  light: #e7c265,
+  1: #ffd707,
 );
 
-$grey-dark: (
-  light: #bbbbbb,
+$gray-light: (
+  1: #c2c2c2,
+  2: #6d6d6d,
+);
+
+$gray-dark: (
+  1: #c2c2c2,
+  2: #6d6d6d,
+);
+
+$blue-light: (
+  1: #85869e,
+  2: #383961,
 );
 
 $blue-dark: (
-  primary: #37bafb,
-  secondary: #53a2cd,
-  light: #caecf1,
-  active: #35a5f6,
-);
-
-$fill-colors-light: (
-  0: #000000,
-  1: #ffffff,
-  2: #f9f9f9,
-  3: #f4f4f4,
-  4: #eeeeee,
-  5: #dddddd,
-  6: #d8d8d8,
-  7: #cccccc,
-);
-
-$fill-colors-dark: (
-  7: #68696d,
-  6: #545859,
-  5: #484b4d,
-  4: #3c3f40,
-  3: #22292e,
-  2: #1a2227,
-  1: #2a3033,
-  0: #ffffff,
-);
-
-$line-colors-light: (
-  4: #999999,
-  3: #d8d8d8,
-  2: #f2f2f2,
-  1: #f4f4f4,
-);
-
-$line-colors-dark: (
-  4: #999999,
-  3: #666666,
-  2: #555555,
-  1: #444444,
-);
-
-$text-colors-light: (
-  7: #333333,
-  6: #454545,
-  5: #666666,
-  4: #999999,
-  3: #bbbbbb,
-  2: #c9c9c9,
-  1: #ffffff,
-);
-
-$text-colors-dark: (
-  7: #f0f3f4,
-  6: #dddddd,
-  5: #a5aeb0,
-  4: #8d9496,
-  3: #686e71,
-  2: #40464a,
-  1: #1a2227,
-);
-
-$icon-colors-light: (
-  3: #333333,
-  2: #666666,
-  1: #c3c3c3,
-);
-
-$icon-colors-dark: (
-  3: #fafafa,
-  2: #b0b0b0,
-  1: #8c8c8c,
+  1: #85869e,
+  2: #383961,
 );
 
 $box-shadow-light: (
@@ -150,29 +82,23 @@ $box-shadow-dark: (
 );
 
 $light-theme: (
-  main: $main-colors-light,
-  fill: $fill-colors-light,
-  line: $line-colors-light,
-  text: $text-colors-light,
-  icon: $icon-colors-light,
+  "white": $white-light,
+  "black": $black-light,
   "green": $green-light,
   "blue": $blue-light,
   "orange": $orange-light,
   "yellow": $yellow-light,
-  "grey": $grey-light,
+  "gray": $gray-light,
   "red": $red-light,
 );
 
 $dark-theme: (
-  main: $main-colors-dark,
-  fill: $fill-colors-dark,
-  line: $line-colors-dark,
-  text: $text-colors-dark,
-  icon: $icon-colors-dark,
+  "white": $white-dark,
+  "black": $black-light,
   "green": $green-dark,
   "blue": $blue-dark,
   "orange": $orange-dark,
   "yellow": $yellow-dark,
-  "grey": $grey-dark,
+  "gray": $gray-dark,
   "red": $red-dark,
 );

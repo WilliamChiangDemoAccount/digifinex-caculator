@@ -9,7 +9,7 @@ export interface IPopup extends IBaseOverlay {
 }
 const Popup = ({ testId, onClose, handleOnClose, title, content, btnText }: IPopup) => (<div
     data-testid={testId}
-    className='d-flex flex-column align-items-center bg-fill-2 p-5 pt-8 shadow-2 component-popup'
+    className='d-flex flex-column align-items-center bg-white-2 p-5 pt-8 shadow-2 component-popup'
 >
     <h4>{title}</h4>
     <p className='font-sm mt-5'>{content}</p>

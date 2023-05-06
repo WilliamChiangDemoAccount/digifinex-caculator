@@ -21,9 +21,9 @@ const Modal = ({ testId, onClose, handleOnClose, title, content, secondaryBtn, p
 
     return <div
         data-testid={testId}
-        className='d-flex flex-column align-items-center bg-fill-1 shadow-2 component-modal'
+        className='d-flex flex-column align-items-center bg-white-2 shadow-2 component-modal'
     >
-        <header className='py-4 px-5 bg-fill-2 w-100'>{title}</header>
+        <header className='py-4 px-5 bg-gray-2 w-100'>{title}</header>
         <section className='p-5 w-100'>
             <p className='font-sm'>{content}</p>
             <nav className='d-flex flex-row align-items-center justify-content-center mt-5 component-modal__action-bar'>

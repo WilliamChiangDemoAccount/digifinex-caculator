@@ -10,7 +10,7 @@ describe('UI test', () => {
 
     it('Should render primary theme', async () => {
         render(<Component testId="test" onClick={() => { }} isPrimary />);
-        expect(screen.getByTestId('btn-test').className).toContain('bg-orange-primary');
+        expect(screen.getByTestId('btn-test').className).toContain('bg-orange-1');
     });
 });
 

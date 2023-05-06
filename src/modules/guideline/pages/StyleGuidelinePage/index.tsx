@@ -11,16 +11,16 @@ interface Props {
 
 const StyleGuidelinePage = (props: Props) => (<ContentLayout testId="StyleGuidelinePage" classes="page-style-guideline">
     <article>
-        <h3 className="text-text-7">使用規範</h3>
+        <h3 className="text-black-1">使用規範</h3>
         <p>系統樣式分為以下三大類</p>
         <ul className="row mt-md-4 mt-0">
             <li className="col-md-4 col-12 mt-md-0 mt-4">
                 <Card classes="h-100">
                     <h4>Bootstrap 5</h4>
                     <p className="mt-2">系統中除客製化主題、顏色等相關樣式，皆可使用bootstrap libary內提供的樣式進行拼接</p>
-                    <small className="mt-2 fst-italic text-text-4">使用方式參考
+                    <small className="mt-2 fst-italic text-gray-1">使用方式參考
                         <a
-                            className="text-text-4 text-decoration-underline"
+                            className="text-gray-1 text-decoration-underline"
                             target="_blank"
                             rel="noreferrer"
                             href="https://getbootstrap.com/docs/5.0/getting-started/introduction/">官方文件</a>
@@ -31,12 +31,12 @@ const StyleGuidelinePage = (props: Props) => (<ContentLayout testId="StyleGuidel
                 <Card classes="h-100">
                     <h4>Component Style</h4>
                     <p className="mt-2">元件本身的樣式設定，可透過toolbox cli生成component時添加--style控制項產出，檔案格式以scss為主，命名格式須符合<a
-                        className="text-text-4 text-decoration-underline"
+                        className="text-gray-1 text-decoration-underline"
                         href="https://www.infoq.cn/article/vfnfwdle0zmga9psvbug"
                         target="_blank"
                         rel="noreferrer"
                     >BEM命名原則</a>且不可與style libery及bootstrap名稱重複，主要用於極為複雜且特殊的單一元件樣式客製</p>
-                    <small className="mt-2 fw-bold text-danger">*常規情況下無需使用</small>
+                    <small className="mt-2 fw-bold text-red-1">*常規情況下無需使用</small>
                 </Card>
             </li>
             <li className="col-md-4 col-12 mt-md-0 mt-4">
@@ -55,7 +55,7 @@ const StyleGuidelinePage = (props: Props) => (<ContentLayout testId="StyleGuidel
                     <small className="mt-2 fst-italic text-text-4 text-end">
                         設計文件參照
                         <a
-                            className="text-text-4 text-decoration-underline"
+                            className="text-gray-1 text-decoration-underline"
                             href="https://www.figma.com/file/V9pZG5DABoYesBA6AlcIhB/ESOP-Guideline?node-id=2-2&t=ZxgXHaaqO5r2FaLy-0"
                             target="_blank"
                             rel="noreferrer"

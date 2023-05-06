@@ -41,7 +41,7 @@ const Container = ({
     const dom = useRef<HTMLDivElement>(null);
     return <div
         style={{ pointerEvents: type === OverlayType.Toast ? 'none' : 'auto' }}
-        className={`vh-100 vw-100 ${backdrop ? 'bg-fill-0_10' : ''} position-fixed layer-overlay top-0 left-0 d-flex align-items-start`}
+        className={`vh-100 vw-100 ${backdrop ? 'bg-black-1_10' : ''} position-fixed layer-overlay top-0 left-0 d-flex align-items-start`}
         onClick={({ target }) => {
             if (backdropClose && (target as HTMLElement).contains(dom.current)) {
                 onClose(id);

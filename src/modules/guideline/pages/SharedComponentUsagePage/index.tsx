@@ -11,7 +11,7 @@ const SharedComponentUsagePage = () => (<ContentLayout testId="SharedComponentUs
       routeMap.get(ProductModule.Guideline)!.children![1].children!.map(({ path, i18n }) =>
         <li key={path} className='col-sm-3 col-12 mt-2 text-center'>
           <Link to={path}>
-            <Card classes='ms-0 me-4 border border-fill-5 border-orange-primary--hover text-text-4 text-orange-primary--hover'>
+            <Card classes='ms-0 me-4 border border-gray-1 border-orange-1--hover text-gray-1 text-orange-1--hover'>
               {i18n}
             </Card>
           </Link>

@@ -29,7 +29,7 @@ const OverlayUsagePage = (props: Props) => {
                 <li className='d-flex flex-row align-items-center mt-2'>
                     <label className='code-snippet'>toast</label>
                     <p className='ms-2'>系統提示</p>
-                    <small className="ms-2 fw-bold text-danger">*toast元件固定無遮罩且無法手動關閉</small>
+                    <small className="ms-2 fw-bold text-red-1">*toast元件固定無遮罩且無法手動關閉</small>
                 </li>
                 <li className='d-flex flex-row align-items-center mt-2'>
                     <label className='code-snippet'>popup</label>

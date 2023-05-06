@@ -20,9 +20,9 @@ const Button = ({
     isPrimary
 }: IButton) => {
     return <button
-        className={`d-flex flex-row align-items-center border-radious-sm py-2 px-3 component-button component-button-${size}
-         ${isPrimary ? 'text-fill-3 bg-orange-primary bg-orange-primary_30--disabled bg-orange-hover--hover bg-orange-active--active' :
-                'border border-line-3 text-text-5 bg-fill-4--hover bg-fill-5--active'} 
+        className={`d-flex flex-row align-items-center border-radious-sm text-black-1 py-2 px-3 component-button component-button-${size}
+         ${isPrimary ? 'bg-orange-1 bg-orange-1_30--disabled' :
+                'border border-gray-1'} 
          ${classes ?? ''}`
         }
         data-testid={`btn-${testId}`}
