@@ -37,6 +37,16 @@ html {
     @include generateShadow($box-shadow-light);
   }
   @include generateBaseStyle();
+  @each $level in map-keys($grid-breakpoints) {
+    @include generateStyleByBreakpoint($level) {
+      main {
+        box-sizing: content-box;
+        max-width: getContainerWidth($level);
+        margin: 0 auto;
+      }
+      @include generateBaseStyle($level);
+    }
+  }
 }
 
 body {
@@ -79,29 +89,6 @@ input {
 @include generateStyleByBreakpoint("md") {
   html {
     line-height: 1.875rem;
-  }
-}
-
-@include generateStyleByBreakpoint("xl") {
-  html {
-    font-size: 18px;
-  }
-}
-
-@include generateStyleByBreakpoint("xxl") {
-  html {
-    font-size: 28px;
-  }
-}
-
-@each $level in map-keys($grid-breakpoints) {
-  @include generateStyleByBreakpoint($level) {
-    main {
-      box-sizing: content-box;
-      max-width: getContainerWidth($level);
-      margin: 0 auto;
-    }
-    @include generateBaseStyle($level);
   }
 }
 

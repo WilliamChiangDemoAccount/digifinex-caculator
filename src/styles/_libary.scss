@@ -5,6 +5,13 @@
   @return 100%;
 }
 
+@function getTextSize($break-point, $value) {
+  @if ($break-point == "md" or $break-point == "sm" or $break-point == "xs") {
+    @return $value * 0.75;
+  }
+  @return $value;
+}
+
 @function mapReverse($map) {
   $result: null;
 

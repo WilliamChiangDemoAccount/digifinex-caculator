@@ -80,6 +80,7 @@
   @each $key, $value in $text-level {
     #{$key} {
       font-size: $value !important;
+      line-height: 1.5 * $value !important;
       @if ($key != "p" and $key != "small") {
         font-weight: bold !important;
       }
@@ -94,6 +95,16 @@
 }
 
 @mixin generateTextByBreakpoint($break-point) {
+  @each $key, $value in $text-level {
+    $font-size: getTextSize($break-point, $value);
+    #{$key} {
+      font-size: $font-size !important;
+      line-height: 1.5 * $font-size !important;
+      @if ($key != "p" and $key != "small") {
+        font-weight: bold !important;
+      }
+    }
+  }
   @each $key, $value in $font-level {
     .font-#{$break-point}-#{$key} {
       font-size: $value !important;

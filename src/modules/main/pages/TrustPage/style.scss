@@ -1,3 +1,57 @@
 @import "~styles/variables";
-.page-trust{
+@import "~styles/utilities";
+
+.page-trust {
+  &__banner {
+    width: 100%;
+    background-image: url("../../../../assets/img/trust/banner.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 48px 20px;
+    h1:nth-of-type(2) {
+      background: linear-gradient(
+        to top,
+        rgba(255, 215, 7, 1),
+        rgba(255, 153, 0, 1),
+        rgba(239, 37, 0, 1)
+      );
+      background: -webkit-linear-gradient(
+        to top,
+        rgba(255, 215, 7, 1),
+        rgba(255, 153, 0, 1),
+        rgba(239, 37, 0, 1)
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    p {
+      max-width: 100%;
+    }
+  }
+}
+
+@include generateStyleByBreakpoint("sm") {
+  .page-trust {
+    &__banner {
+      height: 416px;
+      padding: 118px 0 0 105px;
+      p {
+        max-width: 500px;
+      }
+    }
+  }
+}
+
+@include generateStyleByBreakpoint("lg") {
+  .page-trust {
+    &__banner {
+      height: 680px;
+      padding: 212px 0 0 128px;
+      p {
+        max-width: 600px;
+      }
+    }
+  }
 }

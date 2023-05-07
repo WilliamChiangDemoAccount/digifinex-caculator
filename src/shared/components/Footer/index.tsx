@@ -32,7 +32,7 @@ const Footer = (prop: Props) => {
                                 {t('footer.worktime')}
                             </li>
                         </ul>
-                        <p className='mt-15 mt-sm-10_5 text-white-1 text-bold font-xs-sm font-sm-md'>{t('footer.moreInfo')}</p>
+                        <span className='mt-15 mt-sm-10_5 text-white-1 text-bold font-xs-sm font-sm-md'>{t('footer.moreInfo')}</span>
                         <Button
                             onClick={() => { }}
                             isPrimary
@@ -65,7 +65,7 @@ const Footer = (prop: Props) => {
                 </section>
             </div>
             <section className='border-top-1 border-gray-1 d-flex flex-column-reverse flex-sm-row align-items-center justify-content-between pt-4 component-footer__terms'>
-                <p className='text-gray-1 font-xs-xs font-sm-md font-lg-lg mt-sm-0 mt-2_5'>Copyright © 2023 PS GROUP. All Rights Reserved</p>
+                <span className='text-gray-1 font-xs-xs font-sm-md font-lg-lg mt-sm-0 mt-2_5'>Copyright © 2023 PS GROUP. All Rights Reserved</span>
                 <ul className='d-flex flex-row align-items-center'>
                     <li className='pe-5 border-right-1 border-gray-1 text-gray-1 font-xs-xs font-sm-md font-lg-lg cursor-pointer'>Privacy Policy</li>
                     <li className='px-5 border-right-1 border-gray-1 text-gray-1 font-xs-xs font-sm-md font-lg-lg cursor-pointer'>Terms of Use</li>

@@ -14,7 +14,12 @@
     "trust": {
       "menu": "柏盛信託",
       "enterprise": "企業服務",
-      "private": "私人服務"
+      "private": "私人服務",
+      "banner": {
+        "title": "柏盛信託",
+        "subtitle": "智信之選 安心託付",
+        "content": "Tempora necessitatibus dolor eum illo a ipsa culpa quia aspernatur. Fuga dolorem eaque et eum et qui fuga aut voluptatem. Neque esse omnis atque. Et et ea magnam hic quaerat odio dignissimos doloremque ea. "
+      }
     },
     "services": {
       "menu": "增值服務",
