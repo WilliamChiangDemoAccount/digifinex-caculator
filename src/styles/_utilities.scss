@@ -80,7 +80,6 @@
   @each $key, $value in $text-level {
     #{$key} {
       font-size: $value !important;
-      line-height: 1.5 * $value !important;
       @if ($key != "p" and $key != "small") {
         font-weight: bold !important;
       }
@@ -172,6 +171,9 @@
   .cursor {
     &-default {
       cursor: default;
+    }
+    &-pointer {
+      cursor: pointer;
     }
     @each $key, $file in $cursors {
       $path: "../assets/img/cursor/" + $file;

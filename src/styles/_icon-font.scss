@@ -1,10 +1,10 @@
 @font-face {
   font-family: "icomoon";
-  src: url("~assets/fonts/icomoon.eot?2cyr17");
-  src: url("~assets/fonts/icomoon.eot?2cyr17#iefix") format("embedded-opentype"),
-    url("~assets/fonts/icomoon.ttf?2cyr17") format("truetype"),
-    url("~assets/fonts/icomoon.woff?2cyr17") format("woff"),
-    url("~assets/fonts/icomoon.svg?2cyr17#icomoon") format("svg");
+  src: url("~assets/fonts/icomoon.eot?hmgujb");
+  src: url("~assets/fonts/icomoon.eot?hmgujb#iefix") format("embedded-opentype"),
+    url("f~assets/fonts/icomoon.ttf?hmgujb") format("truetype"),
+    url("~assets/fonts/icomoon.woff?hmgujb") format("woff"),
+    url("~assets/fonts/icomoon.svg?hmgujb#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,123 +26,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-ic_eyeClose_24px:before {
+.icon-contact:before {
   content: "\e900";
-  color: #666;
 }
-.icon-ic_eyeOpen_24px:before {
-  content: "\e901";
-  color: #666;
-}
-.icon-ic_message_24px:before {
-  content: "\e902";
-  color: #666;
-}
-.icon-ic_stockSwitch_16px:before {
-  content: "\e903";
-  color: #999;
-}
-.icon-tips_HK:before {
+.icon-phone:before {
   content: "\e904";
-  color: #e94d37;
 }
-.icon-tips_US:before {
-  content: "\e905";
-  color: #097ab7;
-}
-.icon-ic_moredown_16px:before {
-  content: "\e906";
-  color: #d8d8d8;
-}
-.icon-ic_award_24px:before {
+.icon-time:before {
   content: "\e907";
-  color: #ff7a00;
 }
-.icon-ic_Exercise_24px:before {
-  content: "\e908";
-  color: #ff7a00;
-}
-.icon-ic_cardSeeGrant_16px:before {
-  content: "\e909";
-  color: #ff7a00;
-}
-.icon-ic_Grant_24px:before {
-  content: "\e90a";
-  color: #ff7a00;
-}
-.icon-ic_Grantdownload_16px:before {
-  content: "\e90b";
-  color: #999;
-}
-.icon-ic_GrantdSee_16px:before {
+.icon-address:before {
   content: "\e90c";
-  color: #999;
 }
-.icon-ic_option_24px:before {
+.icon-arrow_right:before {
   content: "\e90d";
-  color: #ff7a00;
 }
-.icon-Resultspage_home:before {
+.icon-global:before {
   content: "\e90e";
-  color: #ff7a00;
-}
-.icon-Resultspage_Incentive:before {
-  content: "\e90f";
-  color: #ff7a00;
-}
-.icon-Resultspage_Order:before {
-  content: "\e910";
-  color: #ff7a00;
-}
-.icon-ic_dialogue_12px:before {
-  content: "\e926";
-  color: #d8d8d8;
-}
-.icon-ic_help_12px:before {
-  content: "\e927";
-  color: #d8d8d8;
-}
-.icon-ic_hunt_12px:before {
-  content: "\e928";
-  color: #d8d8d8;
-}
-.icon-ic_information_12px:before {
-  content: "\e929";
-  color: #d8d8d8;
-}
-.icon-ic_inputAdd_12px:before {
-  content: "\e92a";
-  color: #7d7770;
-}
-.icon-ic_inputReduce_12px:before {
-  content: "\e92b";
-  color: #7d7770;
-}
-.icon-ic_inputtime_24px:before {
-  content: "\e92c";
-  color: #666;
-}
-.icon-ic_more_12px:before {
-  content: "\e92d";
-  color: #7d7770;
-}
-.icon-ic_select:before {
-  content: "\e92e";
-  color: #ddd;
-}
-.icon-ic_stockdowb_12px:before {
-  content: "\e92f";
-  color: #ff2800;
-}
-.icon-ic_stockup_12px:before {
-  content: "\e930";
-  color: #ff2800;
-}
-.icon-tips_buy:before {
-  content: "\e935";
-  color: #f25746;
-}
-.icon-tips_sell:before {
-  content: "\e934";
-  color: #0690bb;
 }

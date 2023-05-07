@@ -19,21 +19,11 @@ $black-dark: (
 );
 
 $orange-light: (
-  1: #ff7a00,
+  1: #ff9900,
 );
 
 $orange-dark: (
-  1: #e66e00,
-);
-
-$green-light: (
-  1: #0aa03d,
-  2: #77b867,
-);
-
-$green-dark: (
-  1: #77b867,
-  2: #8dd37b,
+  1: #ff9900,
 );
 
 $red-light: (
@@ -84,7 +74,6 @@ $box-shadow-dark: (
 $light-theme: (
   "white": $white-light,
   "black": $black-light,
-  "green": $green-light,
   "blue": $blue-light,
   "orange": $orange-light,
   "yellow": $yellow-light,
@@ -95,7 +84,6 @@ $light-theme: (
 $dark-theme: (
   "white": $white-dark,
   "black": $black-light,
-  "green": $green-dark,
   "blue": $blue-dark,
   "orange": $orange-dark,
   "yellow": $yellow-dark,

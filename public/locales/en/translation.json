@@ -1,24 +1,38 @@
 {
-    "pages": {
-        "main": {
-            "menu": "首頁"
-        },
-        "esop": {
-            "menu": "ESOP"
-        },
-        "about": {
-            "menu": "關於我們"
-        },
-        "trust": {
-            "menu": "柏盛信託"
-        },
-        "services": {
-            "menu": "增值服務"
-        }
+  "pages": {
+    "main": {
+      "menu": "首頁"
     },
-    "languages": {
-        "en": "English",
-        "zh-tw": "繁體中文",
-        "zh-cn": "简体中文"
+    "esop": {
+      "menu": "ESOP",
+      "introduction": "內容介紹"
+    },
+    "about": {
+      "menu": "關於我們",
+      "introduction": "集團介紹"
+    },
+    "trust": {
+      "menu": "柏盛信託",
+      "enterprise": "企業服務",
+      "private": "私人服務"
+    },
+    "services": {
+      "menu": "增值服務",
+      "insight": "行業洞察",
+      "ipo": "IPO分銷",
+      "propagate": "資本市場傳播"
     }
+  },
+  "footer": {
+    "address": "香港中环德辅道中路88-98号 中环 88，18楼",
+    "phone": "+852 6286 2198",
+    "worktime": "週一至週五（工作日）09:00 - 18:00",
+    "moreInfo": "如欲了解更多的服务详情，请点击下方按钮立即咨询 ",
+    "contactUs": "立即咨询"
+  },
+  "languages": {
+    "en": "English",
+    "zh-tw": "繁體中文",
+    "zh-cn": "简体中文"
+  }
 }

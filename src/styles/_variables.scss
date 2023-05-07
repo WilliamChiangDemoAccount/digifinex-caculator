@@ -15,7 +15,7 @@ $text-level: (
   h2: 1.5rem,
   h3: 1.25rem,
   h4: 1.125rem,
-  p: 0.9rem,
+  p: 1rem,
   button: 0.875rem,
   small: 0.75rem,
 );
@@ -69,6 +69,7 @@ $spacers: (
   0: 0,
   1: $spacer * 0.25,
   2: $spacer * 0.5,
+  2_5: $spacer * 0.625,
   3: $spacer * 0.75,
   3_5: $spacer * 0.875,
   4: $spacer * 1,
@@ -80,6 +81,15 @@ $spacers: (
   8: $spacer * 2,
   9: $spacer * 2.25,
   10: $spacer * 2.5,
+  10_5: $spacer * 2.625,
+  11: $spacer * 2.75,
+  11_5: $spacer * 2.875,
+  12: $spacer * 3,
+  12_5: $spacer * 3.125,
+  13: $spacer * 3.25,
+  13_5: $spacer * 3.375,
+  14: $spacer * 3.5,
+  15: $spacer * 3.75,
 );
 
 $grid-breakpoints: (

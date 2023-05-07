@@ -24,7 +24,6 @@ const Header = ((prop: Props) => {
     useEffect(() => {
         let listener: any;
         if (dropdown.current) {
-            console.log(dropdown.current)
             listener = window.addEventListener('click', ({ target }) => {
                 if (!dropdown.current?.contains(target as HTMLElement)) {
                     setExpand(false);
@@ -35,7 +34,7 @@ const Header = ((prop: Props) => {
     }, [dropdown]);
 
     return <header className='bg-white-1 component-header py-3_5 py-lg-7_5' data-testid='header'>
-        <section className='component-header__container d-flex flex-row align-items-center justify-content-between px-4 px-sm-5 px-lg-10 h-100'>
+        <section className='component-header__container mx-auto d-flex flex-row align-items-center justify-content-between px-4 px-sm-5 px-lg-10 h-100'>
             <div className='d-flex flex-row align-items-center h-100'>
                 <img
                     data-testid='logo-btn'
@@ -63,7 +62,7 @@ const Header = ((prop: Props) => {
                     }
                 </ul>
             </div>
-            <div ref={dropdown} className='d-flex flex-row align-items-center position-relative text-orange-1 font-xs-lg font-lg-xl component-header__language'>
+            <div ref={dropdown} className='d-none d-sm-flex flex-row align-items-center position-relative text-orange-1 font-xs-lg font-lg-xl component-header__language'>
                 <img className='me-2' src={LanguageIcon} alt="" />
                 <span>{t(`languages.${i18n.language}`)}</span>
                 <img
