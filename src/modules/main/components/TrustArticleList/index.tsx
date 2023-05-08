@@ -3,6 +3,7 @@ import './style.scss';
 import { TrustArticle, TrustService } from '@shared/enums/trust.enum';
 import { useTranslation } from 'react-i18next';
 import Category from '@modules/main/components/TrustArticleCategory';
+import Article from '@modules/main/components/TrustArticle';
 
 interface Props {
     onSkip: () => void;
@@ -147,14 +148,15 @@ const TrustArticleList = ({ onSkip, goTop }: Props) => {
                 isExpand={isFamilyOfficeExpand}
                 onExpand={() => setFamilyOfficeExpand(!isFamilyOfficeExpand)} />
         </ul>
-        <article className='ms-6 ms-lg-26'>
+        <article className='d-flex flex-column align-items-end ms-6'>
             <button
-                className='d-flex flex-row align-items-center font-lg text-gray-2 fw-normal compnent-trust-article-list__skip'
+                className='d-flex flex-row align-items-center font-lg text-gray-2 fw-normal mb-30 mb-lg-15 compnent-trust-article-list__skip'
                 onClick={onSkip}
             >
                 {t('pages.trust.skipService')}
                 <em className='icon-arrow_right bg-gray-2 text-white-1 rounded-circle ms-2 font-xs d-flex justify-content-center align-items-center'></em>
             </button>
+            <Article activeArticle={activeArticle} />
         </article>
     </div >;
 }

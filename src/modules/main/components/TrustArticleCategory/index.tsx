@@ -47,7 +47,7 @@ const TrustArticleCategory = ({ label, children, onExpand, onArticleClick, isExp
         {isExpand && (children ?? articles.map((article, index) =>
             <li
                 key={article}
-                className={`compnent-trust-article-list__article ${index === (articles.length - 1) ? 'compnent-trust-article-list__article--last' : ''} mt-7_5 mt-lg-15 fw-bold cursor-pointer text-gray user-select-none ${activeArticle === article ? 'text-blue-1' : 'text-gray-2'}`}
+                className={`compnent-trust-article-list__article ${index === (articles.length - 1) ? 'compnent-trust-article-list__article--last' : ''} mt-10 fw-bold cursor-pointer text-gray user-select-none ${activeArticle === article ? 'text-blue-1' : 'text-gray-2'}`}
                 onClick={() => {
                     if (onArticleClick) {
                         onArticleClick(article);

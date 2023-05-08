@@ -16,12 +16,16 @@ const TrustPage = (props: Props) => {
             <h1>{t('pages.trust.banner.subtitle')}</h1>
             <p className='mt-lg-6 mt-sm-5 text-white-1'>{t('pages.trust.banner.content')}</p>
         </section>
-        <section ref={service} className='page-trust__service'>
+        <section ref={service} className='pt-12 pt-sm-20 pt-lg-30'>
             <TrustArticleList
-                goTop={() => window.scrollTo({
-                    top: service.current?.offsetTop,
-                    behavior: 'smooth'
-                })}
+                goTop={() => {
+                    if (window.scrollY > 0) {
+                        window.scrollTo({
+                            top: service.current?.offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                }}
                 onSkip={() => window.scrollTo({
                     top: advance.current?.offsetTop,
                     behavior: 'smooth'

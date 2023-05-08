@@ -10,7 +10,7 @@
 
 ul,
 ol {
-  list-style-position: inside;
+  list-style-position: inside !important;
 }
 
 ol {
@@ -76,19 +76,21 @@ input {
 
 @include generateStyleByBreakpoint("xs") {
   html {
-    line-height: 1.125rem;
+    span,
+    ul,
+    ol {
+      line-height: 1.25rem !important;
+    }
   }
 }
 
 @include generateStyleByBreakpoint("sm") {
   html {
-    line-height: 1.25rem;
-  }
-}
-
-@include generateStyleByBreakpoint("md") {
-  html {
-    line-height: 1.875rem;
+    span,
+    ul,
+    ol {
+      line-height: 1.875rem !important;
+    }
   }
 }
 
