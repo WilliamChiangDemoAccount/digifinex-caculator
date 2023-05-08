@@ -37,6 +37,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 30px 20px 54px;
+    h3 {
+      font-size: 1.375rem !important;
+    }
+    ul {
+      li {
+        box-shadow: 0.25rem 0.25rem 0px 0px map-get($orange-light, 1);
+      }
+    }
   }
 }
 
@@ -53,6 +61,15 @@
       padding-left: 0;
       padding-right: 0;
       margin: 70px auto 0;
+      h3 {
+        font-size: 1.75rem !important;
+      }
+      li {
+        flex-basis: 400px;
+        &:nth-child(odd) {
+          margin-right: 1rem;
+        }
+      }
     }
   }
 }
@@ -70,6 +87,12 @@
       margin-top: 140px;
       padding-top: 60px;
       padding-bottom: 100px;
+      li {
+        flex-basis: 570px;
+      }
+      h3 {
+        font-size: 2.25rem !important;
+      }
     }
   }
 }

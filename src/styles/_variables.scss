@@ -49,6 +49,7 @@ $font-level: (
   lgx: 1.25rem,
   xl: 1.375rem,
   xxl: 1.5rem,
+  xxxl: 1.75rem,
 );
 
 $sizes: (
@@ -87,6 +88,7 @@ $spacers: (
   13: $spacer * 3.25,
   13_5: $spacer * 3.375,
   14: $spacer * 3.5,
+  14_5: $spacer * 3.625,
   15: $spacer * 3.75,
   16: $spacer * 4,
   17: $spacer * 4.25,

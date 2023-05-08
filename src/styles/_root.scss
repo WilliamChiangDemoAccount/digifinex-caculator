@@ -3,6 +3,7 @@
 * {
   padding: 0;
   margin: 0;
+  line-height: 1.5em !important;
   [data-required]:empty:before {
     content: "-";
   }
@@ -71,26 +72,6 @@ input {
   }
   &[type="number"] {
     -moz-appearance: textfield;
-  }
-}
-
-@include generateStyleByBreakpoint("xs") {
-  html {
-    span,
-    ul,
-    ol {
-      line-height: 1.25rem !important;
-    }
-  }
-}
-
-@include generateStyleByBreakpoint("sm") {
-  html {
-    span,
-    ul,
-    ol {
-      line-height: 1.875rem !important;
-    }
   }
 }
 
