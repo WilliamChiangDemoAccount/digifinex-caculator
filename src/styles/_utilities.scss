@@ -80,9 +80,7 @@
   @each $key, $value in $text-level {
     #{$key} {
       font-size: $value !important;
-      @if ($key != "p" and $key != "small") {
-        font-weight: bold !important;
-      }
+      font-weight: bold !important;
     }
   }
 

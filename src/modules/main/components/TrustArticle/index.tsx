@@ -6,7 +6,7 @@ interface Props {
     activeArticle: ETrustArticle
 }
 
-const getArticleIllustration = (article: ETrustArticle): string => require(`assets/img/trust/${article}.svg`);
+const getSvg = (fileName: string): string => require(`assets/img/trust/${fileName}.svg`);
 
 const TrustArticle = ({ activeArticle }: Props) => {
     const { t } = useTranslation();
@@ -14,7 +14,10 @@ const TrustArticle = ({ activeArticle }: Props) => {
         <h3 className='text-blue-1 font-xl'>{t('pages.trust.article.rightUsage.label')}</h3>
         <ul className='d-flex flex-row flex-wrap'>
             {[1, 2, 3, 4].map(usage => <li key={usage}>
-                <h3 className='font-xl'>{t(`pages.trust.article.rightUsage.usage-${usage}.title`)}</h3>
+                <h3 className='d-flex flex-row align-items-center'>
+                    <img className='me-4' src={getSvg(`right-usage-${usage}`)} alt="" />
+                    {t(`pages.trust.article.rightUsage.usage-${usage}.title`)}
+                </h3>
                 <span className='d-inline-block mt-4 font-lg text-gray-2'>{t(`pages.trust.article.rightUsage.usage-${usage}.content`)}</span>
             </li>)}
         </ul>
@@ -23,7 +26,10 @@ const TrustArticle = ({ activeArticle }: Props) => {
             <h3 className='text-blue-1 font-xl'>{t('pages.trust.article.charitableUsage.label')}</h3>
             <ul className='d-flex flex-row flex-wrap'>
                 {[1, 2].map(usage => <li key={usage}>
-                    <h3 className='font-xl'>{t(`pages.trust.article.charitableUsage.usage-${usage}.title`)}</h3>
+                    <h3 className='d-flex flex-row align-items-center'>
+                        <img className='me-4' src={getSvg(`charitable-usage-${usage}`)} alt="" />
+                        {t(`pages.trust.article.charitableUsage.usage-${usage}.title`)}
+                    </h3>
                     <span className='d-inline-block font-lg mt-4 text-gray-2'>{t(`pages.trust.article.charitableUsage.usage-${usage}.content`)}</span>
                 </li>)}
             </ul>
@@ -58,7 +64,7 @@ const TrustArticle = ({ activeArticle }: Props) => {
                                         : t(`pages.trust.article.${activeArticle}.content`)}
                         </span>
                     </div>
-                    <img src={getArticleIllustration(activeArticle)} className='compnent-trust-article__illustration' alt="" />
+                    <img src={getSvg(activeArticle)} className='compnent-trust-article__illustration' alt="" />
                 </section>
 }
 

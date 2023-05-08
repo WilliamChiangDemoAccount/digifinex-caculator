@@ -16,6 +16,9 @@
   &__usage {
     width: 650px;
     li {
+      img {
+        width: 30px;
+      }
       flex-basis: 270px;
       flex-shrink: 1;
       flex-grow: 1;
@@ -48,8 +51,11 @@
       width: 392px;
     }
     &__usage {
-      width: 900px;
-      & > li {
+      width: 910px;
+      li {
+        img {
+          width: 36px;
+        }
         flex-basis: 375px;
         &:nth-child(odd) {
           margin-right: 3.25rem;
