@@ -11,16 +11,6 @@ export enum OverlayType {
   Dialog
 }
 
-export enum SessionStorageItem {
-  AccessToken = 'access-token',
-  RefreshToken = 'refresh-token',
-  TokenLifeTime = 'token-live-time'
-}
-
-export enum LocalStorageItem {
-  RedirectUrl = 'redirect-url'
-}
-
 export enum Size {
   Small = 'sm',
   Middle = 'md',

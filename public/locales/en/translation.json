@@ -19,6 +19,62 @@
         "title": "柏盛信託",
         "subtitle": "智信之選 安心託付",
         "content": "Tempora necessitatibus dolor eum illo a ipsa culpa quia aspernatur. Fuga dolorem eaque et eum et qui fuga aut voluptatem. Neque esse omnis atque. Et et ea magnam hic quaerat odio dignissimos doloremque ea. "
+      },
+      "skipService": "略過服務介紹",
+      "service": {
+        "enterprise": "企業服務",
+        "optionAwardTrust": "股權激勵信託",
+        "personal": "私人服務",
+        "familyTrust": "家族信託",
+        "keepRightTrust": "保留權利信託",
+        "insuranceTrust": "保險信託",
+        "foreignGrantorTrust": "非美委託人信託",
+        "charitableTrust": "慈善信託",
+        "familyOffice": "家族辦公室"
+      },
+      "article": {
+        "optionScene": {
+          "label": "應用場景"
+        },
+        "optionTarget": {
+          "label": "使用對象"
+        },
+        "optionUsage": {
+          "label": "股權激勵信託的作用"
+        },
+        "rightIntroduction": {
+          "label": "了解保留權力信託"
+        },
+        "rightUsage": {
+          "label": "保留權力信託的作用"
+        },
+        "insuranceIntroduction": {
+          "label": "了解保險信託"
+        },
+        "insuranceUsage": {
+          "label": "保險信託的作用"
+        },
+        "foreignGrantorIntroduction": {
+          "label": "了解非美委託人信託"
+        },
+        "foreignGrantorUsage": {
+          "label": "非美委託人信託的作用"
+        },
+        "charitableIntroduction": {
+          "label": "了解慈善信託"
+        },
+        "charitableUsage": {
+          "label": "慈善信託的作用"
+        },
+        "familyOfficeIntroduction": {
+          "label": "了解家族辦公室"
+        },
+        "familyOfficeUsage": {
+          "label": "家族辦公室的作用"
+        },
+        "familyOthers": {
+          "label": "相關文章"
+        }
       }
     },
     "services": {

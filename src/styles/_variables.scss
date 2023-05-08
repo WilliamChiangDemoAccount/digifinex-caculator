@@ -5,11 +5,9 @@ $max-number: 1000;
 $positions: "top", "right", "bottom", "left";
 $pseudo-class: "hover";
 // "disabled", "active",
-  // "focus", "checked", "enabled",
-  //   "first-of-type", "first-child", "last-of-type", "last-child", "empty",
-  //   "only-child"
-;
-
+// "focus", "checked", "enabled",
+//   "first-of-type", "first-child", "last-of-type", "last-child", "empty",
+//   "only-child"
 $text-level: (
   h1: 3rem,
   h2: 1.5rem,
@@ -90,18 +88,31 @@ $spacers: (
   13_5: $spacer * 3.375,
   14: $spacer * 3.5,
   15: $spacer * 3.75,
+  16: $spacer * 4,
+  17: $spacer * 4.25,
+  18: $spacer * 4.5,
+  19: $spacer * 4.75,
+  20: $spacer * 5,
+  21: $spacer * 5.25,
+  22: $spacer * 5.5,
+  23: $spacer * 5.75,
+  24: $spacer * 6,
+  25: $spacer * 6.25,
+  26: $spacer * 6.5,
 );
+
+$font-weight-normal: 400;
 
 $grid-breakpoints: (
   xs: 0,
   sm: 768px,
   md: 1024px,
   lg: 1440px,
-  xl: 1920px
+  xl: 1920px,
 );
 
 $container-max-widths: (
-  xl: 1440px
+  xl: 1440px,
 );
 
 $border-radius-map: (

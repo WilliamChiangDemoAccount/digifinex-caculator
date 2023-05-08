@@ -1,0 +1,114 @@
+@import "~styles/variables";
+@import "~styles/utilities";
+
+.compnent-trust-article-list {
+  padding: 0 22px 0 40px;
+  em {
+    transition: 0.5s;
+  }
+  &__article-list {
+    border-left: 2px dashed;
+    & > li {
+      position: relative;
+      padding-left: 2.625rem;
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-50%);
+        content: "";
+        border-radius: 100%;
+      }
+    }
+  }
+
+  &__topic {
+    line-height: 2.5rem;
+    font-size: 1.75rem;
+    &::before {
+      width: 2.25rem;
+      height: 2.25rem;
+    }
+  }
+
+  &__article {
+    &::before {
+      display: none;
+    }
+    &--last {
+      margin-bottom: 12.5rem;
+    }
+  }
+
+  &__sub-category {
+    font-size: 1.375rem !important;
+    line-height: 2rem !important;
+    &::before {
+      top: 1rem !important;
+      transform: translateX(-50%) translateY(-50%) !important;
+      width: 1rem !important;
+      height: 1rem !important;
+    }
+  }
+
+  &__category {
+    font-size: 1.375rem !important;
+    line-height: 2rem !important;
+    &::before {
+      top: 1rem !important;
+      transform: translateX(-50%) translateY(-50%) !important;
+      width: 1.5rem !important;
+      height: 1.5rem !important;
+    }
+  }
+
+  &__skip {
+    em {
+      width: 1.5rem;
+      height: 1.5rem;
+      transform: rotate(90deg);
+    }
+  }
+}
+
+@include generateStyleByBreakpoint("lg") {
+  .compnent-trust-service {
+    padding: 0 67px 0 108px;
+    &__article-list {
+      & > li {
+        padding-left: 3.75rem;
+      }
+    }
+
+    &__topic {
+      line-height: 3.25rem;
+      font-size: 2.25rem;
+      &::before {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+
+    &__sub-category {
+      font-size: 1.875rem !important;
+      line-height: 2.5rem !important;
+      &::before {
+        top: 1rem !important;
+        transform: translateX(-50%) translateY(-50%) !important;
+        width: 1rem !important;
+        height: 1rem !important;
+      }
+    }
+
+    &__category {
+      font-size: 1.875rem !important;
+      line-height: 2.5rem !important;
+      &::before {
+        top: 1.25rem !important;
+        transform: translateX(-50%) translateY(-50%) !important;
+        width: 1.5rem !important;
+        height: 1.5rem !important;
+      }
+    }
+  }
+}

@@ -30,6 +30,18 @@
       max-width: 100%;
     }
   }
+
+  &__service {
+    margin-top: 3rem;
+  }
+
+  &__advance {
+    width: 100%;
+    background-image: url("../../../../assets/img/trust/advance.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 20px 54px;
+  }
 }
 
 @include generateStyleByBreakpoint("sm") {
@@ -40,6 +52,14 @@
       p {
         max-width: 500px;
       }
+    }
+    &__service {
+      margin-top: 5rem;
+    }
+    &__advance {
+      padding-left: 0;
+      padding-right: 0;
+      margin: 70px auto 0;
     }
   }
 }
@@ -52,6 +72,14 @@
       p {
         max-width: 600px;
       }
+    }
+    &__service {
+      margin-top: 7.5rem;
+    }
+    &__advance {
+      margin-top: 140px;
+      padding-top: 60px;
+      padding-bottom: 100px;
     }
   }
 }
