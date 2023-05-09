@@ -10,6 +10,9 @@ import advance3Svg from 'assets/img/trust/trust-advance-3.svg';
 import advance4Svg from 'assets/img/trust/trust-advance-4.svg';
 import securityAssetsSvg from 'assets/img/trust/security-assets.svg';
 import securityDataSvg from 'assets/img/trust/security-data.svg';
+import customerMedicalSvg from 'assets/img/trust/customer-medical.svg';
+import customerTechSvg from 'assets/img/trust/customer-technology.svg';
+import customerNetworkSvg from 'assets/img/trust/customer-network.svg';
 
 const TrustPage = () => {
     const { t } = useTranslation();
@@ -92,6 +95,44 @@ const TrustPage = () => {
                             {t('pages.trust.security.data.content')}
                         </p>
                     </section>
+                </li>
+            </ul>
+        </section>
+        <section className='pt-15 pb-21 pt-sm-20 pb-sm-40 pt-lg-50 pb-lg-50 page-trust__customer'>
+            <h2 className='text-blue-2 text-center'>{t('pages.trust.customer.title')}</h2>
+            <ul className='d-flex flex-column flex-sm-row align-items-center justify-content-center mt-7 mt-sm-15'>
+                <li className='d-flex flex-column align-items-center me-0 me-sm-17_5 me-lg-45 d-flex flex-column align-items-center'>
+                    <div className='rounded-circle bg-white-1 p-6_5 p-sm-13'>
+                        <img src={customerMedicalSvg} alt="" />
+                    </div>
+                    <p className='font-xs-sm font-sm-xl text-black fw-bold mt-2 mt-sm-10_5'>
+                        {t('pages.trust.customer.medical.title')}
+                    </p>
+                    <p className='font-xs-sm font-sm-lg text-gray-2 mt-2 mt-sm-1 mt-lg-4'>
+                        {t('pages.trust.customer.medical.content')}
+                    </p>
+                </li>
+                <li className='d-flex flex-column align-items-center mt-7 mt-sm-0 me-0 me-sm-17_5 me-lg-45'>
+                    <div className='rounded-circle bg-white-1 p-6_5 p-sm-13'>
+                        <img src={customerTechSvg} alt="" />
+                    </div>
+                    <p className='font-xs-sm font-sm-xl text-black fw-bold mt-2 mt-sm-10_5'>
+                        {t('pages.trust.customer.technology.title')}
+                    </p>
+                    <p className='font-xs-sm font-sm-lg text-gray-2 mt-2 mt-sm-1 mt-lg-4'>
+                        {t('pages.trust.customer.technology.content')}
+                    </p>
+                </li>
+                <li className='d-flex flex-column align-items-center mt-7 mt-sm-0'>
+                    <div className='rounded-circle bg-white-1 p-6_5 p-sm-13'>
+                        <img src={customerNetworkSvg} alt="" />
+                    </div>
+                    <p className='font-xs-sm font-sm-xl text-black fw-bold mt-2 mt-sm-10_5'>
+                        {t('pages.trust.customer.network.title')}
+                    </p>
+                    <p className='font-xs-sm font-sm-lg text-gray-2 mt-2 mt-sm-1 mt-lg-4'>
+                        {t('pages.trust.customer.network.content')}
+                    </p>
                 </li>
             </ul>
         </section>

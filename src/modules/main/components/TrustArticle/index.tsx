@@ -6,7 +6,7 @@ interface Props {
     activeArticle: ETrustArticle
 }
 
-const getSvg = (fileName: string): string => require(`assets/img/trust/${fileName}.svg`);
+const getSrc = (fileName: string, type: 'jpg' | 'svg' = 'svg'): string => require(`assets/img/trust/${fileName}.${type}`);
 
 const TrustArticle = ({ activeArticle }: Props) => {
     const { t } = useTranslation();
@@ -15,7 +15,7 @@ const TrustArticle = ({ activeArticle }: Props) => {
         <ul className='d-flex flex-row flex-wrap'>
             {[1, 2, 3, 4].map(usage => <li key={usage}>
                 <h3 className='d-flex flex-row align-items-center'>
-                    <img className='me-4' src={getSvg(`right-usage-${usage}`)} alt="" />
+                    <img className='me-4' src={getSrc(`right-usage-${usage}`)} alt="" />
                     {t(`pages.trust.article.rightUsage.usage-${usage}.title`)}
                 </h3>
                 <span className='d-inline-block mt-4 font-lg text-gray-2'>{t(`pages.trust.article.rightUsage.usage-${usage}.content`)}</span>
@@ -27,7 +27,7 @@ const TrustArticle = ({ activeArticle }: Props) => {
             <ul className='d-flex flex-row flex-wrap'>
                 {[1, 2].map(usage => <li key={usage}>
                     <h3 className='d-flex flex-row align-items-center'>
-                        <img className='me-4' src={getSvg(`charitable-usage-${usage}`)} alt="" />
+                        <img className='me-4' src={getSrc(`charitable-usage-${usage}`)} alt="" />
                         {t(`pages.trust.article.charitableUsage.usage-${usage}.title`)}
                     </h3>
                     <span className='d-inline-block font-lg mt-4 text-gray-2'>{t(`pages.trust.article.charitableUsage.usage-${usage}.content`)}</span>
@@ -64,7 +64,7 @@ const TrustArticle = ({ activeArticle }: Props) => {
                                         : t(`pages.trust.article.${activeArticle}.content`)}
                         </span>
                     </div>
-                    <img src={getSvg(activeArticle)} className='compnent-trust-article__illustration' alt="" />
+                    <img src={getSrc(activeArticle)} className='compnent-trust-article__illustration' alt="" />
                 </section>
 }
 

@@ -145,6 +145,21 @@
           "title": "數據安全",
           "content": "識別業務數據中的機密數據，建設專門的隔離安全屋，保證機密數據傳輸和存儲安全。"
         }
+      },
+      "customer": {
+        "title": "典型行業",
+        "medical": {
+          "title": "醫療",
+          "content": "醫療服務 / 醫療研究"
+        },
+        "technology": {
+          "title": "科技公司",
+          "content": "電信技術 / SaaS / 數據服務" 
+        },
+        "network": {
+          "title": "互聯網平台",
+          "content": "電商 / 社交平台 / 內容平台" 
+        }
       }
     },
     "services": {
