@@ -2,6 +2,9 @@
 @import "~styles/utilities";
 
 .compnent-trust-article {
+  &__hint {
+    max-width: 650px;
+  }
   &__content {
     width: 416px;
     ul {
@@ -44,6 +47,9 @@
 
 @include generateStyleByBreakpoint("lg") {
   .compnent-trust-article {
+    &__hint {
+      max-width: 910px;
+    }
     &__content {
       width: 520px;
     }

@@ -40,7 +40,12 @@ const TrustPage = () => {
                 })} />
         </section>
         <section className='d-block d-sm-none px-5 py-10'>
-            <TrustArticleListMobile />
+            <TrustArticleListMobile
+                onSkip={() => window.scrollTo({
+                    top: advance.current?.offsetTop,
+                    behavior: 'smooth'
+                })}
+            />
         </section>
         <section ref={advance} className='page-trust__advance'>
             <h3 className='text-white-1 text-center'>{t('pages.trust.advance.title')}</h3>

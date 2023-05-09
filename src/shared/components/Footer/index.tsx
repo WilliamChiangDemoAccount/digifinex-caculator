@@ -44,8 +44,8 @@ const Footer = (prop: Props) => {
                     <div className='d-none d-sm-flex flex-row align-items-start'>
                         <ul className='component-footer__menu'>
                             <li className='text-orange-1 font-xl text-white-1 text-end'>{t('pages.trust.menu')}</li>
-                            <li className='mt-4 font-xl text-white-1 text-end'>{t('pages.trust.enterprise')}</li>
-                            <li className='mt-2_5 font-xl text-white-1 text-end'>{t('pages.trust.private')}</li>
+                            <li className='mt-4 font-xl text-white-1 text-end'>{t('pages.trust.service.enterprise')}</li>
+                            <li className='mt-2_5 font-xl text-white-1 text-end'>{t('pages.trust.service.personal')}</li>
                         </ul>
                         <ul className='component-footer__menu'>
                             <li className='text-orange-1 font-xl text-white-1 text-end'>{t('pages.esop.menu')}</li>

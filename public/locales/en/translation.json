@@ -13,8 +13,6 @@
     },
     "trust": {
       "menu": "柏盛信託",
-      "enterprise": "企業服務",
-      "private": "私人服務",
       "banner": {
         "title": "柏盛信託",
         "subtitle": "智信之選 安心託付",
@@ -26,6 +24,7 @@
         "optionAwardTrust": "股權激勵信託",
         "personal": "私人服務",
         "familyTrust": "家族信託",
+        "familyTrustIntroduction": "委託人通過信託安排，將財產所有權轉給受託人，基於信託法的約定，將財產的法定所有權和實益所有權分離，由受託人根據受益人的利益進行管理和分配，以實現妥善傳承、資產保護和隱私安全等目的。",
         "keepRightTrust": "保留權利信託",
         "insuranceTrust": "保險信託",
         "foreignGrantorTrust": "非美委託人信託",

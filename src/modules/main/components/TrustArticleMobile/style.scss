@@ -1,0 +1,20 @@
+@import "~styles/variables";
+.compnent-trust-article-mobile {
+    overflow-x: hidden;
+  &__card {
+    min-width: 100%;
+    transition: 0.5s;
+    img {
+      left: 50%;
+      top: 100%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__control-bar {
+    button {
+      width: 0.75rem;
+      height: 0.75rem;
+    }
+  }
+}
