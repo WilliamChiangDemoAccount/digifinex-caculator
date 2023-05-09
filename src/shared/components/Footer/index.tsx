@@ -3,7 +3,10 @@ import { IBaseComponentProp } from '@shared/interfaces/base-component.interface'
 import './style.scss';
 import { ReactComponent as Logo } from 'assets/img/logo-light.svg';
 import { useTranslation } from 'react-i18next';
-import Button from '@shared/components/Button';
+// import Button from '@shared/components/Button';
+import { NavLink } from 'react-router-dom';
+import { routeMap } from '@utilities/config/routes';
+import { ProductModule } from '@shared/enums/modules.enum';
 
 interface Props extends IBaseComponentProp { }
 
@@ -32,35 +35,51 @@ const Footer = (prop: Props) => {
                                 {t('footer.worktime')}
                             </li>
                         </ul>
-                        <span className='d-block mt-15 mt-sm-10_5 text-white-1 text-bold font-xs-sm font-sm-md'>{t('footer.moreInfo')}</span>
+                        {/* <span className='d-block mt-15 mt-sm-10_5 text-white-1 text-bold font-xs-sm font-sm-md'>{t('footer.moreInfo')}</span>
                         <Button
                             onClick={() => { }}
                             isPrimary
                             classes='mt-sm-5 mt-3 font-xs-sm font-sm-lg py-2 py-sm-4 px-13_5 px-sm-12_5'
                         >
                             {t('footer.contactUs')}
-                        </Button>
+                        </Button> */}
                     </div>
                     <div className='d-none d-sm-flex flex-row align-items-start'>
                         <ul className='component-footer__menu'>
-                            <li className='text-orange-1 font-xl text-white-1 text-end'>{t('pages.trust.menu')}</li>
-                            <li className='mt-4 font-xl text-white-1 text-end'>{t('pages.trust.service.enterprise')}</li>
-                            <li className='mt-2_5 font-xl text-white-1 text-end'>{t('pages.trust.service.personal')}</li>
+                            <li className='text-orange-1 font-xl text-end'>{t('pages.trust.menu')}</li>
+                            <li className='mt-4 font-xl text-end'>
+                                <NavLink className='text-white-1' to={`${routeMap.get(ProductModule.Main)!.children![2].path}/enterprise`}>
+                                    {t('pages.trust.service.enterprise')}
+                                </NavLink>
+                            </li>
+                            <li className='mt-2_5 font-xl text-end'>
+                                <NavLink className='text-white-1' to={`${routeMap.get(ProductModule.Main)!.children![2].path}/personal`}>
+                                    {t('pages.trust.service.personal')}
+                                </NavLink>
+                            </li>
                         </ul>
                         <ul className='component-footer__menu'>
-                            <li className='text-orange-1 font-xl text-white-1 text-end'>{t('pages.esop.menu')}</li>
-                            <li className='mt-4 font-xl text-white-1 text-end'>{t('pages.esop.introduction')}</li>
+                            <li className='text-orange-1 font-xl text-end'>{t('pages.esop.menu')}</li>
+                            <li className='mt-4 font-xl text-end'>
+                                <NavLink className='text-white-1' to={routeMap.get(ProductModule.Main)!.children![1].path}>
+                                    {t('pages.esop.introduction')}
+                                </NavLink>
+                            </li>
                         </ul>
                         <ul className='component-footer__menu'>
-                            <li className='text-orange-1 font-xl text-white-1 text-end'>{t('pages.about.menu')}</li>
-                            <li className='mt-4 font-xl text-white-1 text-end'>{t('pages.about.introduction')}</li>
+                            <li className='text-orange-1 font-xl text-end'>{t('pages.about.menu')}</li>
+                            <li className='mt-4 font-xl text-end'>
+                                <NavLink className='text-white-1' to={routeMap.get(ProductModule.Main)!.children![0].path}>
+                                    {t('pages.about.introduction')}
+                                </NavLink>
+                            </li>
                         </ul>
-                        <ul className='component-footer__menu'>
+                        {/* <ul className='component-footer__menu'>
                             <li className='text-orange-1 font-xl text-white-1 text-end'>{t('pages.services.menu')}</li>
                             <li className='mt-4 font-xl text-white-1 text-end'>{t('pages.services.insight')}</li>
                             <li className='mt-2_5 font-xl text-white-1 text-end'>{t('pages.services.ipo')}</li>
                             <li className='mt-2_5 font-xl text-white-1 text-end'>{t('pages.services.propagate')}</li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </section>
             </div>

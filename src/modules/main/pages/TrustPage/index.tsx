@@ -2,7 +2,7 @@ import ContentLayout from '@shared/components/ContentLayout';
 import './style.scss';
 import { useTranslation } from 'react-i18next';
 import TrustArticleList from '@modules/main/components/TrustArticleList';
-import { useRef } from 'react';
+import { useMemo, useRef } from 'react';
 import TrustArticleListMobile from '@modules/main/components/TrustArticleListMobile';
 import advance1Svg from 'assets/img/trust/trust-advance-1.svg';
 import advance2Svg from 'assets/img/trust/trust-advance-2.svg';
@@ -18,6 +18,7 @@ const TrustPage = () => {
     const { t } = useTranslation();
     const service = useRef<HTMLDivElement>(null);
     const advance = useRef<HTMLDivElement>(null);
+    const isMobile = window.innerWidth <= 768;
     return <ContentLayout classes='page-trust' testId="TrustPage">
         <section className='page-trust__banner'>
             <h1 className='text-white-1'>{t('pages.trust.banner.title')}</h1>
@@ -26,8 +27,8 @@ const TrustPage = () => {
         </section>
         <section ref={service} className='d-none d-sm-block pt-sm-20 pt-lg-30'>
             <TrustArticleList
-                goTop={() => {
-                    if (window.scrollY > 0) {
+                goTop={(force?: boolean) => {
+                    if ((window.scrollY > 0 || force) && !isMobile) {
                         window.scrollTo({
                             top: service.current?.offsetTop,
                             behavior: 'smooth'

@@ -1,9 +1,12 @@
 import { useTranslation } from 'react-i18next';
+import { useParams } from 'react-router-dom';
+import { useEffect, useRef } from 'react';
+
 import enterpriseServiceIcon from 'assets/img/trust/icon-enterprise-service-mobile.svg';
 import personalServiceIcon from 'assets/img/trust/icon-personal-service-mobile.svg';
 
 import TrustArticleMobile from '@modules/main/components/TrustArticleMobile';
-import { TrustArticle } from '@shared/enums/trust.enum';
+import { TrustArticle, TrustService } from '@shared/enums/trust.enum';
 
 import './style.scss';
 
@@ -13,8 +16,28 @@ interface Prop {
 
 const TrustArticleListMobile = ({ onSkip }: Prop) => {
     const { t } = useTranslation();
+    const { serviceType } = useParams();
+    const enterprise = useRef<HTMLDivElement>(null);
+    const personal = useRef<HTMLDivElement>(null);
+    useEffect(() => {
+        switch (serviceType) {
+            case TrustService.Enterprise:
+                window.scrollTo({
+                    top: enterprise.current?.offsetTop,
+                    behavior: 'smooth'
+                });
+                break;
+            case TrustService.Personal:
+                window.scrollTo({
+                    top: personal.current?.offsetTop,
+                    behavior: 'smooth'
+                });
+                break;
+            default: break;
+        }
+    }, [serviceType]);
     return <>
-        <div className='d-flex flex-row align-items-start justify-content-between'>
+        <div ref={enterprise} className='d-flex flex-row align-items-start justify-content-between'>
             <h3 className='font-xl d-flex flex-row align-items-center text-orange-1'>
                 <img src={enterpriseServiceIcon} className='me-2' style={{ height: 24 }} alt="" />
                 {t('pages.trust.service.enterprise')}
@@ -37,7 +60,7 @@ const TrustArticleListMobile = ({ onSkip }: Prop) => {
         </div>
         <h4 className='font-lg mt-3 fw-bold text-blue-2'>{t('pages.trust.service.optionAwardTrust')}</h4>
         <TrustArticleMobile articles={[TrustArticle.OptionScene, TrustArticle.OptionTarget, TrustArticle.OptionUsage]} />
-        <h3 className='font-xl d-flex flex-row align-items-center text-orange-1 pt-14'>
+        <h3 ref={personal} className='font-xl d-flex flex-row align-items-center text-orange-1 pt-14'>
             <img src={personalServiceIcon} className='me-2' style={{ height: 24 }} alt="" />
             {t('pages.trust.service.personal')}
         </h3>

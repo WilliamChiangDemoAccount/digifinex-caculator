@@ -17,5 +17,5 @@ export enum TrustArticle {
 
 export enum TrustService {
     Enterprise = 'enterprise',
-    Private = 'private'
+    Personal = 'personal'
 }

@@ -6,11 +6,6 @@
   &__container {
     padding-bottom: 1.125rem;
   }
-  &__menu {
-    & > li:not(:first-of-type) {
-      cursor: pointer;
-    }
-  }
   &__terms {
     margin-top: 6.5rem;
   }

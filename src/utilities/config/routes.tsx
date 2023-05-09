@@ -77,6 +77,11 @@ export const routeMap = new Map<ProductModule, RouteConfig>([
           path: 'trust',
           i18n: 'pages.trust.menu',
           component: React.lazy(() => import(`@modules/main/pages/TrustPage`)),
+          children: [{
+            path: ':serviceType',
+            i18n: 'pages.trust.menu',
+            component: React.lazy(() => import(`@modules/main/pages/TrustPage`))
+          }]
         }
       ]
     } as RouteConfig
