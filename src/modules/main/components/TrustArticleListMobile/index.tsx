@@ -35,12 +35,24 @@ const TrustArticleListMobile = ({ onSkip }: Prop) => {
                 ></em>
             </button>
         </div>
-        <h4 className='font-lg mt-3 text-blue-2'>{t('pages.trust.service.optionAwardTrust')}</h4>
+        <h4 className='font-lg mt-3 fw-bold text-blue-2'>{t('pages.trust.service.optionAwardTrust')}</h4>
         <TrustArticleMobile articles={[TrustArticle.OptionScene, TrustArticle.OptionTarget, TrustArticle.OptionUsage]} />
         <h3 className='font-xl d-flex flex-row align-items-center text-orange-1 pt-14'>
             <img src={personalServiceIcon} className='me-2' style={{ height: 24 }} alt="" />
             {t('pages.trust.service.personal')}
         </h3>
+        <h4 className='font-lg mt-3 fw-bold text-blue-2'>{t('pages.trust.service.familyTrust')}</h4>
+        <p className='font-sm text-gray-2 mt-3'>{t('pages.trust.service.familyTrustIntroduction')}</p>
+        <h4 className='font-lg mt-5 fw-bold text-blue-1'>{t('pages.trust.service.keepRightTrust')}</h4>
+        <TrustArticleMobile articles={[TrustArticle.RightIntroduction, TrustArticle.RightUsage]} />
+        <h4 className='font-lg mt-12 fw-bold text-blue-1'>{t('pages.trust.service.insuranceTrust')}</h4>
+        <TrustArticleMobile articles={[TrustArticle.InsuranceIntroduction, TrustArticle.InsuranceUsage]} />
+        <h4 className='font-lg mt-12 fw-bold text-blue-1'>{t('pages.trust.service.foreignGrantorTrust')}</h4>
+        <TrustArticleMobile articles={[TrustArticle.ForeignGrantorIntroduction, TrustArticle.ForeignGrantorUsage]} />
+        <h4 className='font-lg mt-12 fw-bold text-blue-1'>{t('pages.trust.service.charitableTrust')}</h4>
+        <TrustArticleMobile articles={[TrustArticle.CharitableIntroduction, TrustArticle.CharitableUsage]} />
+        <h4 className='font-lg mt-12 fw-bold text-blue-1'>{t('pages.trust.service.familyOffice')}</h4>
+        <TrustArticleMobile articles={[TrustArticle.FamilyOfficeIntroduction, TrustArticle.FamilyOfficeUsage, TrustArticle.FamilyOthers]} />
     </>
 }
 

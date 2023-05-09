@@ -23,3 +23,14 @@ export enum Status {
   Pending,
   Warning
 }
+
+export enum Direction {
+  Top = 1,
+  Right,
+  Bottom,
+  Left,
+  TopRight,
+  TopLeft,
+  BottomRight,
+  BottomLeft,
+}

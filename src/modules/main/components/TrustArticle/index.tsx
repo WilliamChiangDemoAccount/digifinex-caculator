@@ -1,6 +1,7 @@
 import { TrustArticle as ETrustArticle } from '@shared/enums/trust.enum';
 import './style.scss';
 import { useTranslation } from 'react-i18next';
+import { getSrc } from '@shared/helpers/file.helper';
 
 interface Props {
     activeArticle: ETrustArticle
@@ -16,8 +17,6 @@ const FamilyTrustArticle: ETrustArticle[] = [
     ETrustArticle.CharitableIntroduction,
     ETrustArticle.CharitableUsage
 ]
-
-const getSrc = (fileName: string, type: 'jpg' | 'svg' = 'svg'): string => require(`assets/img/trust/${fileName}.${type}`);
 
 const TrustArticle = ({ activeArticle }: Props) => {
     const { t } = useTranslation();
@@ -50,11 +49,11 @@ const TrustArticle = ({ activeArticle }: Props) => {
                 activeArticle === ETrustArticle.FamilyOthers ? <section className='bg-white-1 px-8 px-lg-12_5 py-10 py-lg-20 border-radius-sm compnent-trust-article__usage'>
                     <h3 className='text-blue-1 font-xl'>{t('pages.trust.article.charitableUsage.label')}</h3>
                     <div className='d-flex flex-row align-items-center mt-8 w-100 pb-7_5 justify-content-between'>
-                        <h3 className='text-black font-xl'>{t('pages.trust.article.familyOthers.question-1')}</h3>
+                        <h3 className='text-black-1 font-xl'>{t('pages.trust.article.familyOthers.question-1')}</h3>
                         <em className='icon-arrow_right cursor-pointer bg-blue-2 text-white-1 rounded-circle ms-2 font-xl d-flex justify-content-center align-items-center'></em>
                     </div>
                     <div className='d-flex flex-row align-items-center w-100 pt-7_5 border-top-1 border-gray-1 justify-content-between'>
-                        <h3 className='text-black font-xl'>{t('pages.trust.article.familyOthers.question-2')}</h3>
+                        <h3 className='text-black-1 font-xl'>{t('pages.trust.article.familyOthers.question-2')}</h3>
                         <em className='icon-arrow_right cursor-pointer bg-blue-2 text-white-1 rounded-circle ms-2 font-xl d-flex justify-content-center align-items-center'></em>
                     </div>
                 </section> :

@@ -39,7 +39,7 @@ const TrustPage = () => {
                     behavior: 'smooth'
                 })} />
         </section>
-        <section className='d-block d-sm-none px-5 py-10'>
+        <section className='d-block d-sm-none px-5 pt-10 pb-20'>
             <TrustArticleListMobile
                 onSkip={() => window.scrollTo({
                     top: advance.current?.offsetTop,
@@ -86,7 +86,7 @@ const TrustPage = () => {
                 <li className='bg-white-1 border-radius-sm me-3 me-sm-4 me-lg-6 w-50 flex-grow-1'>
                     <img src={securityAssetsSvg} className='w-100' alt="" />
                     <section className='pt-3 px-3 pb-4 pt-sm-5 px-sm-5 pb-sm-15 pt-lg-13_5 px-lg-8 pb-lg-20'>
-                        <h3 className='text-black font-xs-lg font-sm-xl font-lg-xxxl'>{t('pages.trust.security.assets.title')}</h3>
+                        <h3 className='text-black-1 font-xs-lg font-sm-xl font-lg-xxxl'>{t('pages.trust.security.assets.title')}</h3>
                         <p className='mt-2 mt-sm-3 mt-lg-9 text-gray-2 font-sm font-lg-lg'>
                             {t('pages.trust.security.assets.content')}
                         </p>
@@ -95,7 +95,7 @@ const TrustPage = () => {
                 <li className='bg-white-1 border-radius-sm w-50 flex-grow-1'>
                     <img src={securityDataSvg} className='w-100' alt="" />
                     <section className='pt-3 px-3 pb-4 pt-sm-5 px-sm-5 pb-sm-15 pt-lg-13_5 px-lg-8 pb-lg-20'>
-                        <h3 className='text-black font-xs-lg font-sm-xl font-lg-xxxl'>{t('pages.trust.security.data.title')}</h3>
+                        <h3 className='text-black-1 font-xs-lg font-sm-xl font-lg-xxxl'>{t('pages.trust.security.data.title')}</h3>
                         <p className='mt-2 mt-sm-3 mt-lg-9 text-gray-2 font-sm font-lg-lg'>
                             {t('pages.trust.security.data.content')}
                         </p>
@@ -110,7 +110,7 @@ const TrustPage = () => {
                     <div className='rounded-circle bg-white-1 p-6_5 p-sm-13'>
                         <img src={customerMedicalSvg} alt="" />
                     </div>
-                    <p className='font-xs-sm font-sm-xl text-black fw-bold mt-2 mt-sm-10_5'>
+                    <p className='font-xs-sm font-sm-xl text-black-1 fw-bold mt-2 mt-sm-10_5'>
                         {t('pages.trust.customer.medical.title')}
                     </p>
                     <p className='font-xs-sm font-sm-lg text-gray-2 mt-2 mt-sm-1 mt-lg-4'>
@@ -121,7 +121,7 @@ const TrustPage = () => {
                     <div className='rounded-circle bg-white-1 p-6_5 p-sm-13'>
                         <img src={customerTechSvg} alt="" />
                     </div>
-                    <p className='font-xs-sm font-sm-xl text-black fw-bold mt-2 mt-sm-10_5'>
+                    <p className='font-xs-sm font-sm-xl text-black-1 fw-bold mt-2 mt-sm-10_5'>
                         {t('pages.trust.customer.technology.title')}
                     </p>
                     <p className='font-xs-sm font-sm-lg text-gray-2 mt-2 mt-sm-1 mt-lg-4'>
@@ -132,7 +132,7 @@ const TrustPage = () => {
                     <div className='rounded-circle bg-white-1 p-6_5 p-sm-13'>
                         <img src={customerNetworkSvg} alt="" />
                     </div>
-                    <p className='font-xs-sm font-sm-xl text-black fw-bold mt-2 mt-sm-10_5'>
+                    <p className='font-xs-sm font-sm-xl text-black-1 fw-bold mt-2 mt-sm-10_5'>
                         {t('pages.trust.customer.network.title')}
                     </p>
                     <p className='font-xs-sm font-sm-lg text-gray-2 mt-2 mt-sm-1 mt-lg-4'>
