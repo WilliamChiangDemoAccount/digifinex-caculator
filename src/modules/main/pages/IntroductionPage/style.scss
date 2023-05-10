@@ -1,3 +1,18 @@
 @import "~styles/variables";
-.page-introduction{
+@import "~styles/utilities";
+
+@include generateStyleByBreakpoint("sm") {
+  .page-introduction {
+    img {
+      &:first-of-type {
+        display: block !important;
+      }
+      &:last-of-type {
+        display: none !important;
+      }
+    }
+    &__container {
+      max-width: 50rem;
+    }
+  }
 }
