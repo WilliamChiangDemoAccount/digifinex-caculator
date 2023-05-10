@@ -2,7 +2,7 @@ import ContentLayout from '@shared/components/ContentLayout';
 import './style.scss';
 import { useTranslation } from 'react-i18next';
 import TrustArticleList from '@modules/main/components/TrustArticleList';
-import { useMemo, useRef } from 'react';
+import { useRef } from 'react';
 import TrustArticleListMobile from '@modules/main/components/TrustArticleListMobile';
 import advance1Svg from 'assets/img/trust/trust-advance-1.svg';
 import advance2Svg from 'assets/img/trust/trust-advance-2.svg';
@@ -81,7 +81,7 @@ const TrustPage = () => {
                 </li>
             </ul>
         </section>
-        <section className='py-15 px-5 py-sm-20 px-sm-26 py-lg-50 px-lg-47_5 page-trust__security'>
+        <section className='mt-15 px-5 mt-sm-20 px-sm-26 0 px-lg-53 page-trust__security'>
             <h2 className='text-blue-2 text-center'>{t('pages.trust.security.title')}</h2>
             <ul className='mt-7 mt-sm-10 mt-lg-15 d-flex flex-row'>
                 <li className='bg-white-1 border-radius-sm me-3 me-sm-4 me-lg-6 w-50 flex-grow-1'>
@@ -104,7 +104,7 @@ const TrustPage = () => {
                 </li>
             </ul>
         </section>
-        <section className='pt-15 pb-21 pt-sm-20 pb-sm-40 pt-lg-50 pb-lg-50 page-trust__customer'>
+        <section className='mt-15 pb-21 mt-sm-20 pb-sm-40 mt-lg-30 pb-lg-50 page-trust__customer'>
             <h2 className='text-blue-2 text-center'>{t('pages.trust.customer.title')}</h2>
             <ul className='d-flex flex-column flex-sm-row align-items-center justify-content-center mt-7 mt-sm-15'>
                 <li className='d-flex flex-column align-items-center me-0 me-sm-17_5 me-lg-45 d-flex flex-column align-items-center'>

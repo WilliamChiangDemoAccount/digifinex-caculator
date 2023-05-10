@@ -4,15 +4,75 @@
       "menu": "首頁"
     },
     "esop": {
-      "menu": "ESOP",
-      "introduction": "內容介紹"
+      "menu": "股權激勵",
+      "introduction": "內容介紹",
+      "banner": {
+        "title-1": "免費",
+        "title-2": "試用",
+        "content": "Tempora necessitatibus dolor eum illo a ipsa culpa quia aspernatur. Fuga dolorem eaque et eum et qui fuga aut voluptatem. Neque esse omnis atque. Et et ea magnam hic quaerat odio dignissimos doloremque ea. "
+      },
+      "stable-system": {
+        "title": "穩定且強大的系統平台",
+        "online-esop": {
+          "title": "支持股權激勵管理權流程的線上處理",
+          "content": "在確定好激勵對象和激勵方案後，便可使用柏盛集團一站式的管理平台實現從授予文件簽署、信息變更、行權交易、計稅、收益匯回等一系列操作的全線上化處理。"
+        },
+        "detail": {
+          "title": "關注痛點，更關注細節",
+          "content-1": "在線簽署功能：支持在授予、行權等多個環節高效便捷地完成協議文件的在線簽署與下載。",
+          "content-2": "行權交易管理：可以從參與人、授予、歸屬等多緯度，對指定對像在行權交易中的量、價、時間、行權交易方式等要素進行多樣化的管理。",
+          "content-3": "攤銷費用計算與報告：基於SBC的基礎，符合GAAP及IFRS進行費用攤銷以及披露報表的生成。"
+        },
+        "custimize": {
+          "title": "支持全自助化的管理需求",
+          "content": "通過靈活的權限分配功能，平台各模塊下的授權人士可以隨時進行自助化的查詢、信息更新、事務處理以及報表生成。"
+        }
+      },
+      "service": {
+        "title": "",
+        "participent": {
+          "title": "參與人服務",
+          "content-1": "詳細方便的在線指引",
+          "contnet-2": "專業熱情的 7*24 客服",
+          "contnet-3": "形式多樣的參與人培訓"
+        },
+        "admin": {
+          "title": "管理員服務",
+          "content-1": "從系統上線到日常運營的全方位輔導和協助",
+          "contnet-2": "協助對接ESOP運營流程中的其他相關第三方機構",
+          "contnet-3": "依據豐富的經驗和專業的知識給予特定場景的諮詢意見"
+        },
+        "manager": {
+          "title": "高管服務",
+          "content-1": "Form 144 Filing",
+          "contnet-2": "10b5-1 Plan",
+          "contnet-3": "算法單及交易員服務"
+        }
+      },
+      "keep-notice": {
+        "title": "相關市場及\n專業領域的持續關注",
+        "forex": {
+          "title": "外匯管理",
+          "content": "外管7號文的首次報備，季度/年度報備"
+        },
+        "tax": {
+          "title": "稅務諮詢",
+          "content": "稅總徵科發〔2021〕69號及財稅〔2005〕35號文報備"
+        },
+        "rule": {
+          "title": "合規諮詢",
+          "content": "涉及股權激勵授予、行權及收益匯回相關的合規問題"
+        }
+      }
     },
     "about": {
       "menu": "關於我們",
-      "introduction": "集團介紹"
+      "introduction": "集團介紹",
+      "title": "柏盛集團介紹",
+      "content": "柏盛集团成立于香港，为华盛资本 (Valuable Capital Limited) 旗下专业的股权激励和信托服务商，依托香港国际金融中心的优势结合集团雄厚的科技研发实力，致力于为客户提供更高质量的金融增值服务。柏盛集团整合各相关领域专业持牌机构，通过香港、台北、北京、上海、深圳、长沙、新加坡等多地服务团队综合联动，全方位解决跨境服务的痛点，以丰富的行业经验、敏捷的响应速度、专业的服务水平，为客户提供集前瞻性、灵活性、可操作性于一体的股权激励、离岸信托、公司资本数字化管理、资本市场传播等综合企业服务。\n\n华盛資本 (Valuable Capital Limited) 是领先的科技金融综合性企业，已为全球数百万零售个人、机构及企业客户提供高效、精确、全面、优质的服务。目前集团已在中国内地、中国香港、新加坡、新西兰、美国和沙特阿拉伯设立分公司，服务覆盖全球主流金融市场。\n\n华盛資本 (Valuable Capital Limited) 旗下子公司持有香港证监会（SFC）发出的第1、2、4、5、9号牌照（中央编号：AUL711），具有提供证券交易、期货合约交易、就证券提供意见、就期货合约提供意见，以及提供资产管理的资质。"
     },
     "trust": {
-      "menu": "柏盛信託",
+      "menu": "信託服務",
       "banner": {
         "title": "柏盛信託",
         "subtitle": "智信之選 安心託付",
@@ -116,10 +176,10 @@
         }
       },
       "advance": {
-        "title": "柏盛的優勢",
+        "title": "柏盛集團的優勢",
         "advance-1": {
           "title": "綜合服務",
-          "content": "柏盛ESOP管理系統和交易系統互聯互通，提供一站式股權激勵管理、信託內歸屬、行權、交易等全流程服務，減少公司工作量，提升企業與員工體驗。"
+          "content": "柏盛股權激勵管理系統和交易系統互聯互通，提供一站式股權激勵管理、信託內歸屬、行權、交易等全流程服務，減少公司工作量，提升企業與員工體驗。"
         },
         "advance-2": {
           "title": "高效響應",
@@ -153,11 +213,11 @@
         },
         "technology": {
           "title": "科技公司",
-          "content": "電信技術 / SaaS / 數據服務" 
+          "content": "電信技術 / SaaS / 數據服務"
         },
         "network": {
           "title": "互聯網平台",
-          "content": "電商 / 社交平台 / 內容平台" 
+          "content": "電商 / 社交平台 / 內容平台"
         }
       }
     },
