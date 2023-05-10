@@ -1,3 +1,24 @@
 @import "~styles/variables";
-.page-esop{
+@import "~styles/utilities";
+
+.page-esop {
+  &__banner {
+    width: 100%;
+    background-image: url("../../../../assets/img/esop/banner.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 48px 20px;
+  }
+}
+
+@include generateStyleByBreakpoint() {
+  .page-esop {
+    &__banner {
+      width: 100%;
+      background-image: url("../../../../assets/img/esop/banner-mobile.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 48px 20px;
+    }
+  }
 }

@@ -8,7 +8,7 @@ import ArrowDownIcon from 'assets/img/icons/arrow-down.png';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useRef, useState } from 'react';
-import { resources } from '@utilities/config/i18n';
+import { Language } from '@shared/enums/common.enum';
 
 interface Props extends IBaseComponentProp {
 
@@ -77,7 +77,7 @@ const Header = ((prop: Props) => {
                     className={`bg-white-1 px-2 py-7_5 border-radius-sm shadow-1 d-${expand ? 'flex flex-column' : 'none'}`}
                 >
                     {
-                        Object.keys(resources).map(language => <li
+                        [Language.MandarinTraditional, Language.MandarinSimplified, Language.English].map(language => <li
                             data-testid='language-dropdown-item'
                             key={language}
                             className={`font-xs-lg font-lg-xl px-5_5 text-nowrap user-select-none ${language === i18n.language ? 'bg-orange-1_20 text-orange' : 'text-gray-2'}`}

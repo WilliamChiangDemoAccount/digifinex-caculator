@@ -23,12 +23,16 @@ const Footer = (prop: Props) => {
                     <div>
                         <ul>
                             <li className='font-xs-xs font-sm-lg text-white d-flex flex-row align-items-center'>
-                                <em className='icon-address me-3 me-sm-4 font-xs-md font-sm-lgx'></em>
+                                <em className='icon-map me-3 me-sm-4 font-xs-md font-sm-lgx'></em>
                                 {t('footer.address')}
                             </li>
                             <li className='mt-3 font-xs-xs font-sm-lg text-white-1 d-flex flex-row align-items-center'>
                                 <em className='icon-phone me-3 me-sm-4 font-xs-md font-sm-lgx'></em>
                                 {t('footer.phone')}
+                            </li>
+                            <li className='mt-3 font-xs-xs font-sm-lg text-white-1 d-flex flex-row align-items-center'>
+                                <em className='icon-email me-3 me-sm-4 font-xs-md font-sm-lgx'></em>
+                                {t('footer.email')}
                             </li>
                             <li className='mt-3 font-xs-xs font-sm-lg text-white-1 d-flex flex-row align-items-center'>
                                 <em className='icon-time me-3 me-sm-4 font-xs-md font-sm-lgx'></em>

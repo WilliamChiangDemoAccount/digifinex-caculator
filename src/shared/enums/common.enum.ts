@@ -34,3 +34,9 @@ export enum Direction {
   BottomRight,
   BottomLeft,
 }
+
+export enum Language {
+  MandarinTraditional = 'zh-tw',
+  MandarinSimplified = 'zh-cn',
+  English = 'en'
+}

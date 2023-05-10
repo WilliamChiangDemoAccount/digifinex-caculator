@@ -93,9 +93,12 @@
 
 @mixin generateTextByBreakpoint($break-point) {
   @each $key, $value in map-remove($text-level, "h3") {
-    $font-size: getTextSize($break-point, $value);
     #{$key} {
-      font-size: $font-size !important;
+      @if ($key == "h1" and $break-point == "xs") {
+        font-size: getTextSize("sm", $value) !important;
+      } @else {
+        font-size: getTextSize($break-point, $value) !important;
+      }
     }
   }
   @each $key, $value in $font-level {

@@ -1,14 +1,16 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import 'styles/_index.scss';
+import "@utilities/config/i18n";
+import React from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 import { NestRoute, routeMap } from "@utilities/config/routes";
 import Header from "@shared/components/Header";
 import Footer from "@shared/components/Footer";
-import React from "react";
 import Overlay from "@shared/components/Overlay";
 import { useBreadcrumb } from "@shared/hooks/useBreadcrumb";
 import Breadcrumb from "@shared/components/Breadcrumb";
+
 
 function App() {
   const { configs } = useBreadcrumb();
