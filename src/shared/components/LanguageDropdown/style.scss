@@ -1,0 +1,15 @@
+@import "~styles/variables";
+.compnent-language-dropdown {
+  & > ul {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    & > li {
+      cursor: pointer;
+      &:not(:last-of-type) {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}

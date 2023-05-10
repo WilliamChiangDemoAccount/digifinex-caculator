@@ -26,6 +26,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow_up:before {
+  content: "\e901";
+}
 .icon-contact:before {
   content: "\e900";
 }
@@ -52,7 +55,4 @@
 }
 .icon-close:before {
   content: "\e913";
-}
-.icon-arrow_up:before {
-  content: "\e914";
 }
