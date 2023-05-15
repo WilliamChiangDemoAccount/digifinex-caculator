@@ -10,10 +10,9 @@
   font-display: block;
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
+[class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon" !important;
+  font-family: 'icomoon' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -26,33 +25,33 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-close:before {
+  content: "\e904";
+}
+.icon-hamburger-menu:before {
+  content: "\e905";
+}
 .icon-arrow_up:before {
-  content: "\e901";
+  content: "\e90b";
 }
 .icon-contact:before {
+  content: "\e901";
+}
+.icon-email:before {
   content: "\e900";
 }
 .icon-phone:before {
-  content: "\e904";
-}
-.icon-email:before {
-  content: "\e907";
+  content: "\e906";
 }
 .icon-time:before {
-  content: "\e90a";
+  content: "\e907";
 }
-.icon-map:before {
-  content: "\e90f";
+.icon-address:before {
+  content: "\e90c";
 }
 .icon-arrow_right:before {
-  content: "\e910";
+  content: "\e90d";
 }
 .icon-global:before {
-  content: "\e911";
-}
-.icon-hamburger-menu:before {
-  content: "\e912";
-}
-.icon-close:before {
-  content: "\e913";
+  content: "\e90e";
 }

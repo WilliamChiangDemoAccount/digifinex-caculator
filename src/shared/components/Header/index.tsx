@@ -6,6 +6,7 @@ import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LanguageDropdown from '@shared/components/LanguageDropdown';
 import { useEffect, useState } from 'react';
+import { Direction } from '@shared/enums/common.enum';
 
 
 const Header = () => {
@@ -75,7 +76,7 @@ const Header = () => {
                         )
                     }
                 </ul>
-                <LanguageDropdown classes='ms-5 mb-10' />
+                <LanguageDropdown direction={Direction.Top} classes='ms-5 mb-10' />
             </section>
         }
     </>;

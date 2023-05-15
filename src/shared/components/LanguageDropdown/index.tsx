@@ -1,18 +1,19 @@
 import { useTranslation } from 'react-i18next';
 import './style.scss';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useRef } from 'react';
-import { Language } from '@shared/enums/common.enum';
+import { Direction, Language } from '@shared/enums/common.enum';
 import { IBaseComponentProp } from '@shared/interfaces/base-component.interface';
 
 interface Props extends IBaseComponentProp {
+    direction?: Direction.Top | Direction.Bottom
 }
 
-const LanguageDropdown = ({ classes }: Props) => {
+const LanguageDropdown = ({ classes, direction = Direction.Bottom }: Props) => {
     const { t, i18n } = useTranslation();
     const [expand, setExpand] = useState(false);
     const dropdown = useRef<HTMLDivElement>(null);
-
+    const isTop = useMemo(() => direction === Direction.Top, [direction]);
     useEffect(() => {
         let listener: any;
         if (dropdown.current) {
@@ -42,13 +43,17 @@ const LanguageDropdown = ({ classes }: Props) => {
         ></em>
         <ul
             data-testid='language-dropdown'
-            className={`bg-white-1 font-xs-lg font-lg-xl px-2 py-7_5 border-radius-sm shadow-1 d-${expand ? 'flex flex-column' : 'none'}`}
+            className={`bg-white-1 font-xs-lg font-lg-xl px-2 py-6 py-sm-7 border-radius-sm shadow-1 d-${expand ? 'flex flex-column' : 'none'}`}
+            style={{
+                top: `${isTop ? 0 : 100}%`,
+                transform: `translateX(-50%) ${isTop ? 'translateY(calc(-100% - 0.5rem))' : ''}`
+            }}
         >
             {
                 [Language.MandarinTraditional, Language.MandarinSimplified, Language.English].map(language => <li
                     data-testid='language-dropdown-item'
                     key={language}
-                    className={`font-xs-lg font-lg-xl px-5_5 text-nowrap user-select-none ${language === i18n.language ? 'bg-orange-1_20 text-orange' : 'text-gray-2'}`}
+                    className={`font-xs-lg font-lg-xl py-0_5 px-5_5 text-nowrap user-select-none ${language === i18n.language ? 'bg-orange-1_20 text-orange' : 'text-gray-2'} d-flex justify-content-center align-items-center`}
                     onClick={() => {
                         setExpand(false);
                         i18n.changeLanguage(language);
