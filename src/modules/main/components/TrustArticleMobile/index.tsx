@@ -2,7 +2,6 @@ import { TrustArticle } from '@shared/enums/trust.enum';
 import './style.scss';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import svg from 'assets/img/trust/optionScene-mobile.svg';
 import { getSrc } from '@shared/helpers/file.helper';
 import { useTouchMove } from '@shared/hooks/useTouchMove';
 import { Direction } from '@shared/enums/common.enum';
@@ -125,7 +124,7 @@ const TrustArticleMobile = ({ articles }: Props) => {
                                                         <p className='font-sm mt-4 text-gray-2'>{t(`pages.trust.article.${article}.content`)}</p>
                                                 }
                                             </section>
-                                            <img className='position-absolute layer-cover' src={svg} alt="" />
+                                            <img className='position-absolute layer-cover' src={getSrc(`mobile/${article}-mobile`)} alt="" />
                                         </>
                         }
                     </li>
