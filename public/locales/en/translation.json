@@ -1,240 +1,240 @@
 {
   "pages": {
     "main": {
-      "menu": "首頁"
+      "menu": "Home"
     },
     "esop": {
-      "menu": "股權激勵",
-      "introduction": "內容介紹",
+      "menu": "ESOP",
+      "introduction": "Introduction",
       "banner": {
-        "title-1": "免費",
-        "title-2": "試用",
+        "title-1": "Free",
+        "title-2": "Trial",
         "content": "Tempora necessitatibus dolor eum illo a ipsa culpa quia aspernatur. Fuga dolorem eaque et eum et qui fuga aut voluptatem. Neque esse omnis atque. Et et ea magnam hic quaerat odio dignissimos doloremque ea. "
       },
       "stable-system": {
-        "title": "穩定且強大的系統平台",
+        "title": "A Stable and Powerful Management System",
         "online-esop": {
-          "title": "支持股權激勵管理權流程的線上處理",
-          "content": "在確定好激勵對象和激勵方案後，便可使用柏盛集團一站式的管理平台實現從授予文件簽署、信息變更、行權交易、計稅、收益匯回等一系列操作的全線上化處理。"
+          "title": "Handling ESOP Management Process Online",
+          "content": "After determining the incentive plan and the beneficiaries, you can use the one-stop platform of PS Group to complete comprehensive online processing, such as grant document signing, information change, exercise transaction, tax calculation and income repatriation."
         },
         "detail": {
-          "title": "關注痛點，更關注細節",
-          "content-1": "在線簽署功能：支持在授予、行權等多個環節高效便捷地完成協議文件的在線簽署與下載。",
-          "content-2": "行權交易管理：可以從參與人、授予、歸屬等多緯度，對指定對像在行權交易中的量、價、時間、行權交易方式等要素進行多樣化的管理。",
-          "content-3": "攤銷費用計算與報告：基於SBC的基礎，符合GAAP及IFRS進行費用攤銷以及披露報表的生成。"
+          "title": "Focus on key points, Attention to details",
+          "content-1": "Online Signing Function: Supports efficient and convenient online signing, downloading agreement related documents in multiple links such as granting and exercising rights.",
+          "content-2": "Exercising Transaction Management: Diversified management can be carried out on the quantity, price, time, exercise transaction method and other elements of the designated object in the exercise transaction from multiple latitudes such as participants, grant, and ownership.",
+          "content-3": "Calculation and Reporting of Amortization Expenses: Based on SBC, amortization of expenses and generation of disclosure reports in compliance with GAAP and IFRS."
         },
         "custimize": {
-          "title": "支持全自助化的管理需求",
-          "content": "通過靈活的權限分配功能，平台各模塊下的授權人士可以隨時進行自助化的查詢、信息更新、事務處理以及報表生成。"
+          "title": "Support Full Self-service Management Needs",
+          "content": "Through the flexible authority distribution function, each module of the platform can authorize administrators to perform self-service queries, information update, transaction processing and report generation at any time."
         }
       },
       "service": {
         "title": "",
         "participent": {
-          "title": "參與人服務",
-          "content-1": "詳細方便的在線指引",
-          "contnet-2": "專業熱情的 7*24 客服",
-          "contnet-3": "形式多樣的參與人培訓"
+          "title": "Participant Services",
+          "content-1": "Detailed and convenient online guide",
+          "contnet-2": "Professional and Passionate 24/7 customer service",
+          "contnet-3": "Various training for participants"
         },
         "admin": {
-          "title": "管理員服務",
-          "content-1": "從系統上線到日常運營的全方位輔導和協助",
-          "contnet-2": "協助對接ESOP運營流程中的其他相關第三方機構",
-          "contnet-3": "依據豐富的經驗和專業的知識給予特定場景的諮詢意見"
+          "title": "Administrator Services",
+          "content-1": "Comprehensive guidance and assistance from system launch to daily operation",
+          "contnet-2": "Assist in connecting with other relevant third parties in the ESOP operation process",
+          "contnet-3": "Based on extensive experience and professional knowledge to give advice on specific scenarios"
         },
         "manager": {
-          "title": "高管服務",
+          "title": "Executivese Services",
           "content-1": "Form 144 Filing",
           "contnet-2": "10b5-1 Plan",
-          "contnet-3": "算法單及交易員服務"
+          "contnet-3": "Algorithmic order and Trader services"
         }
       },
       "keep-notice": {
-        "title": "相關市場及\n專業領域的持續關注",
+        "title": "Continued focus on relevant markets and professional fields",
         "forex": {
-          "title": "外匯管理",
-          "content": "外管7號文的首次報備，季度/年度報備"
+          "title": "Foreign exchange settlement process and flow management",
+          "content": "SAFE Circular No. 7 report preparation"
         },
         "tax": {
-          "title": "稅務諮詢",
-          "content": "稅總徵科發〔2021〕69號及財稅〔2005〕35號文報備"
+          "title": "Tax Advisory",
+          "content": "No. 69 [2021] of the State Administration of Taxation and No.35 [2005] of the Ministry of Finance and State Taxation Administration report preparation"
         },
         "rule": {
-          "title": "合規諮詢",
-          "content": "涉及股權激勵授予、行權及收益匯回相關的合規問題"
+          "title": "Compliance Advisory",
+          "content": "Compliance issues related to the granting of equity incentives, the exercise of rights and the repatriation of proceeds"
         }
       }
     },
     "about": {
-      "menu": "關於我們",
-      "introduction": "集團介紹",
-      "title": "柏盛集團介紹",
-      "content": "柏盛集團成立於香港，為華盛資本 (Valuable Capital Limited) 旗下專業的股權激勵和信託服務商，依托香港國際金融中心的優勢結合集團雄厚的科技研發實力，致力於為客戶提供更高質量的金融增值服務。柏盛集團整合各相關領域專業持牌機構，通過香港、台北、北京、上海、深圳、長沙、新加坡等多地服務團隊綜合聯動，全方位解決跨境服務的痛點，以豐富的行業經驗、敏捷的響應速度、專業的服務水平，為客戶提供集前瞻性、靈活性、可操作性於一體的股權激勵、離岸信託、公司資本數字化管理、資本市場傳播等綜合企業服務。華盛資本 (Valuable Capital Limited) 是領先的科技金融綜合性企業，已為全球數百萬零售個人、機構及企業客戶提供高效、精確、全面、優質的服務。目前集團已在中國內地、中國香港、新加坡、新西蘭、美國和沙特阿拉伯設立分公司，服務覆蓋全球主流金融市場。華盛資本 (Valuable Capital Limited) 旗下子公司持有香港證監會（SFC）發出的第1、2、4、5、9號牌照（中央編號：AUL711），具有提供證券交易、期貨合約交易、就證券提供意見、就期貨合約提供意見，以及提供資產管理的資質。"
+      "menu": "About us",
+      "introduction": "About PS Group",
+      "title": "Learn PS Group",
+      "content": "Based in Hong Kong, PS Group is a professional equity incentive and trust services provider under Valuable Capital Limited. Leveraging the advantages of the Hong Kong International Financial Center and the group's strong technology research and development capabilities, PS Group is committed to providing customers with higher quality financial value-added services. PS Group integrates licensed professional institutions in various related fields and solves pain points in cross-border services through comprehensive and coordinated service teams in Hong Kong, Taipei, Beijing, Shanghai, Shenzhen, Changsha, Singapore, and other locations. With rich industry experience, agile response speed, and professional service level, PS Group provides customers with comprehensive corporate services that are forward-looking, flexible, and operational, including equity incentives, offshore trusts, digital management of corporate capital, and capital market communication. Valuable Capital Limited is a leading technology financial comprehensive enterprise and has provided efficient, accurate, comprehensive, and high-quality services to millions of retail individuals, institutions, and corporate customers worldwide. Currently, the group has established branches in mainland China, Hong Kong, Singapore, New Zealand, the United States, and Saudi Arabia, and its services cover mainstream financial markets worldwide. The subsidiaries of Valuable Capital Limited hold licenses numbered 1, 2, 4, 5, and 9 issued by the Hong Kong Securities and Futures Commission (CE No.: AUL711), which qualify them to provide securities trading, futures contract trading, advice on securities, advice on futures contracts, and asset management."
     },
     "trust": {
-      "menu": "信託服務",
+      "menu": "Trust Services",
       "banner": {
-        "title": "柏盛信託",
-        "subtitle": "智信之選 安心託付",
+        "title": "PS Trust",
+        "subtitle": "Expertise you can trust, results you can depend on.",
         "content": "Tempora necessitatibus dolor eum illo a ipsa culpa quia aspernatur. Fuga dolorem eaque et eum et qui fuga aut voluptatem. Neque esse omnis atque. Et et ea magnam hic quaerat odio dignissimos doloremque ea. "
       },
-      "skipService": "略過服務介紹",
+      "skipService": "Skip service introduction",
       "service": {
-        "enterprise": "企業服務",
-        "optionAwardTrust": "股權激勵信託",
-        "personal": "私人服務",
-        "familyTrust": "家族信託",
-        "familyTrustIntroduction": "委託人通過信託安排，將財產所有權轉給受託人，基於信託法的約定，將財產的法定所有權和實益所有權分離，由受託人根據受益人的利益進行管理和分配，以實現妥善傳承、資產保護和隱私安全等目的。",
-        "keepRightTrust": "保留權利信託",
-        "insuranceTrust": "保險信託",
-        "foreignGrantorTrust": "非美委託人信託",
-        "charitableTrust": "慈善信託",
-        "familyOffice": "家族辦公室"
+        "enterprise": "Corporate Services",
+        "optionAwardTrust": "ESOP Trust",
+        "personal": "Personal services",
+        "familyTrust": "Family Trust",
+        "familyTrustIntroduction": "The settlor transfers the ownership of the property to the trustee through a trust arrangement. Based on the agreement of trust law, the legal ownership and beneficial ownership of the property are separated, and the trustee manages and distributes the property according to the interests of the beneficiaries, so as to achieve proper inheritance, asset protection, privacy and security purposes.",
+        "keepRightTrust": "Reserved Powers Trust",
+        "insuranceTrust": "Insurance Trust",
+        "foreignGrantorTrust": "Foreign Grantor Trust",
+        "charitableTrust": "Charitable Trust",
+        "familyOffice": "Family Office"
       },
       "article": {
         "optionScene": {
-          "label": "應用場景",
-          "content": "準備或者已經在香港或美國上市的公司，基於靈活管理、代持股份等需求，設立股權激勵信託，代激勵對象持有股權/股票，在條件達到後，依據公司的確認和相關文件，柏盛信託安排股票的賣出、收益分配等。"
+          "label": "Application Scenario",
+          "content": "Based on the needs of flexible management and entrusted shareholding, Listed Company or Pre-IPO Company in Hong Kong or in the U.S. established ESOP Trust to hold equity/stock on behalf of the incentive objects. After the conditions are met, according to the company's confirmation and relevant documents, PS Trust arranges the sale of stocks and income distribution."
         },
         "optionTarget": {
-          "label": "使用對象",
-          "content-1": "已設有境外架構的擬上市公司",
-          "content-2": "美港股已上市公司"
+          "label": "Target Users",
+          "content-1": "Companies going to list and already setting up an overseas structure",
+          "content-2": "Companies listed in the US or Hong Kong"
         },
         "optionUsage": {
-          "label": "股權激勵信託的作用",
-          "content-1": "結合柏盛集團股權激勵管理系統，提供一站式股權激勵服務",
-          "content-2": "專業信託服務，提供企業股權激勵各類管理痛點的解決方案",
-          "content-3": "確保公司資產安全，兼顧公司控制和員工激勵"
+          "label": "Purpose of ESOP Trust",
+          "content-1": "Combined with PS Group equity incentive management system, to provide one-stop equity incentive services",
+          "content-2": "Professional trust services, providing solutions for various management pain points of ESOP management",
+          "content-3": "Ensure the safety of company assets, taking into account company control and employee incentives"
         },
         "rightIntroduction": {
-          "label": "了解保留權力信託",
-          "content": "香港、新加坡和其他部分國家或地區作為信託司法管轄區，均允許設立保留權力信託。相較全權信託，保留權力信託可將對信託資產的投資權力保留給委託人，而不損害信託本身的有效性。"
+          "label": "Learn about Reserved Powers Trust",
+          "content": "As trust jurisdictions, Hong Kong, Singapore and some other countries or regions allow the establishment of retained power trusts. Compared with discretionary trusts, reserved power trusts can reserve the investment power of trust assets to the settlor without compromising the validity of the trust itself."
         },
         "rightUsage": {
-          "label": "保留權力信託的作用",
+          "label": "Purpose of Reserved Powers Trust",
           "usage-1": {
-            "title": "資產保護",
-            "content": "通過合理的信託架構安排，放入信託中的資產可免遭債權人追索、法定繼承限制，同時未分配的信託資產也可免遭受益人的債權人追索和婚姻財產申索。"
+            "title": "Asset Protection",
+            "content": "Through a reasonable trust structure arrangement, the assets placed in the trust can be exempted from creditors' recourse and legal inheritance restrictions, and undistributed trust assets can also be exempted from the beneficiary's creditors' recourse and marital property claims."
           },
           "usage-2": {
-            "title": "整合資產",
-            "content": "基於信託設立人及受益人的情況和背景，信託公司可根據相關專家顧問的專業意見，給予合理的架構搭建，以實現持有不同類型的海外資產，把家族財富整合到一個架構內，委託人去世後，家庭成員可繼續在信託下進行投資"
+            "title": "Integrate Asset",
+            "content": "Based on the circumstances and background of the trust settor and the beneficiary, we can provide a reasonable structure based on the professional opinions of relevant expert consultants, so as to realize the holding of different types of overseas assets and integrate family wealth into one structure. After death, family members can continue to invest under the trust."
           },
           "usage-3": {
-            "title": "家族傳承",
-            "content": "通過合理的信託安排，可實現家族企業所有權和控制權歸集，避免強制繼承權規例，避免遺囑認證過程及遺囑爭議，實現家族資產的妥善傳承"
+            "title": "Family Heritage",
+            "content": "Through reasonable trust arrangements, the collection of ownership and control rights of family businesses can be achieved, avoiding mandatory inheritance regulations, avoiding the process of probate and will disputes, and realizing the proper inheritance of family assets"
           },
           "usage-4": {
-            "title": "高度保密性",
-            "content": "在合法合規的前提下，信託內資產(資產類型和總量)可實現隱私保護，信託相關人士的身份和利益同時也高度保密"
+            "title": "High Confidentiality",
+            "content": "Under the premise of legal compliance, the assets in the trust (asset type and total amount) can realize privacy protection, and the identities and interests of the relevant parties of the trust are also highly confidential"
           }
         },
         "insuranceIntroduction": {
-          "label": "了解保險信託",
-          "content": "由委託人和受託人簽訂保險金信託契約，於保險事故發生時，由保險公司將理賠金交付受託人，由受託人依約管理運用，並於信託期間按照委託人的意願將信託資產分配給信託受益人。"
+          "label": "Learn about Insurance Trust",
+          "content": "The settlor and the trustee sign an insurance trust deed. When an insured event occurs, the insurance company will deliver the claims to the trustee, and the trustee will manage it according to the contract, and distribute the trust assets to the beneficiary according to the settlor's wishes during the trust period."
         },
         "insuranceUsage": {
-          "label": "保險信託的作用",
-          "content": "信託結合壽險產品，在發揮壽險產品功用的同時，賦予信託資產靈活管理、意向傳承、隱私保密等特點。"
+          "label": "Purpose of Insurance Trust",
+          "content": "Combining trust with life insurance products, while enjoying the protection of life insurance products, it also endows trust assets with flexible management, inheritance of intention, privacy and confidentiality and other characteristics."
         },
         "foreignGrantorIntroduction": {
-          "label": "了解非美委託人信託",
-          "content": "非美委託人信託（Foreign Grantor Trust）是美國稅法的定義，需要同時滿足非美信託（Foreign Trust）和委託人信託（Grantor Trust）兩個條件，如信託被認定為非美委託人信託，即一方面信託本身不會就信託所取得的收入繳納美國稅，同時信託向受益人的分配也無需繳納美國稅。"
+          "label": "Learn about Foreign Grantor Trust",
+          "content": "The definition of the U.S. tax law needs to meet the two conditions of a non-U.S. trust (Foreign Trust) and a grantor trust (Grantor Trust). If a trust is recognized as a non-U.S. Income is subject to U.S. tax, and distributions from the trust to beneficiaries are also exempt from U.S. tax."
         },
         "foreignGrantorUsage": {
-          "label": "非美委託人信託的作用",
-          "content": "非美委託人信託適用於委託人為非美國稅務居民，信託受益人中存在一位或多位具有美國納稅義務的美籍人士的情況。\n此類信託的設立須獲取美國稅務律師的稅務意見，通過合理的信託架構安排，幫助一位或多位具有美國納稅義務的美籍受益人合理籌劃財富傳承到後代時可能面臨的美國贈與稅和遺產稅。"
+          "label": "Purpose of Foreign Grantor Trust",
+          "content": "Established by a non-U.S. tax resident as grantor, foreign grantor Trust provides wealth and inheritance planning for U.S. Beneficiaries. Such trusts are set up with the tax advice of a U.S. tax attorney and are structured to help one or more U.S. beneficiaries with U.S. tax liabilities reasonably plan for future issues to reasonably minimize their potential U.S. gift and inheritance tax."
         },
         "charitableIntroduction": {
-          "label": "了解慈善信託",
-          "content": "個人及家族可通過設立慈善信託併申請稅務優惠，以實現個人及家族的慈善意願。"
+          "label": "Learn about Charitable Trust",
+          "content": "Individuals and families can realize their charitable wishes by establishing a Charitable Trust and applying for tax incentives."
         },
         "charitableUsage": {
-          "label": "慈善信託的作用",
+          "label": "Purpose of Charitable Trust",
           "usage-1": {
-            "title": "實現稅務優化",
-            "content": "慈善信託可申請稅務優惠"
+            "title": "Achieve tax optimization",
+            "content": "Charitable Trust can apply for tax incentives"
           },
           "usage-2": {
-            "title": "達成慈善意願",
-            "content": "一個運營得當的家族慈善信託可讓家族成員及後代參與家族慈善事業的管理，使家族成員及後代通過參與家族慈善事業，了解家族文化和價值觀，為家族治理提供方法，培養家族成員及後代的社會責任"
+            "title": "Achieve Charitable Wishes",
+            "content": "A well-run family Charitable Trust can allow family members and future generations to participate in the management of family philanthropy, enable posterity to understand family culture and values through participation in family philanthropy, provide methods for family governance, and cultivate a society for family members and future generations responsibility"
           }
         },
         "familyOfficeIntroduction": {
-          "label": "了解家族辦公室",
-          "content": "我們將根據客戶的需求，整合投資顧問、律師和稅務顧問等專業機構，為客戶量身定制全方位的家族綜合服務，協助客戶搭建股權架構和家族辦公室，優化客戶家族的治理和財富規劃。"
+          "label": "Learn about Family Office",
+          "content": "According to the needs of customers, we will integrate professional institutions such as investment consultants, lawyers and tax consultants, tailor a full range of comprehensive family services for customers, assist customers in building equity structures and Family Office, and optimize the governance and wealth planning of customers' families."
         },
         "familyOfficeUsage": {
-          "label": "家族辦公室的作用",
-          "content": "協助客戶設計和構建家族辦公室，提供全方位的家族綜合服務，優化客戶家族的治理，並加強家族財富的風險規劃和投資管理，建立家族文化傳承，達成家族團結共識。"
+          "label": "Purpose of Family Office",
+          "content": "Assist clients in designing and building Family Office, provide a full range of comprehensive family services, optimize client family governance, strengthen risk planning and investment management of family wealth, establish family cultural heritage, and reach consensus on family unity."
         },
         "familyOthers": {
-          "label": "相關文章",
-          "question-1": "單一家族辦公室是否需要設立家族信託？",
-          "question-2": "新加坡家辦新規深度解析？"
+          "label": "Related Articles",
+          "question-1": "Is it necessary to set up a Family Trust for a single Family Office?",
+          "question-2": "In-depth analysis of the new regulations of Singapore family office"
         }
       },
       "advance": {
-        "title": "柏盛集團的優勢",
+        "title": "Advantages of PS Group",
         "advance-1": {
-          "title": "綜合服務",
-          "content": "柏盛股權激勵管理系統和交易系統互聯互通，提供一站式股權激勵管理、信託內歸屬、行權、交易等全流程服務，減少公司工作量，提升企業與員工體驗。"
+          "title": "Comprehensive Services",
+          "content": "The PS ESOP management system and trading system are interconnected, providing one-stop equity incentive management, vesting in trust, exercise, trading and other full-process services, reducing the company's workload and improving the experience of enterprises and employees."
         },
         "advance-2": {
-          "title": "高效響應",
-          "content": "柏盛信託在大陸、香港和新加坡均有服務團隊，高效響應客戶各類需求。"
+          "title": "Efficient Response",
+          "content": "PS Trust has service teams in mainland China, Hong Kong and Singapore which can respond to various needs of customers efficiently."
         },
         "advance-3": {
-          "title": "經驗豐富",
-          "content": "來自各知名諮詢、金融機構的專業團隊，擁有為上百家公司提供信託相關服務的從業經驗，覆蓋各行各業知名企業，為客戶提供定制化的解決方案。"
+          "title": "Experienced",
+          "content": "The members of PS team are from well-known consulting and financial institutions with experience in providing customized  trust solutions for hundreds of companies covering well-known enterprises in various industries."
         },
         "advance-4": {
-          "title": "牌照正規",
-          "content": "PS Trust Limited (柏盛信託有限公司)持有根據香港《打擊洗錢及恐怖分子資金籌集條例》（第615章）頒發的“信託或公司服務提供者”牌照（牌照號碼：TC008760）"
+          "title": "Regulatory compliance",
+          "content": "PS Trust Limited is a trust company with company service provider license (TCSP: TC006201) under the Hong Kong Anti-Money Laundering and Counter-Terrorism Financing Ordinance (Chapter 615)."
         }
       },
       "security": {
-        "title": "安全與合規",
+        "title": "Safety and Compliance",
         "assets": {
-          "title": "資產安全",
-          "content": "信託資產受託於持牌信託公司，且受信託法保護，信託資產免受受託人的破產清算、債務追繳等風險。"
+          "title": "Security of Assets",
+          "content": "The trust assets are entrusted to the licensed trust company and protected by the trust law. The trust assets are not subject to risks such as bankruptcy, liquidation and debt of the trustee."
         },
         "data": {
-          "title": "數據安全",
-          "content": "識別業務數據中的機密數據，建設專門的隔離安全屋，保證機密數據傳輸和存儲安全。"
+          "title": "Security Data",
+          "content": "Identify confidential data in service data and build a special isolation safe room to ensure the security of confidential data transmission and storage."
         }
       },
       "customer": {
-        "title": "典型行業",
+        "title": "Typical Industry",
         "medical": {
-          "title": "醫療",
-          "content": "醫療服務 / 醫療研究"
+          "title": "Healthcare",
+          "content": "Medical Services / Pharmaceutical Research"
         },
         "technology": {
-          "title": "科技公司",
-          "content": "電信技術 / SaaS / 數據服務"
+          "title": "Technology Company",
+          "content": "Telecommunication Technology / SaaS / Data Service"
         },
         "network": {
-          "title": "互聯網平台",
-          "content": "電商 / 社交平台 / 內容平台"
+          "title": "Internet Platform",
+          "content": "e-Commerce / SNS / Content Platform"
         }
       }
     },
     "services": {
-      "menu": "增值服務",
-      "insight": "行業洞察",
+      "menu": "Value-added Service",
+      "insight": "Industry Insights",
       "ipo": "IPO分銷",
       "propagate": "資本市場傳播"
     }
   },
   "footer": {
-    "address": "香港中环德辅道中路88-98号 中环 88，18楼",
+    "address": "18/F CENTRAL 88, 88-98 DES VOEUX ROAD CENTRAL, HONG KONG",
     "phone": "+852 6286 2198",
-    "worktime": "週一至週五（工作日）09:00 - 18:00",
+    "worktime": "Monday to Friday (on workdays) 09:00 - 18:00",
     "email": "info@psgp.com",
-    "moreInfo": "如欲了解更多的服务详情，请点击下方按钮立即咨询 ",
-    "contactUs": "立即咨询"
+    "moreInfo": "For more details, please click the button below to consult now ",
+    "contactUs": "Contact Us"
   },
   "languages": {
     "en": "English",
