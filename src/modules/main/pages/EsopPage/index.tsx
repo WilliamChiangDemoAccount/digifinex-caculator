@@ -51,35 +51,35 @@ const EsopPage = () => {
                     src={getSrc(`stable-system-mobile-${language || 'en'}`, 'esop')} alt="" />
             </div>
         </section>
-        {/* <h2 className='text-center px-5 px-sm-26 px-lg-27'>{t('pages.esop.service.title')}</h2>
-        <section className='page-esop__service bg-md-white-1 px-5 px-sm-26 px-lg-27'>
-            <ul className='mt-sm-22_5 mt-lg-27_5 d-flex flex-row align-items-start justify-content-between'>
-                <li className='d-flex flex-column align-items-center layer-cover'>
-                    <img src={getSrc('service-1-icon', 'esop')} alt="" />
-                    <p className='text-blue-2 font-lg font-sm-xl font-lg-3xl mt-5_5 fw-bold'>
-                        {t('pages.esop.service.participent.title')}
-                    </p>
-                    <p className='text-gray-2 font-sm font-sm-lg'>
-                        {t('pages.esop.service.participent.content-1')}
-                    </p>
-                    <p className='text-gray-2 font-sm font-sm-lg mt-5'>
-                        {t('pages.esop.service.participent.content-2')}
-                    </p>
-                    <p className='text-gray-2 font-sm font-sm-lg mt-5'>
-                        {t('pages.esop.service.participent.content-3')}
-                    </p>
-                </li>
-                <li className='d-flex flex-column align-items-center layer-cover'>
-                    <img src={getSrc('service-2-icon', 'esop')} alt="" />
-                </li>
-                <li className='d-flex flex-column align-items-center layer-cover'>
-                    <img src={getSrc('service-3-icon', 'esop')} alt="" />
-                </li>
+        <h2 className='text-center px-5 px-sm-26 px-lg-30_5'>{t('pages.esop.service.title')}</h2>
+        <section className='page-esop__service bg-white-1 px-5 px-sm-26 px-lg-30_5'>
+            <ul className='d-flex flex-row align-items-start justify-content-between'>
+                {
+                    ['participent', 'admin', 'manager'].map((service, index) => (<li
+                        key={service}
+                        className='d-flex flex-column layer-cover'>
+                        <img src={getSrc(`service-${index + 1}-icon`, 'esop')} alt="" />
+                        <p className='text-blue-2 text-center font-lg font-sm-xl font-lg-3xl fw-bold'>
+                            {t(`pages.esop.service.${service}.title`)}
+                        </p>
+                        <ul className='pe-lg-8'>
+                            <li className='text-gray-2 font-sm font-sm-lg mt-lg-6 d-flex flex-row align-items-top'>
+                                {t(`pages.esop.service.${service}.content-1`)}
+                            </li>
+                            <li className='text-gray-2 font-sm font-sm-lg mt-lg-6 d-flex flex-row align-items-top'>
+                                {t(`pages.esop.service.${service}.content-2`)}
+                            </li>
+                            <li className='text-gray-2 font-sm font-sm-lg mt-lg-6 d-flex flex-row align-items-top'>
+                                {t(`pages.esop.service.${service}.content-3`)}
+                            </li>
+                        </ul>
+                    </li>))
+                }
             </ul>
             <div className='mt-sm-50 layer-normal'>
 
             </div>
-        </section> */}
+        </section>
     </ContentLayout>
 }
 export default EsopPage;

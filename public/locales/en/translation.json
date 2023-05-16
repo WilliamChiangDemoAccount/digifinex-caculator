@@ -32,20 +32,20 @@
         "participent": {
           "title": "Participant Services",
           "content-1": "Detailed and convenient online guide",
-          "contnet-2": "Professional and Passionate 24/7 customer service",
-          "contnet-3": "Various training for participants"
+          "content-2": "Professional and Passionate 24/7 customer service",
+          "content-3": "Various training for participants"
         },
         "admin": {
           "title": "Administrator Services",
           "content-1": "Comprehensive guidance and assistance from system launch to daily operation",
-          "contnet-2": "Assist in connecting with other relevant third parties in the ESOP operation process",
-          "contnet-3": "Based on extensive experience and professional knowledge to give advice on specific scenarios"
+          "content-2": "Assist in connecting with other relevant third parties in the ESOP operation process",
+          "content-3": "Based on extensive experience and professional knowledge to give advice on specific scenarios"
         },
         "manager": {
           "title": "Executivese Services",
           "content-1": "Form 144 Filing",
-          "contnet-2": "10b5-1 Plan",
-          "contnet-3": "Algorithmic order and Trader services"
+          "content-2": "10b5-1 Plan",
+          "content-3": "Algorithmic order and Trader services"
         }
       },
       "keep-notice": {

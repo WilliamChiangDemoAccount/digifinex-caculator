@@ -32,20 +32,20 @@
         "participent": {
           "title": "參與人服務",
           "content-1": "詳細方便的在線指引",
-          "contnet-2": "專業熱情的 7*24 客服",
-          "contnet-3": "形式多樣的參與人培訓"
+          "content-2": "專業熱情的 7*24 客服",
+          "content-3": "形式多樣的參與人培訓"
         },
         "admin": {
           "title": "管理員服務",
           "content-1": "從系統上線到日常運營的全方位輔導和協助",
-          "contnet-2": "協助對接ESOP運營流程中的其他相關第三方機構",
-          "contnet-3": "依據豐富的經驗和專業的知識給予特定場景的諮詢意見"
+          "content-2": "協助對接ESOP運營流程中的其他相關第三方機構",
+          "content-3": "依據豐富的經驗和專業的知識給予特定場景的諮詢意見"
         },
         "manager": {
           "title": "高管服務",
           "content-1": "Form 144 Filing",
-          "contnet-2": "10b5-1 Plan",
-          "contnet-3": "算法單及交易員服務"
+          "content-2": "10b5-1 Plan",
+          "content-3": "算法單及交易員服務"
         }
       },
       "keep-notice": {

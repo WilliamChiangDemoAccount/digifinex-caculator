@@ -29,38 +29,6 @@
       }
     }
   }
-
-  &__service {
-    li {
-      position: relative;
-      flex-grow: 1;
-      &:nth-of-type(odd) {
-        background-image: url("../../../../assets/img/esop/service-bg-dark.svg");
-      }
-      &:nth-of-type(even) {
-        background-image: url("../../../../assets/img/esop/service-bg-light.svg");
-      }
-      img {
-        position: absolute;
-        top: -50%;
-        left: 50%;
-        height: 100px;
-        transform: translateY(50%) translateX(-50%);
-      }
-      &:first-of-type {
-        padding: 3.75rem 1rem 5rem 1.25rem;
-        transform: translateY(1.25rem);
-      }
-      &:nth-of-type(2) {
-        padding: 4rem 1.875rem 4rem 2.5rem;
-        transform: translateX(-1rem) translateY(43.65px);
-      }
-      &:nth-of-type(3) {
-        padding: 4rem 0.5rem 3.5rem 1.5rem;
-        transform: translateX(-2rem);
-      }
-    }
-  }
 }
 @include generateStyleByBreakpoint("sm") {
   .page-esop {
@@ -98,6 +66,56 @@
         height: 350px;
         right: 691px;
         top: 70px;
+      }
+    }
+    &__service {
+      margin-top: 432px;
+      position: relative;
+      & > ul > li {
+        padding-top: 109px;
+        min-width: 418px;
+        height: 505px;
+        img {
+          position: absolute;
+          width: 200px;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+        }
+        & > ul {
+          & > li {
+            &::before {
+              display: block;
+              content: url("../../../../assets/img/esop/list-icon.svg");
+              width: 30px;
+              margin-right: 0.75rem;
+            }
+          }
+        }
+        &:first-of-type {
+          transform: translateY(-302px);
+          & > ul {
+            padding-left: 5rem;
+          }
+        }
+        &:nth-of-type(2) {
+          transform: translateX(-2rem) translateY(-241px);
+          & > ul {
+            padding-left: 3.125rem;
+          }
+        }
+        &:nth-of-type(3) {
+          transform: translateX(-4rem) translateY(-330px);
+          & > ul {
+            padding-left: 6.25rem;
+          }
+        }
+        &:nth-of-type(odd) {
+          background-image: url("../../../../assets/img/esop/service-bg-dark.svg");
+        }
+        &:nth-of-type(even) {
+          background-image: url("../../../../assets/img/esop/service-bg-light.svg");
+        }
       }
     }
   }
