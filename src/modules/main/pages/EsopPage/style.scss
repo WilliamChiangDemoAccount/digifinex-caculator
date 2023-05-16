@@ -3,22 +3,102 @@
 
 .page-esop {
   &__banner {
-    width: 100%;
-    background-image: url("../../../../assets/img/esop/banner.svg");
+    height: auto;
+    background-image: url("../../../../assets/img/esop/banner-mobile.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding: 48px 20px;
+  }
+
+  &__stable-system {
+    width: 100%;
+    ul {
+      width: 100%;
+    }
+    + div {
+      &::before {
+        border-radius: 4px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        content: "";
+        width: 100%;
+        height: 50%;
+      }
+    }
+  }
+
+  &__service {
+    li {
+      position: relative;
+      flex-grow: 1;
+      &:nth-of-type(odd) {
+        background-image: url("../../../../assets/img/esop/service-bg-dark.svg");
+      }
+      &:nth-of-type(even) {
+        background-image: url("../../../../assets/img/esop/service-bg-light.svg");
+      }
+      img {
+        position: absolute;
+        top: -50%;
+        left: 50%;
+        height: 100px;
+        transform: translateY(50%) translateX(-50%);
+      }
+      &:first-of-type {
+        padding: 3.75rem 1rem 5rem 1.25rem;
+        transform: translateY(1.25rem);
+      }
+      &:nth-of-type(2) {
+        padding: 4rem 1.875rem 4rem 2.5rem;
+        transform: translateX(-1rem) translateY(43.65px);
+      }
+      &:nth-of-type(3) {
+        padding: 4rem 0.5rem 3.5rem 1.5rem;
+        transform: translateX(-2rem);
+      }
+    }
+  }
+}
+@include generateStyleByBreakpoint("sm") {
+  .page-esop {
+    &__banner {
+      background-image: url("../../../../assets/img/esop/banner-table.svg");
+      height: 288px;
+    }
+    &__stable-system {
+      width: 814px;
+      align-self: flex-end;
+      ul {
+        width: 465px;
+      }
+      img {
+        height: 300px;
+        right: 552px;
+        top: 46px;
+      }
+    }
   }
 }
 
-@include generateStyleByBreakpoint() {
+@include generateStyleByBreakpoint("lg") {
   .page-esop {
     &__banner {
-      width: 100%;
-      background-image: url("../../../../assets/img/esop/banner-mobile.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      padding: 48px 20px;
+      background-image: url("../../../../assets/img/esop/banner.svg");
+      height: 432px;
+    }
+    &__stable-system {
+      width: 1056px;
+      ul {
+        width: 585px;
+      }
+      img {
+        height: 350px;
+        right: 691px;
+        top: 70px;
+      }
     }
   }
 }

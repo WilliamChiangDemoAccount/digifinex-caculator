@@ -27,7 +27,7 @@ const TrustArticle = ({ activeArticle }: Props) => {
             <ul className='d-flex flex-row flex-wrap'>
                 {[1, 2, 3, 4].map(usage => <li key={usage}>
                     <h3 className='d-flex flex-row align-items-center'>
-                        <img className='me-4' src={getSrc(`right-usage-${usage}`)} alt="" />
+                        <img className='me-4' src={getSrc(`right-usage-${usage}`, 'trust')} alt="" />
                         {t(`pages.trust.article.rightUsage.usage-${usage}.title`)}
                     </h3>
                     <span className='d-inline-block mt-4 font-lg text-gray-2'>{t(`pages.trust.article.rightUsage.usage-${usage}.content`)}</span>
@@ -39,7 +39,7 @@ const TrustArticle = ({ activeArticle }: Props) => {
                 <ul className='d-flex flex-row flex-wrap'>
                     {[1, 2].map(usage => <li key={usage}>
                         <h3 className='d-flex flex-row align-items-center'>
-                            <img className='me-4' src={getSrc(`charitable-usage-${usage}`)} alt="" />
+                            <img className='me-4' src={getSrc(`charitable-usage-${usage}`, 'trust')} alt="" />
                             {t(`pages.trust.article.charitableUsage.usage-${usage}.title`)}
                         </h3>
                         <span className='d-inline-block font-lg mt-4 text-gray-2'>{t(`pages.trust.article.charitableUsage.usage-${usage}.content`)}</span>
@@ -77,13 +77,13 @@ const TrustArticle = ({ activeArticle }: Props) => {
                             </span>
                         </div>
                         <img
-                            src={getSrc(`desktop/${activeArticle}`)}
+                            src={getSrc(`desktop/${activeArticle}`, 'trust')}
                             style={{ filter: 'drop-shadow(0px 0px 19px rgba(146, 146, 146, 0.25))' }}
                             className='d-none d-md-block compnent-trust-article__illustration'
                             alt=""
                         />
                         <img
-                            src={getSrc(`tablet/${activeArticle}-table`)}
+                            src={getSrc(`tablet/${activeArticle}-table`, 'trust')}
                             style={{ filter: 'drop-shadow(0px 0px 19px rgba(146, 146, 146, 0.25))' }}
                             className='d-none d-sm-block d-md-none compnent-trust-article__illustration'
                             alt=""

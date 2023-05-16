@@ -9,8 +9,11 @@ $pseudo-class: "hover";
 //   "first-of-type", "first-child", "last-of-type", "last-child", "empty",
 //   "only-child"
 $text-level: (
+  // 48
   h1: 3rem,
+  // 36
   h2: 2.25rem,
+  // 22
   h3: 1.375rem,
 );
 
@@ -97,18 +100,22 @@ $spacers: (
   18_5: $spacer * 4.625,
   19: $spacer * 4.75,
   20: $spacer * 5,
+  20_5: $spacer * 5.125,
   21: $spacer * 5.25,
   21_5: $spacer * 5.375,
   22: $spacer * 5.5,
+  22_5: $spacer * 5.625,
   23: $spacer * 5.75,
   23_5: $spacer * 5.875,
   24: $spacer * 6,
   25: $spacer * 6.25,
   26: $spacer * 6.5,
   27: $spacer * 6.75,
+  27_5: $spacer * 6.875,
   28: $spacer * 7,
   29: $spacer * 7.25,
   30: $spacer * 7.5,
+  35: $spacer * 8.75,
   40: $spacer * 10,
   45: $spacer * 11.25,
   47_5: $spacer * 11.875,

@@ -7,9 +7,8 @@
       "menu": "股權激勵",
       "introduction": "內容介紹",
       "banner": {
-        "title-1": "免費",
-        "title-2": "試用",
-        "content": "Tempora necessitatibus dolor eum illo a ipsa culpa quia aspernatur. Fuga dolorem eaque et eum et qui fuga aut voluptatem. Neque esse omnis atque. Et et ea magnam hic quaerat odio dignissimos doloremque ea. "
+        "title-1": "柏盛集團",
+        "title-2": "一站式股權激勵管理平台"
       },
       "stable-system": {
         "title": "穩定且強大的系統平台",
@@ -29,7 +28,7 @@
         }
       },
       "service": {
-        "title": "",
+        "title": "面面俱到的貼心服務",
         "participent": {
           "title": "參與人服務",
           "content-1": "詳細方便的在線指引",
@@ -75,8 +74,7 @@
       "menu": "柏盛信託",
       "banner": {
         "title": "柏盛信託",
-        "subtitle": "智信之選 安心託付",
-        "content": "Tempora necessitatibus dolor eum illo a ipsa culpa quia aspernatur. Fuga dolorem eaque et eum et qui fuga aut voluptatem. Neque esse omnis atque. Et et ea magnam hic quaerat odio dignissimos doloremque ea. "
+        "subtitle": "智信之選 安心託付"
       },
       "skipService": "略過服務介紹",
       "service": {

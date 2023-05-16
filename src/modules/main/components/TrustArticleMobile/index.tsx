@@ -52,7 +52,7 @@ const TrustArticleMobile = ({ articles }: Props) => {
                                             <input className='d-none' type="checkbox" id={`trust-right-usage-${usage}`} />
                                             <div className='d-flex flex-row align-items-center justify-content-between'>
                                                 <h3 className='d-flex flex-row align-items-center font-sm'>
-                                                    <img className='me-2' src={getSrc(`right-usage-${usage}`)} alt="" />
+                                                    <img className='me-2' src={getSrc(`right-usage-${usage}`, 'trust')} alt="" />
                                                     {t(`pages.trust.article.rightUsage.usage-${usage}.title`)}
                                                 </h3>
                                                 <label className='icon-arrow_up cursor-pointer' htmlFor={`trust-right-usage-${usage}`}></label>
@@ -70,7 +70,7 @@ const TrustArticleMobile = ({ articles }: Props) => {
                                                 <input className='d-none' type="checkbox" id={`trust-charitable-usage-${usage}`} />
                                                 <div className='d-flex flex-row align-items-center justify-content-between'>
                                                     <h3 className='d-flex flex-row align-items-center font-sm'>
-                                                        <img className='me-2' src={getSrc(`charitable-usage-${usage}`)} alt="" />
+                                                        <img className='me-2' src={getSrc(`charitable-usage-${usage}`, 'trust')} alt="" />
                                                         {t(`pages.trust.article.charitableUsage.usage-${usage}.title`)}
                                                     </h3>
                                                     <label className='icon-arrow_up cursor-pointer' htmlFor={`trust-charitable-usage-${usage}`}></label>
@@ -124,7 +124,7 @@ const TrustArticleMobile = ({ articles }: Props) => {
                                                         <p className='font-sm mt-4 text-gray-2'>{t(`pages.trust.article.${article}.content`)}</p>
                                                 }
                                             </section>
-                                            <img className='position-absolute layer-cover' src={getSrc(`mobile/${article}-mobile`)} alt="" />
+                                            <img className='position-absolute layer-cover' src={getSrc(`mobile/${article}-mobile`, 'trust')} alt="" />
                                         </>
                         }
                     </li>
