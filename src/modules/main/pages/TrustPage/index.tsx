@@ -20,10 +20,9 @@ const TrustPage = () => {
     const advance = useRef<HTMLDivElement>(null);
     const isMobile = window.innerWidth <= 768;
     return <ContentLayout classes='page-trust' testId="TrustPage">
-        <section className='page-trust__banner'>
-            <h1 className='text-white-1'>{t('pages.trust.banner.title')}</h1>
-            <h1>{t('pages.trust.banner.subtitle')}</h1>
-            <p className='mt-lg-6 mt-sm-5 mt-3 text-white-1'>{t('pages.trust.banner.content')}</p>
+        <section className='d-flex flex-column justify-content-center align-items-center px-5 pt-12 pb-14 page-trust__banner'>
+            <h1 className='text-orange-1 text-center'>{t('pages.trust.banner.title')}</h1>
+            <h1 className='text-white-1 text-center'>{t('pages.trust.banner.subtitle')}</h1>
         </section>
         <section ref={service} className='d-none d-sm-block pt-sm-20 pt-lg-30'>
             <TrustArticleList
@@ -114,7 +113,7 @@ const TrustPage = () => {
                     <p className='font-xs-sm font-sm-xl text-black-1 fw-bold mt-2 mt-sm-10_5'>
                         {t('pages.trust.customer.medical.title')}
                     </p>
-                    <p className='font-xs-sm font-sm-lg text-gray-2 mt-2 mt-sm-1 mt-lg-4'>
+                    <p className='font-xs-sm font-sm-lg text-gray-2 mt-2 mt-sm-1 mt-lg-4 text-center'>
                         {t('pages.trust.customer.medical.content')}
                     </p>
                 </li>
@@ -125,7 +124,7 @@ const TrustPage = () => {
                     <p className='font-xs-sm font-sm-xl text-black-1 fw-bold mt-2 mt-sm-10_5'>
                         {t('pages.trust.customer.technology.title')}
                     </p>
-                    <p className='font-xs-sm font-sm-lg text-gray-2 mt-2 mt-sm-1 mt-lg-4'>
+                    <p className='font-xs-sm font-sm-lg text-gray-2 mt-2 mt-sm-1 mt-lg-4 text-center'>
                         {t('pages.trust.customer.technology.content')}
                     </p>
                 </li>
@@ -136,7 +135,7 @@ const TrustPage = () => {
                     <p className='font-xs-sm font-sm-xl text-black-1 fw-bold mt-2 mt-sm-10_5'>
                         {t('pages.trust.customer.network.title')}
                     </p>
-                    <p className='font-xs-sm font-sm-lg text-gray-2 mt-2 mt-sm-1 mt-lg-4'>
+                    <p className='font-xs-sm font-sm-lg text-gray-2 mt-2 mt-sm-1 mt-lg-4 text-center'>
                         {t('pages.trust.customer.network.content')}
                     </p>
                 </li>

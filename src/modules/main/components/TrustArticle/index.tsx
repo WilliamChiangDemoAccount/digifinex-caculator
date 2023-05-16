@@ -58,7 +58,7 @@ const TrustArticle = ({ activeArticle }: Props) => {
                     </div>
                 </section> :
                     <section className='d-flex flex-row align-items-center'>
-                        <div className='py-20 ps-12 pe-4 bg-white-1 compnent-trust-article__content'>
+                        <div className='py-10 py-md-20 ps-9 ps-md-12 pe-4 bg-white-1 compnent-trust-article__content'>
                             <span className='d-block mb-2_5 font-xl fw-bold text-blue-1'>{t(`pages.trust.article.${activeArticle}.label`)}</span>
                             <span className={`d-block text-gray-2 font-lg ${activeArticle === ETrustArticle.OptionTarget || activeArticle === ETrustArticle.OptionUsage ? 'ps-4' : ''}`}>
                                 {
@@ -76,7 +76,18 @@ const TrustArticle = ({ activeArticle }: Props) => {
                                             : t(`pages.trust.article.${activeArticle}.content`)}
                             </span>
                         </div>
-                        <img src={getSrc(activeArticle)} className='compnent-trust-article__illustration' alt="" />
+                        <img
+                            src={getSrc(`desktop/${activeArticle}`)}
+                            style={{ filter: 'drop-shadow(0px 0px 19px rgba(146, 146, 146, 0.25))' }}
+                            className='d-none d-md-block compnent-trust-article__illustration'
+                            alt=""
+                        />
+                        <img
+                            src={getSrc(`tablet/${activeArticle}-table`)}
+                            style={{ filter: 'drop-shadow(0px 0px 19px rgba(146, 146, 146, 0.25))' }}
+                            className='d-none d-sm-block d-md-none compnent-trust-article__illustration'
+                            alt=""
+                        />
                     </section>}
     </>
 }

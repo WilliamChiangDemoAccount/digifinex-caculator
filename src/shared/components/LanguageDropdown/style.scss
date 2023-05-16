@@ -1,0 +1,16 @@
+@import "~styles/variables";
+.compnent-language-dropdown {
+  & > ul {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    & > li {
+      cursor: pointer;
+      height: 2rem;
+      box-sizing: content-box;
+      &:not(:last-of-type) {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
