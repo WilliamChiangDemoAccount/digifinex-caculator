@@ -29,6 +29,25 @@
       }
     }
   }
+
+  &__service {
+    position: relative;
+    & > ul > li {
+      img {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+      & > ul {
+        & > li {
+          &::before {
+            display: block;
+          }
+        }
+      }
+    }
+  }
 }
 @include generateStyleByBreakpoint("sm") {
   .page-esop {
@@ -46,6 +65,51 @@
         height: 300px;
         right: 552px;
         top: 46px;
+      }
+    }
+    &__service {
+      margin-top: 234px;
+      & > ul > li {
+        padding-top: 61px;
+        min-width: 320px;
+        max-width: 320px;
+        height: 360px;
+        img {
+          width: 160px;
+        }
+        & > ul {
+          & > li {
+            &::before {
+              content: url("../../../../assets/img/esop/list-icon-table.svg");
+              width: 24px;
+              margin-right: 0.75rem;
+            }
+          }
+        }
+        &:first-of-type {
+          transform: translateY(-118px);
+          & > ul {
+            padding-left: 70px;
+          }
+        }
+        &:nth-of-type(2) {
+          transform: translateX(-12px) translateY(-77px);
+          & > ul {
+            padding-left: 1.5rem;
+          }
+        }
+        &:nth-of-type(3) {
+          transform: translateX(-24px) translateY(-155px);
+          & > ul {
+            padding-left: 5rem;
+          }
+        }
+        &:nth-of-type(odd) {
+          background-image: url("../../../../assets/img/esop/service-bg-dark-table.svg");
+        }
+        &:nth-of-type(even) {
+          background-image: url("../../../../assets/img/esop/service-bg-light-table.svg");
+        }
       }
     }
   }
@@ -70,22 +134,17 @@
     }
     &__service {
       margin-top: 432px;
-      position: relative;
       & > ul > li {
         padding-top: 109px;
         min-width: 418px;
+        max-width: 418px;
         height: 505px;
         img {
-          position: absolute;
           width: 200px;
-          top: 0;
-          left: 50%;
-          transform: translateX(-50%) translateY(-50%);
         }
         & > ul {
           & > li {
             &::before {
-              display: block;
               content: url("../../../../assets/img/esop/list-icon.svg");
               width: 30px;
               margin-right: 0.75rem;
@@ -99,13 +158,13 @@
           }
         }
         &:nth-of-type(2) {
-          transform: translateX(-2rem) translateY(-241px);
+          transform: translateX(-30px) translateY(-241px);
           & > ul {
             padding-left: 3.125rem;
           }
         }
         &:nth-of-type(3) {
-          transform: translateX(-4rem) translateY(-330px);
+          transform: translateX(-60px) translateY(-330px);
           & > ul {
             padding-left: 6.25rem;
           }

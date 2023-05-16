@@ -51,9 +51,9 @@ const EsopPage = () => {
                     src={getSrc(`stable-system-mobile-${language || 'en'}`, 'esop')} alt="" />
             </div>
         </section>
-        <h2 className='text-center px-5 px-sm-26 px-lg-30_5'>{t('pages.esop.service.title')}</h2>
-        <section className='page-esop__service bg-white-1 px-5 px-sm-26 px-lg-30_5'>
-            <ul className='d-flex flex-row align-items-start justify-content-between'>
+        <h2 className='text-center px-5 px-sm-11 px-lg-30_5'>{t('pages.esop.service.title')}</h2>
+        <section className='page-esop__service bg-white-1 px-5 px-sm-11 px-lg-30_5'>
+            <ul className='d-flex flex-row align-items-start justify-content-center'>
                 {
                     ['participent', 'admin', 'manager'].map((service, index) => (<li
                         key={service}
@@ -62,16 +62,14 @@ const EsopPage = () => {
                         <p className='text-blue-2 text-center font-lg font-sm-xl font-lg-3xl fw-bold'>
                             {t(`pages.esop.service.${service}.title`)}
                         </p>
-                        <ul className='pe-lg-8'>
-                            <li className='text-gray-2 font-sm font-sm-lg mt-lg-6 d-flex flex-row align-items-top'>
-                                {t(`pages.esop.service.${service}.content-1`)}
-                            </li>
-                            <li className='text-gray-2 font-sm font-sm-lg mt-lg-6 d-flex flex-row align-items-top'>
-                                {t(`pages.esop.service.${service}.content-2`)}
-                            </li>
-                            <li className='text-gray-2 font-sm font-sm-lg mt-lg-6 d-flex flex-row align-items-top'>
-                                {t(`pages.esop.service.${service}.content-3`)}
-                            </li>
+                        <ul className='pe-sm-3 pe-lg-7_5'>
+                            {
+                                [1, 2, 3].map(order =>
+                                    <li className={`text-gray-2 font-sm font-lg-lg mt-sm-${index === 1 ? 4 : 6} mt-lg-${index === 1 ? 6 : 7} d-flex flex-row align-items-top`}>
+                                        {t(`pages.esop.service.${service}.content-${order}`)}
+                                    </li>
+                                )
+                            }
                         </ul>
                     </li>))
                 }
