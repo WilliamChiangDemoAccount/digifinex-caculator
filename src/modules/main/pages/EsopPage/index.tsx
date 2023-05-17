@@ -1,11 +1,13 @@
 import ContentLayout from '@shared/components/ContentLayout';
 import './style.scss';
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 import Expand from '@shared/components/Expand';
 import { getSrc } from '@shared/helpers/file.helper';
+import { useWindowSize } from '@shared/hooks/useWindowSize';
 
 const EsopPage = () => {
     const { t, i18n: { language } } = useTranslation();
+    const { width } = useWindowSize();
     return <ContentLayout classes='page-esop' testId="EsopPage">
         <section className='page-esop__banner d-flex flex-column justify-content-center align-items-center'>
             <h1 className='text-orange-1 text-center'>{t('pages.esop.banner.title-1')}</h1>
@@ -51,21 +53,24 @@ const EsopPage = () => {
                     src={getSrc(`stable-system-mobile-${language || 'en'}`, 'esop')} alt="" />
             </div>
         </section>
-        <h2 className='text-center px-5 px-sm-11 px-lg-30_5'>{t('pages.esop.service.title')}</h2>
-        <section className='page-esop__service bg-white-1 px-5 px-sm-11 px-lg-30_5'>
-            <ul className='d-flex flex-row align-items-start justify-content-center'>
+        <h2 className='text-center mt-7 mt-sm-0 px-5 px-sm-11 px-lg-30_5'>{t('pages.esop.service.title')}</h2>
+        <section className={`page-esop__service ${width >= 768 ? 'bg-white-1' : ''} px-5 px-sm-11 px-lg-30_5`}>
+            <ul className='d-flex flex-column flex-sm-row align-items-start justify-content-center'>
                 {
                     ['participent', 'admin', 'manager'].map((service, index) => (<li
                         key={service}
                         className='d-flex flex-column layer-cover'>
-                        <img src={getSrc(`service-${index + 1}-icon`, 'esop')} alt="" />
-                        <p className='text-blue-2 text-center font-lg font-sm-xl font-lg-3xl fw-bold'>
+                        <img src={getSrc(`service-${index + 1}-icon${width < 1440 ? '-table' : ''}`, 'esop')} alt="" />
+                        <p className='text-blue-2 text-center mb-1 mb-sm-0 font-lg font-sm-xl font-lg-3xl fw-bold'>
                             {t(`pages.esop.service.${service}.title`)}
                         </p>
                         <ul className='pe-sm-3 pe-lg-7_5'>
                             {
                                 [1, 2, 3].map(order =>
-                                    <li className={`text-gray-2 font-sm font-lg-lg mt-sm-${index === 1 ? 4 : 6} mt-lg-${index === 1 ? 6 : 7} d-flex flex-row align-items-top`}>
+                                    <li
+                                        key={order}
+                                        className={`text-gray-2 font-sm font-lg-lg mt-4 mt-sm-${index === 1 ? 4 : 6} mt-lg-${index === 1 ? 6 : 7} d-flex flex-row align-items-top`}
+                                    >
                                         {t(`pages.esop.service.${service}.content-${order}`)}
                                     </li>
                                 )
@@ -74,9 +79,29 @@ const EsopPage = () => {
                     </li>))
                 }
             </ul>
-            <div className='mt-sm-50 layer-normal'>
-
+        </section>
+        <section className='page-esop__market bg-white-1 position-relative pt-7 pt-sm-19 pt-lg-30'>
+            <div className='d-flex flex-column flex-sm-row align-items-start'>
+                <h2>
+                    <Trans
+                        i18nKey={'pages.esop.keep-notice.title'}
+                        components={{ 1: <br /> }}
+                    />
+                </h2>
+                <ul className='mt-7 mt-sm-0'>
+                    {['forex', 'tax', 'rule'].map((e, index) =>
+                        <li className={index === 0 ? '' : 'mt-6 mt-sm-9 mt-lg-10'}>
+                            <p className='text-blue-2 fw-bold font-sm font-sm-xl'>{t(`pages.esop.keep-notice.${e}.title`)}</p>
+                            <p className='text-gray-2 mt-2 mt-lg-3_5 font-sm font-sm-lg'>{t(`pages.esop.keep-notice.${e}.content`)}</p>
+                        </li>
+                    )}
+                </ul>
             </div>
+            <img
+                className='position-absolute w-100 layer-cover'
+                src={getSrc(`bg${width < 1440 && width >= 768 ? '-table' : width < 768 ? '-mobile' : ''}`, 'esop')}
+                alt=""
+            />
         </section>
     </ContentLayout>
 }

@@ -31,6 +31,7 @@
   }
 
   &__service {
+    margin-top: 122px;
     position: relative;
     & > ul > li {
       img {
@@ -48,7 +49,62 @@
       }
     }
   }
+
+  &__market {
+    & > div {
+      padding: 0 28px 133px;
+    }
+    & > img {
+      bottom: 0;
+      left: 0;
+    }
+  }
 }
+
+@media screen and (max-width: map-get($grid-breakpoints, "sm")) {
+  .page-esop {
+    &__service {
+      margin-top: 52px;
+      margin-bottom: -75px;
+      & > ul > li {
+        padding: 50px 34px 0;
+        min-width: 240px;
+        max-width: 240px;
+        height: 300px;
+        img {
+          width: 100px;
+        }
+        & > ul {
+          & > li {
+            &::before {
+              content: url("../../../../assets/img/esop/list-icon-mobile.svg");
+              width: 18px;
+              margin-right: 0.625rem;
+            }
+          }
+        }
+        &:nth-of-type(2) {
+          padding-left: 16px;
+          padding-right: 16px;
+          transform: translateY(-75px);
+        }
+        &:nth-of-type(3) {
+          transform: translateY(-126px);
+        }
+        &:nth-of-type(odd) {
+          align-self: flex-start;
+          background-image: url("../../../../assets/img/esop/service-bg-dark-mobile.svg");
+        }
+        &:nth-of-type(even) {
+          height: 360px;
+          align-self: flex-end;
+          background-image: url("../../../../assets/img/esop/service-bg-light-mobile.svg");
+        }
+      }
+    }
+  }
+}
+
 @include generateStyleByBreakpoint("sm") {
   .page-esop {
     &__banner {
@@ -69,6 +125,7 @@
     }
     &__service {
       margin-top: 234px;
+      margin-bottom: -77px;
       & > ul > li {
         padding-top: 61px;
         min-width: 320px;
@@ -112,6 +169,16 @@
         }
       }
     }
+    &__market {
+      & > div {
+        padding: 0 44px 158px 112px;
+        h2,
+        ul {
+          flex-basis: 50%;
+          flex-grow: 1;
+        }
+      }
+    }
   }
 }
 
@@ -134,6 +201,7 @@
     }
     &__service {
       margin-top: 432px;
+      margin-bottom: -241px;
       & > ul > li {
         padding-top: 109px;
         min-width: 418px;
@@ -175,6 +243,11 @@
         &:nth-of-type(even) {
           background-image: url("../../../../assets/img/esop/service-bg-light.svg");
         }
+      }
+    }
+    &__market {
+      & > div {
+        padding: 0 122px 316px 214px;
       }
     }
   }
