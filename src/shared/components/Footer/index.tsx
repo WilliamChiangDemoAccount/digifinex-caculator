@@ -18,6 +18,19 @@ const Footer = (prop: Props) => {
     >
         <section className='component-footer__container mx-auto d-flex flex-column justify-content-between'>
             <div>
+                <ul className='d-block d-sm-none'>
+                    {
+                        [...routeMap.get(ProductModule.Main)!.children ?? []].reverse().map(
+                            ({ path, i18n }) =>
+                                <li key={path} className='border-bottom-1 border-gray-3 px-6 py-5'>
+                                    <NavLink className='text-orange-1' to={path}>
+                                        {t(i18n)}
+                                    </NavLink>
+                                </li>
+                        )
+                    }
+
+                </ul>
                 <Logo className='d-none d-sm-block' />
                 <section className='d-flex flex-column flex-sm-row align-items-stretch justify-content-between mt-sm-14 pt-sm-0 pt-11_5 px-6 px-sm-0'>
                     <div>
