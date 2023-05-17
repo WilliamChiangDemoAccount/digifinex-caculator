@@ -263,12 +263,12 @@
     }
   },
   "footer": {
-    "address": "香港中环德辅道中路88-98号 中环 88，18楼",
+    "address": "香港中環德輔道中88-98號 中環 88，18樓",
     "phone": "+852 6286 2198",
     "worktime": "週一至週五（工作日）09:00 - 18:00",
     "email": "info@psgp.com",
-    "moreInfo": "如欲了解更多的服务详情，请点击下方按钮立即咨询 ",
-    "contactUs": "立即咨询"
+    "moreInfo": "如欲瞭解更多的服務詳情，請點擊下方按鈕立即諮詢",
+    "contactUs": "立即諮詢"
   },
   "languages": {
     "en": "English",
