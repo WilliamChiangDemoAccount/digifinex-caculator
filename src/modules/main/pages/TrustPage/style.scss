@@ -3,8 +3,8 @@
 
 .page-trust {
   &__banner {
-    width: 100%;
-    background-image: url("../../../../assets/img/trust/banner.svg");
+    height: 320px;
+    background-image: url("../../../../assets/img/trust/mobile/banner-mobile.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -51,6 +51,7 @@
   .page-trust {
     &__banner {
       height: 288px;
+      background-image: url("../../../../assets/img/trust/desktop/banner.svg");
     }
     &__advance {
       padding-left: 0;

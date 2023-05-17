@@ -20,9 +20,9 @@ const TrustPage = () => {
     const advance = useRef<HTMLDivElement>(null);
     const isMobile = window.innerWidth <= 768;
     return <ContentLayout classes='page-trust' testId="TrustPage">
-        <section className='d-flex flex-column justify-content-center align-items-center px-5 pt-12 pb-14 page-trust__banner'>
-            <h1 className='text-orange-1 text-center'>{t('pages.trust.banner.title')}</h1>
-            <h1 className='text-white-1 text-center'>{t('pages.trust.banner.subtitle')}</h1>
+        <section className='d-flex flex-column justify-content-start justify-content-sm-center px-5 pt-12 pb-14 page-trust__banner'>
+            <h1 className='text-orange-1 text-start text-sm-center'>{t('pages.trust.banner.title')}</h1>
+            <h1 className='text-white-1 text-start text-sm-center'>{t('pages.trust.banner.subtitle')}</h1>
         </section>
         <section ref={service} className='d-none d-sm-block pt-sm-20 pt-lg-30'>
             <TrustArticleList

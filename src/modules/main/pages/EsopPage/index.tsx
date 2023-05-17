@@ -9,9 +9,9 @@ const EsopPage = () => {
     const { t, i18n: { language } } = useTranslation();
     const { width } = useWindowSize();
     return <ContentLayout classes='page-esop' testId="EsopPage">
-        <section className='page-esop__banner d-flex flex-column justify-content-center align-items-center'>
-            <h1 className='text-orange-1 text-center'>{t('pages.esop.banner.title-1')}</h1>
-            <h1 className='text-white-1 text-center'>{t('pages.esop.banner.title-2')}</h1>
+        <section className='page-esop__banner d-flex flex-column justify-content-sm-center justify-content-start'>
+            <h1 className='text-orange-1 text-start text-sm-center'>{t('pages.esop.banner.title-1')}</h1>
+            <h1 className='text-white-1 text-start text-sm-center'>{t('pages.esop.banner.title-2')}</h1>
         </section>
         <section className='py-12 py-sm-20 px-5 px-sm-5_5 px-lg-27 d-flex flex-column align-items-center'>
             <h2 className='text-center'>{t('pages.esop.stable-system.title')}</h2>
