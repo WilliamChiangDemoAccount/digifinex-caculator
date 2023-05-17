@@ -14,7 +14,7 @@ $text-level: (
   // 36
   h2: 2.25rem,
   // 22
-  h3: 1.375rem,
+  h3: 1.375rem
 );
 
 $layer-level: (
@@ -46,11 +46,18 @@ $font-level: (
   md: 1rem,
   lg: 1.125rem,
   lgx: 1.25rem,
+  // 22
   xl: 1.375rem,
   xxl: 1.5rem,
+  // 28
   3xl: 1.75rem,
+  // 30
   4xl: 1.875rem,
   5xl: 2rem,
+  // 36
+  6xl: 2.25rem,
+  // 48
+  7xl: 3rem,
 );
 
 $sizes: (
@@ -116,6 +123,7 @@ $spacers: (
   29: $spacer * 7.25,
   30: $spacer * 7.5,
   30_5: $spacer * 7.625,
+  32: $spacer * 8,
   35: $spacer * 8.75,
   40: $spacer * 10,
   45: $spacer * 11.25,

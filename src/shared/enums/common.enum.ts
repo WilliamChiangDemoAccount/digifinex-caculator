@@ -40,3 +40,9 @@ export enum Language {
   MandarinSimplified = 'zh-cn',
   English = 'en'
 }
+
+export enum BreakPoint {
+  Mobile = 'mobile',
+  Tablet = 'table',
+  Desktop = 'desktop'
+}

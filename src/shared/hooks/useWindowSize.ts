@@ -1,14 +1,23 @@
-import { useEffect, useState } from "react"
+import { BreakPoint } from "@shared/enums/common.enum";
+import { useCallback, useEffect, useState } from "react"
 
-export const useWindowSize = (): Pick<DOMRect, 'height' | 'width'> => {
-    const [windowRect, setWindowRect] = useState<Pick<DOMRect, 'height' | 'width'>>({
+type WindowSize = Pick<DOMRect, 'height' | 'width'> & { breakpoint: BreakPoint };
+
+export const useWindowSize = (): WindowSize => {
+    const getBreakpoint = useCallback((width: number) =>
+        width < 768 ? BreakPoint.Mobile :
+            width >= 768 && width < 1440 ? BreakPoint.Tablet :
+                BreakPoint.Desktop
+        , []);
+    const [windowRect, setWindowRect] = useState<WindowSize>({
         height: window.innerHeight,
-        width: window.innerWidth
+        width: window.innerWidth,
+        breakpoint: getBreakpoint(window.innerWidth)
     });
     useEffect(() => {
         const callback = () => {
             const { height, width } = document.getElementsByTagName('html')[0].getBoundingClientRect();
-            setWindowRect({ height, width });
+            setWindowRect({ height, width, breakpoint: getBreakpoint(width) });
         }
         window.addEventListener('resize', callback);
         return () => window.removeEventListener('resize', callback);

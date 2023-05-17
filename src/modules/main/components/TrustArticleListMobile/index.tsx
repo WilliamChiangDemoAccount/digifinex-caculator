@@ -2,8 +2,8 @@ import { useTranslation } from 'react-i18next';
 import { useParams } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
 
-import enterpriseServiceIcon from 'assets/img/trust/icon-enterprise-service-mobile.svg';
-import personalServiceIcon from 'assets/img/trust/icon-personal-service-mobile.svg';
+import enterpriseServiceIcon from 'assets/img/icons/icon-enterprise-service.svg';
+import personalServiceIcon from 'assets/img/icons/icon-personal-service.svg';
 
 import TrustArticleMobile from '@modules/main/components/TrustArticleMobile';
 import { TrustArticle, TrustService } from '@shared/enums/trust.enum';

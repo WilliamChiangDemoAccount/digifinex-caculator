@@ -90,7 +90,9 @@ const EsopPage = () => {
                 </h2>
                 <ul className='mt-7 mt-sm-0'>
                     {['forex', 'tax', 'rule'].map((e, index) =>
-                        <li className={index === 0 ? '' : 'mt-6 mt-sm-9 mt-lg-10'}>
+                        <li
+                            key={e}
+                            className={index === 0 ? '' : 'mt-6 mt-sm-9 mt-lg-10'}>
                             <p className='text-blue-2 fw-bold font-sm font-sm-xl'>{t(`pages.esop.keep-notice.${e}.title`)}</p>
                             <p className='text-gray-2 mt-2 mt-lg-3_5 font-sm font-sm-lg'>{t(`pages.esop.keep-notice.${e}.content`)}</p>
                         </li>

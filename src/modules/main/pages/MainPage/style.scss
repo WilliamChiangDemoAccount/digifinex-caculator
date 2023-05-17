@@ -1,3 +1,80 @@
 @import "~styles/variables";
-.page-main{
+@import "~styles/utilities";
+
+.page-main {
+  a {
+    &::before {
+      margin-left: 8px;
+      font-size: 1.25rem;
+    }
+  }
+
+  &__banner {
+    width: 100%;
+    background-image: url("../../../../assets/img/main/banner.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__esop {
+    img {
+      width: 100%;
+    }
+  }
+
+  &__trust {
+    article {
+      & > img {
+        filter: drop-shadow(0px 0px 19px rgba(146, 146, 146, 0.25));
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include generateStyleByBreakpoint("sm") {
+  .page-main {
+    &__banner {
+      height: 288px;
+    }
+    &__esop {
+      img {
+        width: 400px;
+      }
+    }
+    &__trust {
+      article {
+        & > img {
+          width: 416px;
+        }
+      }
+    }
+  }
+}
+
+@include generateStyleByBreakpoint("lg") {
+  .page-main {
+    a {
+      &::before {
+        margin-left: 14px;
+        font-size: 1.5rem;
+      }
+    }
+    &__banner {
+      height: 432px;
+    }
+    &__esop {
+      img {
+        width: 500px;
+      }
+    }
+    &__trust {
+      article {
+        & > img {
+          width: 600px;
+        }
+      }
+    }
+  }
 }
