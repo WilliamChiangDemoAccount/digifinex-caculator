@@ -1,40 +1,40 @@
 {
   "pages": {
     "main": {
-      "menu": "首頁",
+      "menu": "Home Page",
       "banner": {
-        "title": "柏盛集團",
-        "subtitle": "股權激勵計劃和信託專業服務供應商"
+        "title": "PS Group",
+        "subtitle": "Professional ESOP and Trust Services Provider"
       },
       "esop": {
         "system": {
-          "title": "股權激勵管理系統",
-          "content": "柏盛集團股權激勵系統功能完善，功能覆蓋授予數據管理，在線簽署協議，行權計稅服務，規則管理，出金管理，財務報表支持等。",
-          "button": "瞭解更多"
+          "title": "ESOP Management System",
+          "content": "PS Group's ESOP Management system has multiple functions, covering grant data management, agreements online signing, exercise and tax services, rule management, withdrawal services, financial statement support, etc.",
+          "button": "Learn More"
         },
         "service": {
-          "title": "股權激勵運營服務",
-          "content": "柏盛集團擁有信託、券商、系統服務等期權的牌照或資質，客戶無須採購多方單一服務商，解決傳統服務模式下工作量大、溝通成本高的痛點；柏盛集團的骨干人員均有在股權激勵管理行業10年以上的從業經驗，能快速響應客戶需求，靈活定制解決方案，如製定相關的運營規則，並關注計稅和外管報備等相關法規政策的變化和執行。",
-          "button": "瞭解更多"
+          "title": "ESOP Management Services",
+          "content": "PS Group has the licenses and qualification of trust, brokerage, system service and other services. Customers do not need to purchase multi-party single service provider, which gives customers ideal solution compared to heavy workload and high communication cost under the traditional service mode. The key staff of PS Group have more than 10 years of experience in the ESOP management industry. PS team provide quick respond and flexibly customized solutions, such as formulating relevant operating rules, and pay attention to the changes and implementation of relevant regulations and policies such as taxation and administration of foreign exchange.",
+          "button": "Learn More"
         }
       },
       "trust": {
-        "title": "信託服務",
+        "title": "Trust Services",
         "enterprise": {
-          "title": "企業服務",
-          "content": "柏盛集團主要為企業提供股權激勵信託，有境外架構的擬上市公司、上市公司或H股公司，可基於各類管理需求設立股權激勵信託，協助公司管理公司的股權激勵計劃。​",
-          "button": "瞭解更多"
+          "title": "Enterprise Services",
+          "content": "PS Group mainly provides ESOP trust services for enterprises. Companies with overseas structure to be listed, listed or H-share companies can set up ESOP trusts based on various management needs to assist their ESOP plans management.",
+          "button": "Learn More"
         },
         "personal": {
-          "title": "私人服務",
+          "title": "Private Services",
           "familyTrust": {
-            "title": "家族信託",
-            "content": "柏盛集團為委託人設立家族信託，委託人將部分資產轉入信託，可實現資產保全、資產整合、稅務籌劃和家族傳承等信託目的。​"
+            "title": "Family Trust",
+            "content": "PS Group sets up family trusts for settlors, and the settlors transfers part of their personal assets into the trusts for various trust purposes such as asset preservation, asset integration, tax planning and family inheritance."
           },
           "familyOffice": {
-            "title": "家族辦公室",
-            "content": "柏盛集團協助客戶設計和構建家族辦公室，提供全方位的家族綜合服務，優化客戶家族的治理，並加強家族財富的風險規劃和投資管理，建立家族文化傳承，達成家族團結共識。",
-            "button": "瞭解更多"
+            "title": "Family Office",
+            "content": "PS Group assists clients in the design and construction of family offices, provides comprehensive family services, optimizes the governance of family, improves the risk planning and investment management of family wealth, establishes family cultural inheritance, and strengthens family cohesion.",
+            "button": "Learn More"
           }
         }
       }
