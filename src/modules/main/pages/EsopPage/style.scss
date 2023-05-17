@@ -65,12 +65,14 @@
   .page-esop {
     &__service {
       margin-top: 52px;
-      margin-bottom: -75px;
+      padding-bottom: 36px;
       & > ul > li {
-        padding: 50px 34px 0;
+        background-size: cover;
+        padding: 50px 34px;
         min-width: 240px;
         max-width: 240px;
-        height: 300px;
+        min-height: 300px;
+        height: auto;
         img {
           width: 100px;
         }
@@ -83,20 +85,22 @@
             }
           }
         }
+
         &:nth-of-type(2) {
           padding-left: 16px;
           padding-right: 16px;
-          transform: translateY(-75px);
+          margin-top: 35px;
         }
+
         &:nth-of-type(3) {
-          transform: translateY(-126px);
+          margin-top: 56px;
         }
+
         &:nth-of-type(odd) {
           align-self: flex-start;
           background-image: url("../../../../assets/img/esop/service-bg-dark-mobile.svg");
         }
         &:nth-of-type(even) {
-          height: 360px;
           align-self: flex-end;
           background-image: url("../../../../assets/img/esop/service-bg-light-mobile.svg");
         }
