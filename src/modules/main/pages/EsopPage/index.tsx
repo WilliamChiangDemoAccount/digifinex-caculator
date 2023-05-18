@@ -36,9 +36,9 @@ const EsopPage = () => {
                         </Expand>
                     </li>
                     <li className='pt-4 pt-sm-5 pt-lg-6'>
-                        <Expand title='pages.esop.stable-system.online-esop.title'>
+                        <Expand title='pages.esop.stable-system.custimize.title'>
                             <p className='font-sm font-lg-lg text-gray-2 mt-2 mt-sm-3 mt-lg-4 pe-0 pe-sm-16 pe-lg-20_5'>
-                                {t('pages.esop.stable-system.online-esop.content')}
+                                {t('pages.esop.stable-system.custimize.content')}
                             </p>
                         </Expand>
                     </li>
