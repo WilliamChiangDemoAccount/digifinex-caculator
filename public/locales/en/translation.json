@@ -3,8 +3,8 @@
     "main": {
       "menu": "Home Page",
       "banner": {
-        "title": "PS Group",
-        "subtitle": "Professional ESOP and Trust Services Provider"
+        "title": "PS GROUP",
+        "subtitle": "Proffessional ESOP and Trust Services Provider"
       },
       "esop": {
         "system": {
@@ -40,11 +40,11 @@
       }
     },
     "esop": {
-      "menu": "ESOP",
+      "menu": "ESOP Services",
       "introduction": "Introduction",
       "banner": {
         "title-1": "PS Group",
-        "title-2": "One-Stop ESOP management platform"
+        "title-2": "One-Stop ESOP Management Solution"
       },
       "stable-system": {
         "title": "A Stable and Powerful Management System",
@@ -53,7 +53,7 @@
           "content": "After determining the incentive plan and the beneficiaries, you can use the one-stop platform of PS Group to complete comprehensive online processing, such as grant document signing, information change, exercise transaction, tax calculation and income repatriation."
         },
         "detail": {
-          "title": "Focus on key points, Attention to details",
+          "title": "Focus on Key Points, Attention to Details",
           "content-1": "Online Signing Function: Supports efficient and convenient online signing, downloading agreement related documents in multiple links such as granting and exercising rights.",
           "content-2": "Exercising Transaction Management: Diversified management can be carried out on the quantity, price, time, exercise transaction method and other elements of the designated object in the exercise transaction from multiple latitudes such as participants, grant, and ownership.",
           "content-3": "Calculation and Reporting of Amortization Expenses: Based on SBC, amortization of expenses and generation of disclosure reports in compliance with GAAP and IFRS."
@@ -64,7 +64,7 @@
         }
       },
       "service": {
-        "title": "面面俱到的貼心服務",
+        "title": "The Considerate Service",
         "participent": {
           "title": "Participant Services",
           "content-1": "Detailed and convenient online guide",
@@ -78,16 +78,16 @@
           "content-3": "Based on extensive experience and professional knowledge to give advice on specific scenarios"
         },
         "manager": {
-          "title": "Executivese Services",
+          "title": "Executives Services",
           "content-1": "Form 144 Filing",
           "content-2": "10b5-1 Plan",
           "content-3": "Algorithmic order and Trader services"
         }
       },
       "keep-notice": {
-        "title": "Continued focus on relevant markets <1></1> and professional fields",
+        "title": "Continued Focus on Relevant Markets <1></1> and Professional Fields",
         "forex": {
-          "title": "Foreign exchange settlement process and flow management",
+          "title": "Foreign Exchange Settlement Process and Flow Management",
           "content": "SAFE Circular No. 7 report preparation"
         },
         "tax": {
@@ -109,14 +109,14 @@
     "trust": {
       "menu": "Trust Services",
       "banner": {
-        "title": "PS Trust",
-        "subtitle": "Expertise you can trust, results you can depend on."
+        "title": "PS TRUST",
+        "subtitle": "Expertise You Can Trust, Results You Can Depend On"
       },
       "skipService": "Skip service introduction",
       "service": {
         "enterprise": "Corporate Services",
         "optionAwardTrust": "ESOP Trust",
-        "personal": "Personal services",
+        "personal": "Personal Services",
         "familyTrust": "Family Trust",
         "familyTrustIntroduction": "The settlor transfers the ownership of the property to the trustee through a trust arrangement. Based on the agreement of trust law, the legal ownership and beneficial ownership of the property are separated, and the trustee manages and distributes the property according to the interests of the beneficiaries, so as to achieve proper inheritance, asset protection, privacy and security purposes.",
         "keepRightTrust": "Reserved Powers Trust",
@@ -224,7 +224,7 @@
           "content": "The members of PS team are from well-known consulting and financial institutions with experience in providing customized  trust solutions for hundreds of companies covering well-known enterprises in various industries."
         },
         "advance-4": {
-          "title": "Regulatory compliance",
+          "title": "Regulatory Compliance",
           "content": "PS Trust Limited is a trust company with company service provider license (TCSP: TC006201) under the Hong Kong Anti-Money Laundering and Counter-Terrorism Financing Ordinance (Chapter 615)."
         }
       },
