@@ -14,6 +14,7 @@ export const useWindowSize = (): WindowSize => {
         width: window.innerWidth,
         breakpoint: getBreakpoint(window.innerWidth)
     });
+    
     useEffect(() => {
         const callback = () => {
             const { height, width } = document.getElementsByTagName('html')[0].getBoundingClientRect();
@@ -21,7 +22,7 @@ export const useWindowSize = (): WindowSize => {
         }
         window.addEventListener('resize', callback);
         return () => window.removeEventListener('resize', callback);
-    }, []);
+    }, [getBreakpoint]);
 
     return windowRect;
 }

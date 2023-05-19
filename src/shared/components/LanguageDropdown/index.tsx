@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import './style.scss';
 import { useEffect, useMemo, useState } from 'react';
 import { useRef } from 'react';
-import { Direction, Language } from '@shared/enums/common.enum';
+import { Direction, Language, LocalStorageItem } from '@shared/enums/common.enum';
 import { IBaseComponentProp } from '@shared/interfaces/base-component.interface';
 
 interface Props extends IBaseComponentProp {
@@ -56,6 +56,8 @@ const LanguageDropdown = ({ classes, direction = Direction.Bottom }: Props) => {
                     className={`font-xs-lg font-lg-xl py-0_5 px-5_5 text-nowrap user-select-none ${language === i18n.language ? 'bg-orange-1_20 text-orange' : 'text-gray-2'} d-flex justify-content-center align-items-center`}
                     onClick={() => {
                         setExpand(false);
+                        document.getElementsByTagName('html')[0].setAttribute('lang', language);
+                        localStorage.setItem(LocalStorageItem.Language, language);
                         i18n.changeLanguage(language);
                     }}
                 >
