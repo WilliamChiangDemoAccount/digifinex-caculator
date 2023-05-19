@@ -5,8 +5,9 @@ import Logo from 'assets/img/logo.png';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LanguageDropdown from '@shared/components/LanguageDropdown';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Direction } from '@shared/enums/common.enum';
+import { useDynamicBoxSize } from '@shared/hooks/useDynamicBoxSize';
 
 
 const Header = () => {
@@ -14,10 +15,16 @@ const Header = () => {
     const navigate = useNavigate();
     const { t } = useTranslation();
     const [isMobileMenuOpen, setMenuOpen] = useState(false);
-    useEffect(() => isMobileMenuOpen ? document.children[0].classList.add('overflow-hidden') :
+    const headerRef = useRef<HTMLElement | null>(null);
+    const { height: mobileMenuHeight } = useDynamicBoxSize({ excludesRef: [headerRef] });
+
+    useEffect(() => isMobileMenuOpen ?
+        document.children[0].classList.add('overflow-hidden') :
         document.children[0].classList.remove('overflow-hidden'), [isMobileMenuOpen]);
+
     return <>
         <header
+            ref={headerRef}
             data-testid='header'
             className='bg-white-1 component-header py-3_5 py-sm-4 py-lg-6 layer-important'
         >
@@ -39,7 +46,10 @@ const Header = () => {
                                     className='component-header__item d-flex flex-row align-items-center justify-content-center'
                                 >
                                     <NavLink
-                                        className={`text-black-1--hover font-xs-lg font-lg-xl border-0 ${isCurrentPage ? 'text-black-1 border-bottom-2 border-black-1' : 'text-gray-2'} `}
+                                        className={`text-black-1--hover font-xs-lg font-lg-xl border-0 ${isCurrentPage ?
+                                                'text-black-1 border-bottom-2 border-black-1 fw-bold' :
+                                                'text-gray-2'
+                                            }`}
                                         to={path}
                                     >
                                         {t(i18n)}
@@ -58,7 +68,10 @@ const Header = () => {
         </header>
         {
             isMobileMenuOpen &&
-            <section className='d-flex flex-column justify-content-between align-items-start d-sm-none border-top-1 bg-white-1 border-gray-1 vw-100 layer-canvus position-fixed overflow-auto component-header__mobile-menu'>
+            <section
+                className='d-flex flex-column justify-content-between align-items-start d-sm-none border-top-1 bg-white-1 border-gray-1 vw-100 layer-canvus position-fixed overflow-auto component-header__mobile-menu'
+                style={{ height: mobileMenuHeight }}
+            >
                 <ul className='w-100'>
                     {
                         routeMap.get(ProductModule.Main)!.children!.map(({ i18n, path }) => <li
