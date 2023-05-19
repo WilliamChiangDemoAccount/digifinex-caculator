@@ -139,6 +139,7 @@
           width: 160px;
         }
         & > ul {
+          max-width: 272px;
           & > li {
             &::before {
               content: url("../../../../assets/img/esop/list-icon-table.svg");
@@ -149,21 +150,13 @@
         }
         &:first-of-type {
           transform: translateY(-118px);
-          & > ul {
-            padding-left: 70px;
-          }
         }
         &:nth-of-type(2) {
+          height: 384px;
           transform: translateX(-12px) translateY(-77px);
-          & > ul {
-            padding-left: 1.5rem;
-          }
         }
         &:nth-of-type(3) {
           transform: translateX(-24px) translateY(-155px);
-          & > ul {
-            padding-left: 5rem;
-          }
         }
         &:nth-of-type(odd) {
           background-image: url("../../../../assets/img/esop/service-bg-dark-table.svg");
@@ -175,11 +168,9 @@
     }
     &__market {
       & > div {
-        padding: 0 44px 158px 112px;
-        h2,
-        ul {
-          flex-basis: 50%;
-          flex-grow: 1;
+        padding: 0 64px 186px 124px;
+        h2 {
+          max-width: 320px;
         }
       }
     }
@@ -215,6 +206,7 @@
           width: 200px;
         }
         & > ul {
+          max-width: 318px;
           & > li {
             &::before {
               content: url("../../../../assets/img/esop/list-icon.svg");
@@ -225,21 +217,13 @@
         }
         &:first-of-type {
           transform: translateY(-302px);
-          & > ul {
-            padding-left: 5rem;
-          }
         }
         &:nth-of-type(2) {
+          height: 584px;
           transform: translateX(-30px) translateY(-241px);
-          & > ul {
-            padding-left: 3.125rem;
-          }
         }
         &:nth-of-type(3) {
           transform: translateX(-60px) translateY(-330px);
-          & > ul {
-            padding-left: 6.25rem;
-          }
         }
         &:nth-of-type(odd) {
           background-image: url("../../../../assets/img/esop/service-bg-dark.svg");
@@ -251,7 +235,10 @@
     }
     &__market {
       & > div {
-        padding: 0 122px 316px 214px;
+        padding: 0 120px 316px 200px;
+        h2 {
+          max-width: 440px;
+        }
       }
     }
   }

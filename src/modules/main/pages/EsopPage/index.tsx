@@ -15,7 +15,7 @@ const EsopPage = () => {
         </section>
         <section className='py-12 py-sm-20 px-5 px-sm-5_5 px-lg-27 d-flex flex-column align-items-center'>
             <h2 className='text-center'>{t('pages.esop.stable-system.title')}</h2>
-            <div className='mt-7 mt-sm-10 mt-lg-15 px-4 px-sm-8 px-lg-10 py-6 py-sm-11_5 py-lg-17 bg-white-1 border-radius-sm d-flex flex-column align-items-end position-relative page-esop__stable-system'>
+            <div className='mt-7 mt-sm-10 mt-lg-15 px-4 px-sm-8 px-lg-10 py-6 py-sm-15 py-lg-20 bg-white-1 border-radius-sm d-flex flex-column align-items-end position-relative page-esop__stable-system'>
                 <ul>
                     <li className='border-bottom-1 border-gray-1 pb-4 pb-sm-5 pb-lg-6'>
                         <Expand title='pages.esop.stable-system.online-esop.title'>
@@ -64,7 +64,7 @@ const EsopPage = () => {
                         <p className='text-blue-2 text-center mb-1 mb-sm-0 font-lg font-sm-xl font-lg-3xl fw-bold'>
                             {t(`pages.esop.service.${service}.title`)}
                         </p>
-                        <ul className='pe-sm-3 pe-lg-7_5'>
+                        <ul className='mx-auto'>
                             {
                                 [1, 2, 3].map(order =>
                                     <li
@@ -80,9 +80,9 @@ const EsopPage = () => {
                 }
             </ul>
         </section>
-        <section className='page-esop__market bg-white-1 position-relative pt-7 pt-sm-19 pt-lg-30'>
-            <div className='d-flex flex-column flex-sm-row align-items-start'>
-                <h2>
+        <section className='page-esop__market bg-white-1 position-relative pt-7 pt-sm-19 pt-lg-30 d-flex'>
+            <div className='d-flex flex-column flex-sm-row align-items-start justify-content-center'>
+                <h2 className='me-0 me-sm-20'>
                     <Trans
                         i18nKey={'pages.esop.keep-notice.title'}
                         components={{ 1: <br /> }}

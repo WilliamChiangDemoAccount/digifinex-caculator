@@ -28,7 +28,7 @@ const Expand = ({
         setExpand(forceExpand);
     }, [forceExpand]);
     return <>
-        <div className={`d-flex flex-row align-items-center justify-content-between ${classes}`}>
+        <div className={`d-flex flex-row align-items-start justify-content-between ${classes}`}>
             <p className='fw-bold font-sm font-sm-xl font-lg-3xl text-blue-2'>{t(title)}</p>
             <button
                 onClick={() => {
@@ -41,7 +41,7 @@ const Expand = ({
                     transform: `rotate(${isExpand ? 0 : -180}deg)`
                 }}
             >
-                <em className='icon-arrow_up fw-bold text-blue-2 font-xs font-sm-xl font-md-4xl'></em>
+                <em className='icon-arrow_up fw-bold text-blue-2 font-xs font-sm-xl font-lg-4xl'></em>
             </button>
         </div>
         {isExpand && children}
