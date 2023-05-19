@@ -9,6 +9,19 @@ interface Props extends IBaseComponentProp {
     direction?: Direction.Top | Direction.Bottom
 }
 
+/**
+ * 設置網站語系
+ * @param language 目標語系
+ * @param webTitle 翻譯後的網站標題
+ */
+export const setHtmlLang = (language: Language, webTitle: string) => {
+    const rootElement = document.getElementsByTagName('html')[0];
+    const titleElement = rootElement.children[0].getElementsByTagName('title')[0];
+    localStorage.setItem(LocalStorageItem.Language, language);
+    rootElement.setAttribute('lang', language);
+    titleElement.textContent = webTitle;
+}
+
 const LanguageDropdown = ({ classes, direction = Direction.Bottom }: Props) => {
     const { t, i18n } = useTranslation();
     const [expand, setExpand] = useState(false);
@@ -20,7 +33,6 @@ const LanguageDropdown = ({ classes, direction = Direction.Bottom }: Props) => {
             listener = window.addEventListener('click', ({ target }) => {
                 if (!dropdown.current?.contains(target as HTMLElement)) {
                     setExpand(false);
-
                 }
             });
         }
@@ -56,9 +68,8 @@ const LanguageDropdown = ({ classes, direction = Direction.Bottom }: Props) => {
                     className={`font-xs-lg font-lg-xl py-0_5 px-5_5 text-nowrap user-select-none ${language === i18n.language ? 'bg-orange-1_20 text-orange' : 'text-gray-2'} d-flex justify-content-center align-items-center`}
                     onClick={() => {
                         setExpand(false);
-                        document.getElementsByTagName('html')[0].setAttribute('lang', language);
-                        localStorage.setItem(LocalStorageItem.Language, language);
                         i18n.changeLanguage(language);
+                        setHtmlLang(language, t('title'));
                     }}
                 >
                     {t(`languages.${language}`)}

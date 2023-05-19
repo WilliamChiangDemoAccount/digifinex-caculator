@@ -12,11 +12,13 @@ import { useBreadcrumb } from "@shared/hooks/useBreadcrumb";
 import Breadcrumb from "@shared/components/Breadcrumb";
 import { Language, LocalStorageItem } from "@shared/enums/common.enum";
 import { useTranslation } from "react-i18next";
+import { setHtmlLang } from "@shared/components/LanguageDropdown";
 
 
 function App() {
   const { configs } = useBreadcrumb();
-  const { i18n: { changeLanguage } } = useTranslation();
+  const { i18n: { changeLanguage }, t } = useTranslation();
+
   useEffect(() => {
     if (!localStorage.getItem(LocalStorageItem.Language)) {
       const defaultLan = /^zh-/.test(navigator.language) ?
@@ -26,7 +28,10 @@ function App() {
       localStorage.setItem(LocalStorageItem.Language, defaultLan);
     }
     changeLanguage(localStorage.getItem(LocalStorageItem.Language)!);
-  }, [changeLanguage]);
+    setHtmlLang(localStorage.getItem(LocalStorageItem.Language)! as Language, t('title'));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return <>
     <Header />
     <main className="d-flex flex-column">
