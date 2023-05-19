@@ -56,11 +56,11 @@ body {
   overflow-anchor: none;
   overflow: hidden auto;
   font-family: "Open sans", "SF pro" !important;
-  &:lang(zh-CN) {
+  &:lang(zh-cn) {
     font-family: "Noto Sans SC", "Noto Sans TC", "Microsoft YaHei",
       "Microsoft jhenghei" !important;
   }
-  &:lang(zh-HK) {
+  &:lang(zh-tw) {
     font-family: "Noto Sans TC", "PingFang TC", "Microsoft jhenghei" !important;
   }
 }

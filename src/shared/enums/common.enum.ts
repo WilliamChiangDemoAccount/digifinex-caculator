@@ -46,3 +46,7 @@ export enum BreakPoint {
   Tablet = 'table',
   Desktop = 'desktop'
 }
+
+export enum LocalStorageItem {
+  Language = 'language'
+}

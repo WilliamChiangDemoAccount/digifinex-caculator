@@ -19,7 +19,7 @@ const MainPage = () => {
             <h1 className='text-white-1 text-center'>{t('pages.main.banner.subtitle')}</h1>
         </section>
         <section className='pt-12 pt-sm-20 px-4 px-sm-5_5 px-lg-12 page-main__esop'>
-            <h2 className='text-orange-1 text-center font-xl font-sm-6xl font-lg-7xl'>{t('pages.main.esop.system.title')}</h2>
+            <h2 className='text-orange-1 text-center font-xl font-sm-6xl font-lg-7xl'>{t('pages.main.esop.title')}</h2>
             <div className='bg-white-1 border-radius-sm w-100 py-5 py-sm-15 px-4 px-sm-6_5 px-lg-15 mt-7 mt-sm-10 d-flex flex-column-reverse flex-sm-row align-items-center'>
                 <img
                     className='mt-13 mt-sm-0 me-0 me-sm-3_5 me-lg-9'

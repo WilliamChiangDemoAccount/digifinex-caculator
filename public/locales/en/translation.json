@@ -1,4 +1,5 @@
 {
+  "title":"PS GROUP",
   "pages": {
     "main": {
       "menu": "Home Page",
@@ -7,6 +8,7 @@
         "subtitle": "Proffessional ESOP and Trust Services Provider"
       },
       "esop": {
+        "title": "ESOP Management System",
         "system": {
           "title": "ESOP Management System",
           "content": "PS Group's ESOP Management system has multiple functions, covering grant data management, agreements online signing, exercise and tax services, rule management, withdrawal services, financial statement support, etc.",
@@ -104,7 +106,7 @@
       "menu": "About us",
       "introduction": "About PS Group",
       "title": "Learn PS Group",
-      "content": "Based in Hong Kong, PS Group is a professional equity incentive and trust services provider under Valuable Capital Limited. Leveraging the advantages of the Hong Kong International Financial Center and the group's strong technology research and development capabilities, PS Group is committed to providing customers with higher quality financial value-added services. PS Group integrates licensed professional institutions in various related fields and solves pain points in cross-border services through comprehensive and coordinated service teams in Hong Kong, Taipei, Beijing, Shanghai, Shenzhen, Changsha, Singapore, and other locations. With rich industry experience, agile response speed, and professional service level, PS Group provides customers with comprehensive corporate services that are forward-looking, flexible, and operational, including equity incentives, offshore trusts, digital management of corporate capital, and capital market communication. Valuable Capital Limited is a leading technology financial comprehensive enterprise and has provided efficient, accurate, comprehensive, and high-quality services to millions of retail individuals, institutions, and corporate customers worldwide. Currently, the group has established branches in mainland China, Hong Kong, Singapore, New Zealand, the United States, and Saudi Arabia, and its services cover mainstream financial markets worldwide. The subsidiaries of Valuable Capital Limited hold licenses numbered 1, 2, 4, 5, and 9 issued by the Hong Kong Securities and Futures Commission (CE No.: AUL711), which qualify them to provide securities trading, futures contract trading, advice on securities, advice on futures contracts, and asset management."
+      "content": "<1>Based in Hong Kong, PS Group is a professional equity incentive and trust services provider under Valuable Capital Limited. Leveraging the advantages of the Hong Kong International Financial Center and the group's strong technology research and development capabilities, PS Group is committed to providing customers with higher quality financial value-added services. PS Group integrates licensed professional institutions in various related fields and solves pain points in cross-border services through comprehensive and coordinated service teams in Hong Kong, Taipei, Beijing, Shanghai, Shenzhen, Changsha, Singapore, and other locations. With rich industry experience, agile response speed, and professional service level, PS Group provides customers with comprehensive corporate services that are forward-looking, flexible, and operational, including equity incentives, offshore trusts, digital management of corporate capital, and capital market communication.</1><2>Valuable Capital Limited is a leading technology financial comprehensive enterprise and has provided efficient, accurate, comprehensive, and high-quality services to millions of retail individuals, institutions, and corporate customers worldwide. Currently, the group has established branches in mainland China, Hong Kong, Singapore, New Zealand, the United States, and Saudi Arabia, and its services cover mainstream financial markets worldwide.</2><2>The subsidiaries of Valuable Capital Limited hold licenses numbered 1, 2, 4, 5, and 9 issued by the Hong Kong Securities and Futures Commission (CE No.: AUL711), which qualify them to provide securities trading, futures contract trading, advice on securities, advice on futures contracts, and asset management.</2>"
     },
     "trust": {
       "menu": "Trust Services",

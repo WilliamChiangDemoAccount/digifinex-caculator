@@ -2,11 +2,24 @@ import { useTranslation } from 'react-i18next';
 import './style.scss';
 import { useEffect, useMemo, useState } from 'react';
 import { useRef } from 'react';
-import { Direction, Language } from '@shared/enums/common.enum';
+import { Direction, Language, LocalStorageItem } from '@shared/enums/common.enum';
 import { IBaseComponentProp } from '@shared/interfaces/base-component.interface';
 
 interface Props extends IBaseComponentProp {
     direction?: Direction.Top | Direction.Bottom
+}
+
+/**
+ * 設置網站語系
+ * @param language 目標語系
+ * @param webTitle 翻譯後的網站標題
+ */
+export const setHtmlLang = (language: Language, webTitle: string) => {
+    const rootElement = document.getElementsByTagName('html')[0];
+    const titleElement = rootElement.children[0].getElementsByTagName('title')[0];
+    localStorage.setItem(LocalStorageItem.Language, language);
+    rootElement.setAttribute('lang', language);
+    titleElement.textContent = webTitle;
 }
 
 const LanguageDropdown = ({ classes, direction = Direction.Bottom }: Props) => {
@@ -20,7 +33,6 @@ const LanguageDropdown = ({ classes, direction = Direction.Bottom }: Props) => {
             listener = window.addEventListener('click', ({ target }) => {
                 if (!dropdown.current?.contains(target as HTMLElement)) {
                     setExpand(false);
-
                 }
             });
         }
@@ -57,6 +69,7 @@ const LanguageDropdown = ({ classes, direction = Direction.Bottom }: Props) => {
                     onClick={() => {
                         setExpand(false);
                         i18n.changeLanguage(language);
+                        setHtmlLang(language, t('title'));
                     }}
                 >
                     {t(`languages.${language}`)}
