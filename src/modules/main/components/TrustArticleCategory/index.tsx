@@ -42,7 +42,7 @@ const TrustArticleCategory = ({
     return <>
         <li className={`mt-10 d-flex fw-bold flex-row align-items-start ${hideBorder ?
             'compnent-trust-article-category--last bg-white-2__after' : ''} ${isActive ? 'bg-blue-2__before text-blue-2' :
-                'bg-gray-1__before text-gray-1'} ${classes ?? ''}`}
+                hideArrow ? 'bg-blue-1__before text-blue-1' : 'bg-gray-1__before text-gray-1'} ${classes ?? ''}`}
         >
             <span
                 className={`d-flex flex-row align-items-center ${hideArrow ? 'cursor-pointer' : ''}`}

@@ -21,7 +21,7 @@ const FamilyTrustArticle: ETrustArticle[] = [
 const TrustArticle = ({ activeArticle }: Props) => {
     const { t } = useTranslation();
     return <>
-        {FamilyTrustArticle.includes(activeArticle) && <p className='font-lg text-gray-2 mb-25 compnent-trust-article__hint'>{t('pages.trust.service.familyTrustIntroduction')}</p>}
+        {FamilyTrustArticle.includes(activeArticle) && <p className='font-lg text-gray-2 mt-sm-23 mt-lg-47_5 mb-25 compnent-trust-article__hint'>{t('pages.trust.service.familyTrustIntroduction')}</p>}
         {activeArticle === ETrustArticle.RightUsage ? <section className='bg-white-1 px-8 px-lg-12_5 py-10 py-lg-20 border-radius-sm compnent-trust-article__usage'>
             <h3 className='text-blue-1 font-xl'>{t('pages.trust.article.rightUsage.label')}</h3>
             <ul className='d-flex flex-row flex-wrap'>

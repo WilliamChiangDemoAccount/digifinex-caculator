@@ -2,7 +2,7 @@ import ContentLayout from '@shared/components/ContentLayout';
 import './style.scss';
 import { useTranslation } from 'react-i18next';
 import TrustArticleList from '@modules/main/components/TrustArticleList';
-import { useRef } from 'react';
+import { useMemo, useRef } from 'react';
 import TrustArticleListMobile from '@modules/main/components/TrustArticleListMobile';
 import advance1Svg from 'assets/img/trust/trust-advance-1.svg';
 import advance2Svg from 'assets/img/trust/trust-advance-2.svg';
@@ -13,11 +13,14 @@ import securityDataSvg from 'assets/img/trust/security-data.svg';
 import customerMedicalSvg from 'assets/img/trust/customer-medical.svg';
 import customerTechSvg from 'assets/img/trust/customer-technology.svg';
 import customerNetworkSvg from 'assets/img/trust/customer-network.svg';
+import { useWindowSize } from '@shared/hooks/useWindowSize';
 
 const TrustPage = () => {
     const { t } = useTranslation();
+    const { width } = useWindowSize();
     const service = useRef<HTMLDivElement>(null);
     const advance = useRef<HTMLDivElement>(null);
+    const headerHeight: number = useMemo(() => width < 1440 ? 60 : 100, [width]);
     return <ContentLayout classes='page-trust' testId="TrustPage">
         <section className='d-flex flex-column justify-content-start justify-content-sm-center px-5 pt-12 pb-14 page-trust__banner'>
             <h1 className='text-orange-1 text-start text-sm-center'>{t('pages.trust.banner.title')}</h1>
@@ -26,20 +29,22 @@ const TrustPage = () => {
         <section ref={service} className='d-none d-sm-block pt-sm-20 pt-lg-30'>
             <TrustArticleList
                 goTop={(offset?: number) => {
-                    window.scrollTo({
-                        top: offset ?? service.current?.offsetTop,
-                        behavior: 'smooth'
-                    });
+                    if (width >= 768) {
+                        window.scrollTo({
+                            top: offset ?? service.current?.offsetTop! - headerHeight,
+                            behavior: 'smooth'
+                        });
+                    }
                 }}
                 onSkip={() => window.scrollTo({
-                    top: advance.current?.offsetTop,
+                    top: advance.current?.offsetTop! - headerHeight,
                     behavior: 'smooth'
                 })} />
         </section>
         <section className='d-block d-sm-none px-5 pt-10 pb-20'>
             <TrustArticleListMobile
                 onSkip={() => window.scrollTo({
-                    top: advance.current?.offsetTop,
+                    top: advance.current?.offsetTop! - headerHeight,
                     behavior: 'smooth'
                 })}
             />

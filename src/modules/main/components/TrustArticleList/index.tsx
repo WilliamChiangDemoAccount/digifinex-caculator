@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { TrustArticle, TrustService } from '@shared/enums/trust.enum';
@@ -6,6 +6,7 @@ import Category from '@modules/main/components/TrustArticleCategory';
 import Article from '@modules/main/components/TrustArticle';
 
 import './style.scss';
+import { useWindowSize } from '@shared/hooks/useWindowSize';
 
 interface Props {
     onSkip: () => void;
@@ -18,7 +19,9 @@ interface Props {
 
 const TrustArticleList = ({ onSkip, goTop }: Props) => {
     const { t } = useTranslation();
+    const { width } = useWindowSize();
     const { serviceType } = useParams();
+    const headerHeight: number = useMemo(() => width < 1440 ? 60 : 100, [width]);
     const [isOptionTrustExpand, setOptionTrustExpand] = useState(true);
     const [isFamilyTrustExpand, setFamilyTrustExpand] = useState(false);
     const enterpriseService = useRef<HTMLLIElement>(null);
@@ -38,9 +41,9 @@ const TrustArticleList = ({ onSkip, goTop }: Props) => {
         setTimeout(() => goTop((enterpriseArticles.includes(article) ?
             enterpriseService.current!.offsetTop :
             personalService.current!.offsetTop
-        ) - 100), 0);
+        ) - headerHeight), 0);
         setArtcleActive(article);
-    }, [setArtcleActive, goTop]);
+    }, [setArtcleActive, goTop, headerHeight]);
 
     const activeEnterprise = useCallback((article: TrustArticle) => {
         switchArticle(article);
@@ -71,7 +74,7 @@ const TrustArticleList = ({ onSkip, goTop }: Props) => {
         <ul className='compnent-trust-article-list__article-list border-gray-1'>
             <li
                 ref={enterpriseService}
-                className={`d-flex flex-row fw-bold ${activeService === TrustService.Enterprise ? 'bg-orange-1__before text-orange-1' : 'bg-gray-1__before text-gray-1'} compnent-trust-article-list__topic`}>
+                className={`d-flex flex-row fw-bold white-space-nowrap ${activeService === TrustService.Enterprise ? 'bg-orange-1__before text-orange-1' : 'bg-gray-1__before text-gray-1'} compnent-trust-article-list__topic`}>
                 {t('pages.trust.service.enterprise')}
             </li>
             <Category
@@ -84,7 +87,7 @@ const TrustArticleList = ({ onSkip, goTop }: Props) => {
                 onExpand={() => setOptionTrustExpand(!isOptionTrustExpand)} />
             <li
                 ref={personalService}
-                className={`mt-10 d-flex flex-row fw-bold ${activeService === TrustService.Personal ? 'bg-orange-1__before text-orange-1' : 'bg-gray-1__before text-gray-1'} compnent-trust-article-list__topic`}>
+                className={`mt-10 d-flex flex-row fw-bold white-space-nowrap ${activeService === TrustService.Personal ? 'bg-orange-1__before text-orange-1' : 'bg-gray-1__before text-gray-1'} compnent-trust-article-list__topic`}>
                 {t('pages.trust.service.personal')}
             </li>
             <Category
