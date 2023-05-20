@@ -19,14 +19,31 @@ interface Props extends IBaseComponentProp {
      */
     activeArticle: TrustArticle;
     hideArrow?: boolean;
+    /**
+     * 是否隱藏左側虛線
+     */
+    hideBorder?: boolean;
 }
 
-const TrustArticleCategory = ({ label, children, onExpand, onArticleClick, isExpand, articles, activeArticle, classes, hideArrow = false }: Props) => {
+const TrustArticleCategory = ({
+    label,
+    children,
+    onExpand,
+    onArticleClick,
+    isExpand,
+    articles,
+    activeArticle,
+    classes,
+    hideArrow = false,
+    hideBorder = false
+}: Props) => {
     const { t } = useTranslation();
     const isActive = useMemo(() => articles.some(article => article === activeArticle), [articles, activeArticle]);
     return <>
-        <li className={`mt-10 d-flex fw-bold flex-row align-items-start  ${isActive ? 'bg-blue-2__before text-blue-2' :
-            'bg-gray-1__before text-gray-1'}  ${classes ?? ''}`}>
+        <li className={`mt-10 d-flex fw-bold flex-row align-items-start ${hideBorder ?
+            'compnent-trust-article-category--last bg-white-2__after' : ''} ${isActive ? 'bg-blue-2__before text-blue-2' :
+                'bg-gray-1__before text-gray-1'} ${classes ?? ''}`}
+        >
             <span
                 className={`d-flex flex-row align-items-center ${hideArrow ? 'cursor-pointer' : ''}`}
                 onClick={() => {
@@ -47,7 +64,9 @@ const TrustArticleCategory = ({ label, children, onExpand, onArticleClick, isExp
         {isExpand && (children ?? articles.map((article, index) =>
             <li
                 key={article}
-                className={`compnent-trust-article-list__article ${index === (articles.length - 1) ? 'compnent-trust-article-list__article--last' : ''} mt-10 cursor-pointer text-gray user-select-none ${activeArticle === article ? 'text-blue-1 fw-bold' : 'text-gray-2'}`}
+                className={`compnent-trust-article-list__article ${hideBorder ?
+                    'compnent-trust-article-category--last bg-white-2__after' : ''} ${index === (articles.length - 1) ? 'pb-50' : ''} pt-10 cursor-pointer text-gray user-select-none ${activeArticle === article ?
+                        'text-blue-1 fw-bold' : 'text-gray-2'}`}
                 onClick={() => {
                     if (onArticleClick) {
                         onArticleClick(article);

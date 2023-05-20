@@ -161,6 +161,7 @@ const TrustArticleList = ({ onSkip, goTop }: Props) => {
                 />
             </Category>
             <Category
+                hideBorder
                 label={'pages.trust.service.familyOffice'}
                 classes='compnent-trust-article-list__category'
                 articles={[TrustArticle.FamilyOfficeIntroduction, TrustArticle.FamilyOfficeUsage, TrustArticle.FamilyOthers]}
