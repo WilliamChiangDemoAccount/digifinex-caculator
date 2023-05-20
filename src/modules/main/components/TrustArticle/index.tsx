@@ -58,7 +58,7 @@ const TrustArticle = ({ activeArticle }: Props) => {
                     </div>
                 </section> :
                     <section className='d-flex flex-row align-items-center'>
-                        <div className='py-10 py-md-20 ps-9 ps-md-12 pe-4 bg-white-1 compnent-trust-article__content'>
+                        <div className='py-10 py-md-20 ps-9 ps-md-12 pe-4 pe-lg-12 bg-white-1 compnent-trust-article__content'>
                             <span className='d-block mb-2_5 font-xl fw-bold text-blue-1'>{t(`pages.trust.article.${activeArticle}.label`)}</span>
                             <span className={`d-block text-gray-2 font-lg ${activeArticle === ETrustArticle.OptionTarget || activeArticle === ETrustArticle.OptionUsage ? 'ps-4' : ''}`}>
                                 {
