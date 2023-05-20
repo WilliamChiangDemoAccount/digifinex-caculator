@@ -74,7 +74,7 @@ const TrustArticleList = ({ onSkip, goTop }: Props) => {
         <ul className='compnent-trust-article-list__article-list border-gray-1'>
             <li
                 ref={enterpriseService}
-                className={`d-flex flex-row fw-bold white-space-nowrap ${activeService === TrustService.Enterprise ? 'bg-orange-1__before text-orange-1' : 'bg-gray-1__before text-gray-1'} compnent-trust-article-list__topic`}>
+                className={`d-flex flex-row fw-bold text-nowrap ${activeService === TrustService.Enterprise ? 'bg-orange-1__before text-orange-1' : 'bg-gray-1__before text-gray-1'} compnent-trust-article-list__topic`}>
                 {t('pages.trust.service.enterprise')}
             </li>
             <Category
@@ -87,7 +87,7 @@ const TrustArticleList = ({ onSkip, goTop }: Props) => {
                 onExpand={() => setOptionTrustExpand(!isOptionTrustExpand)} />
             <li
                 ref={personalService}
-                className={`mt-10 d-flex flex-row fw-bold white-space-nowrap ${activeService === TrustService.Personal ? 'bg-orange-1__before text-orange-1' : 'bg-gray-1__before text-gray-1'} compnent-trust-article-list__topic`}>
+                className={`mt-10 d-flex flex-row fw-bold text-nowrap ${activeService === TrustService.Personal ? 'bg-orange-1__before text-orange-1' : 'bg-gray-1__before text-gray-1'} compnent-trust-article-list__topic`}>
                 {t('pages.trust.service.personal')}
             </li>
             <Category
