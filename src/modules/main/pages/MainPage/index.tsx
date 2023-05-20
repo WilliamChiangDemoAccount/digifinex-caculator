@@ -9,6 +9,7 @@ import { routeMap } from '@utilities/config/routes';
 import { ProductModule } from '@shared/enums/modules.enum';
 import enterpriseServiceIcon from 'assets/img/icons/icon-enterprise-service-blue.svg';
 import personalServiceIcon from 'assets/img/icons/icon-personal-service-blue.svg';
+import { TrustArticle, TrustService } from '@shared/enums/trust.enum';
 
 const MainPage = () => {
     const { t, i18n: { language } } = useTranslation();
@@ -64,7 +65,7 @@ const MainPage = () => {
                         </p>
                         <NavLink
                             className='icon-arrow_right text-orange-1 pb-1 border-0 border-bottom-1 border-orange-1 mt-5 mt-sm-4 mt-lg-7 d-inline-flex align-items-center flex-row-reverse font-sm font-sm-lg font-lg-xl'
-                            to={`${routeMap.get(ProductModule.Main)!.children![2].path}/enterprise`}>
+                            to={`${routeMap.get(ProductModule.Main)!.children![2].path}/${TrustService.Enterprise}`}>
                             {t(`pages.main.trust.enterprise.button`)}
                         </NavLink>
                     </section>
@@ -89,7 +90,7 @@ const MainPage = () => {
                         </p>
                         <NavLink
                             className='icon-arrow_right text-orange-1 pb-1 border-0 border-bottom-1 border-orange-1 mt-5 mt-sm-4 mt-lg-7 d-inline-flex align-items-center flex-row-reverse font-sm font-sm-lg font-lg-xl'
-                            to={`${routeMap.get(ProductModule.Main)!.children![2].path}/personal`}>
+                            to={`${routeMap.get(ProductModule.Main)!.children![2].path}/${TrustService.Personal}/${TrustArticle.FamilyOfficeIntroduction}`}>
                             {t(`pages.main.trust.personal.familyOffice.button`)}
                         </NavLink>
                     </section>

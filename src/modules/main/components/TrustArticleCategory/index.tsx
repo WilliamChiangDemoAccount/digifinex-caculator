@@ -1,9 +1,10 @@
-import { useMemo } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { TrustArticle } from '@shared/enums/trust.enum';
 import { useTranslation } from 'react-i18next';
 import { IBaseComponentProp } from '@shared/interfaces/base-component.interface';
 
 import './style.scss';
+import { useParams } from 'react-router-dom';
 
 interface Props extends IBaseComponentProp {
     label: string;
@@ -38,7 +39,17 @@ const TrustArticleCategory = ({
     hideBorder = false
 }: Props) => {
     const { t } = useTranslation();
+    const [initialization, initial] = useState(false);
+    const { article } = useParams();
     const isActive = useMemo(() => articles.some(article => article === activeArticle), [articles, activeArticle]);
+    useEffect(() => {
+        if (!initialization && article && articles.includes(article as TrustArticle)) {
+            if (onArticleClick) {
+                onArticleClick(article as TrustArticle);
+            }
+            initial(isExpand);
+        }
+    }, [onArticleClick, article, initialization, initial, isExpand, articles]);
     return <>
         <li className={`mt-10 d-flex fw-bold flex-row align-items-start ${hideBorder ?
             'compnent-trust-article-category--last bg-white-2__after' : ''} ${isActive ? 'bg-blue-2__before text-blue-2' :

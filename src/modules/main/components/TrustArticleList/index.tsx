@@ -20,7 +20,7 @@ interface Props {
 const TrustArticleList = ({ onSkip, goTop }: Props) => {
     const { t } = useTranslation();
     const { width } = useWindowSize();
-    const { serviceType } = useParams();
+    const { serviceType, article } = useParams();
     const headerHeight: number = useMemo(() => width < 1440 ? 60 : 100, [width]);
     const [isOptionTrustExpand, setOptionTrustExpand] = useState(true);
     const [isFamilyTrustExpand, setFamilyTrustExpand] = useState(false);
@@ -54,21 +54,23 @@ const TrustArticleList = ({ onSkip, goTop }: Props) => {
     }, [switchArticle]);
 
     useEffect(() => {
-        switch (serviceType) {
-            case TrustService.Enterprise:
-                activeEnterprise(TrustArticle.OptionScene);
-                break;
-            case TrustService.Personal:
-                setFamilyTrustExpand(true);
-                setFamilyTrustChildrenExpand({ section1: true, section2: false, section3: false, section4: false });
-                setFamilyOfficeExpand(false);
-                setOptionTrustExpand(false);
-                switchArticle(TrustArticle.RightIntroduction);
-                setServiceActive(TrustService.Personal);
-                break;
-            default: break;
+        if (!article) {
+            switch (serviceType) {
+                case TrustService.Enterprise:
+                    activeEnterprise(TrustArticle.OptionScene);
+                    break;
+                case TrustService.Personal:
+                    setFamilyTrustExpand(true);
+                    setFamilyTrustChildrenExpand({ section1: true, section2: false, section3: false, section4: false });
+                    setFamilyOfficeExpand(false);
+                    setOptionTrustExpand(false);
+                    switchArticle(TrustArticle.RightIntroduction);
+                    setServiceActive(TrustService.Personal);
+                    break;
+                default: break;
+            }
         }
-    }, [serviceType, activeEnterprise, switchArticle]);
+    }, [serviceType, article, activeEnterprise, switchArticle]);
 
     return <div className='compnent-trust-article-list d-flex flex-row justify-content-between'>
         <ul className='compnent-trust-article-list__article-list border-gray-1'>
