@@ -18,7 +18,6 @@ const TrustPage = () => {
     const { t } = useTranslation();
     const service = useRef<HTMLDivElement>(null);
     const advance = useRef<HTMLDivElement>(null);
-    const isMobile = window.innerWidth <= 768;
     return <ContentLayout classes='page-trust' testId="TrustPage">
         <section className='d-flex flex-column justify-content-start justify-content-sm-center px-5 pt-12 pb-14 page-trust__banner'>
             <h1 className='text-orange-1 text-start text-sm-center'>{t('pages.trust.banner.title')}</h1>
@@ -26,13 +25,11 @@ const TrustPage = () => {
         </section>
         <section ref={service} className='d-none d-sm-block pt-sm-20 pt-lg-30'>
             <TrustArticleList
-                goTop={(force?: boolean) => {
-                    if ((window.scrollY > 0 || force) && !isMobile) {
-                        window.scrollTo({
-                            top: service.current?.offsetTop,
-                            behavior: 'smooth'
-                        });
-                    }
+                goTop={(offset?: number) => {
+                    window.scrollTo({
+                        top: offset ?? service.current?.offsetTop,
+                        behavior: 'smooth'
+                    });
                 }}
                 onSkip={() => window.scrollTo({
                     top: advance.current?.offsetTop,

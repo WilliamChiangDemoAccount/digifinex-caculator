@@ -78,6 +78,8 @@
     }
     &__customer {
       li {
+        flex-basis: 312px;
+        flex-shrink: 1;
         max-width: 312px;
         img {
           width: 5rem;
