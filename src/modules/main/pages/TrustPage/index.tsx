@@ -53,28 +53,28 @@ const TrustPage = () => {
                 <li className='bg-white-1 border-radius-sm py-6 px-3 py-sm-5 px-sm-5 py-lg-10'>
                     <div className='d-flex flex-row align-items-center'>
                         <img className='me-3 me-sm-4 me-lg-6_5' src={advance1Svg} alt="" />
-                        <h4 className='text-blue-2 font-lg font-sm-xl font-lg-3xl'>{t('pages.trust.advance.advance-1.title')}</h4>
+                        <h4 className='text-blue-2 fw-bold font-lg font-sm-xl font-lg-3xl'>{t('pages.trust.advance.advance-1.title')}</h4>
                     </div>
                     <p className='ps-11 ps-sm-13 ps-lg-18_5 font-sm text-gray-2 font-lg-lg mt-3 mt-sm-2 mt-lg-5'>{t('pages.trust.advance.advance-1.content')}</p>
                 </li>
                 <li className='bg-white-1 border-radius-sm mt-5 mt-sm-0 py-6 px-3 py-sm-5 px-sm-5 py-lg-10'>
                     <div className='d-flex flex-row align-items-center'>
                         <img className='me-3 me-sm-4 me-lg-6_5' src={advance2Svg} alt="" />
-                        <h4 className='text-blue-2 font-lg font-sm-xl font-lg-3xl'>{t('pages.trust.advance.advance-2.title')}</h4>
+                        <h4 className='text-blue-2 fw-bold font-lg font-sm-xl font-lg-3xl'>{t('pages.trust.advance.advance-2.title')}</h4>
                     </div>
                     <p className='ps-11 ps-sm-13 ps-lg-18_5 font-sm text-gray-2 font-lg-lg mt-3 mt-sm-2 mt-lg-5'>{t('pages.trust.advance.advance-2.content')}</p>
                 </li>
                 <li className='bg-white-1 border-radius-sm mt-5 mt-lg-7_5 py-6 px-3 py-sm-5 px-sm-5 py-lg-10'>
                     <div className='d-flex flex-row align-items-center'>
                         <img className='me-3 me-sm-4 me-lg-6_5' src={advance3Svg} alt="" />
-                        <h4 className='text-blue-2 font-lg font-sm-xl font-lg-3xl'>{t('pages.trust.advance.advance-3.title')}</h4>
+                        <h4 className='text-blue-2 fw-bold font-lg font-sm-xl font-lg-3xl'>{t('pages.trust.advance.advance-3.title')}</h4>
                     </div>
                     <p className='ps-11 ps-sm-13 ps-lg-18_5 font-sm text-gray-2 font-lg-lg mt-3 mt-sm-2 mt-lg-5'>{t('pages.trust.advance.advance-3.content')}</p>
                 </li>
                 <li className='bg-white-1 border-radius-sm mt-5 mt-lg-7_5 py-6 px-3 py-sm-5 px-sm-5 py-lg-10'>
                     <div className='d-flex flex-row align-items-center'>
                         <img className='me-3 me-sm-4 me-lg-6_5' src={advance4Svg} alt="" />
-                        <h4 className='text-blue-2 font-lg font-sm-xl font-lg-3xl'>{t('pages.trust.advance.advance-4.title')}</h4>
+                        <h4 className='text-blue-2 fw-bold font-lg font-sm-xl font-lg-3xl'>{t('pages.trust.advance.advance-4.title')}</h4>
                     </div>
                     <p className='ps-11 ps-sm-13 ps-lg-18_5 font-sm text-gray-2 font-lg-lg mt-3 mt-sm-2 mt-lg-5'>{t('pages.trust.advance.advance-4.content')}</p>
                 </li>
