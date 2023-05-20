@@ -1,7 +1,7 @@
 import { ProductModule } from '@shared/enums/modules.enum';
 import './style.scss';
 import { routeMap } from '@utilities/config/routes';
-import Logo from 'assets/img/logo.png';
+import Logo from 'assets/img/logo.svg';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LanguageDropdown from '@shared/components/LanguageDropdown';
