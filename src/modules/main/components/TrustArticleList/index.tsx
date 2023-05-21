@@ -8,6 +8,7 @@ import Article from '@modules/main/components/TrustArticle';
 import './style.scss';
 import { useWindowSize } from '@shared/hooks/useWindowSize';
 import { BreakPoint } from '@shared/enums/common.enum';
+import { useScroll } from '@shared/hooks/useScroll';
 
 interface Props {
     onSkip: () => void;
@@ -25,6 +26,7 @@ const TrustArticleList = ({ onSkip, goTop }: Props) => {
     const headerHeight: number = useMemo(() => breakpoint !== BreakPoint.Desktop ? 60 : 100, [breakpoint]);
     const [isOptionTrustExpand, setOptionTrustExpand] = useState(true);
     const [isFamilyTrustExpand, setFamilyTrustExpand] = useState(false);
+    const articleList = useRef<HTMLDivElement>(null);
     const enterpriseService = useRef<HTMLLIElement>(null);
     const personalService = useRef<HTMLLIElement>(null);
     const [{ section1, section2, section3, section4 }, setFamilyTrustChildrenExpand] = useState({
@@ -46,34 +48,86 @@ const TrustArticleList = ({ onSkip, goTop }: Props) => {
         setArtcleActive(article);
     }, [setArtcleActive, goTop, headerHeight]);
 
-    const activeEnterprise = useCallback((article: TrustArticle) => {
-        switchArticle(article);
+    const activeEnterprise = useCallback(() => {
         setOptionTrustExpand(true);
         setFamilyTrustExpand(false);
         setFamilyOfficeExpand(false);
         setServiceActive(TrustService.Enterprise);
-    }, [switchArticle]);
+    }, []);
+
+    const activePersonal = useCallback(({ familyTrust, familyOffice }: {
+        familyTrust?: number;
+        familyOffice?: boolean
+    }) => {
+        const isFamilyTrustActive = typeof familyTrust === 'number';
+        const defaultFamilyChildrenExpand: any = { section1: false, section2: false, section3: false, section4: false };
+        if (isFamilyTrustActive) {
+            defaultFamilyChildrenExpand[`section${familyTrust}`] = true;
+        }
+        setFamilyTrustExpand(isFamilyTrustActive);
+        setFamilyTrustChildrenExpand(defaultFamilyChildrenExpand);
+        setFamilyOfficeExpand(!!familyOffice);
+        setOptionTrustExpand(false);
+        setServiceActive(TrustService.Personal);
+    }, []);
+
+    const handleOnScroll = useCallback((event: Event) => {
+        const articleOffestHeight = enterpriseService.current!.offsetTop - headerHeight;
+        const scrollTop = (event.target as Document).scrollingElement?.scrollTop ?? 0;
+        const articleScrollTop = scrollTop > articleOffestHeight ? scrollTop - articleOffestHeight : 0;
+        const articleIndex = articleScrollTop / articleList.current!.clientHeight * 12;
+        const article: TrustArticle = Object.values(TrustArticle)[Math.floor(articleIndex > 12 ? 12 : articleIndex)];
+        switch (article) {
+            case TrustArticle.RightIntroduction:
+            case TrustArticle.RightUsage:
+                activePersonal({ familyTrust: 1 });
+                break;
+            case TrustArticle.InsuranceIntroduction:
+            case TrustArticle.InsuranceUsage:
+                activePersonal({ familyTrust: 2 });
+                break;
+            case TrustArticle.ForeignGrantorIntroduction:
+            case TrustArticle.ForeignGrantorUsage:
+                activePersonal({ familyTrust: 3 });
+                break;
+            case TrustArticle.CharitableIntroduction:
+            case TrustArticle.CharitableUsage:
+                activePersonal({ familyTrust: 4 });
+                break;
+            case TrustArticle.FamilyOfficeIntroduction:
+            case TrustArticle.FamilyOfficeUsage:
+            case TrustArticle.FamilyOthers:
+                activePersonal({ familyOffice: true });
+                break;
+            default:
+                activeEnterprise();
+                break;
+        }
+        setArtcleActive(article);
+    }, [headerHeight, activeEnterprise, activePersonal]);
+
+    useScroll({ handleOnScroll });
 
     useEffect(() => {
         if (!article) {
             switch (serviceType) {
                 case TrustService.Enterprise:
-                    activeEnterprise(TrustArticle.OptionScene);
+                    activeEnterprise();
+                    switchArticle(TrustArticle.OptionScene);
                     break;
                 case TrustService.Personal:
-                    setFamilyTrustExpand(true);
-                    setFamilyTrustChildrenExpand({ section1: true, section2: false, section3: false, section4: false });
-                    setFamilyOfficeExpand(false);
-                    setOptionTrustExpand(false);
+                    activePersonal({ familyTrust: 1 })
                     switchArticle(TrustArticle.RightIntroduction);
-                    setServiceActive(TrustService.Personal);
                     break;
                 default: break;
             }
         }
-    }, [serviceType, article, activeEnterprise, switchArticle]);
+    }, [serviceType, article, activeEnterprise, switchArticle, activePersonal]);
 
-    return <div className='compnent-trust-article-list d-flex flex-row justify-content-between'>
+    return <div
+        ref={articleList}
+        className='compnent-trust-article-list d-flex flex-row justify-content-between'
+    >
         <ul className='compnent-trust-article-list__article-list border-gray-1'>
             <li
                 ref={enterpriseService}
@@ -85,7 +139,10 @@ const TrustArticleList = ({ onSkip, goTop }: Props) => {
                 classes='compnent-trust-article-list__category'
                 articles={[TrustArticle.OptionScene, TrustArticle.OptionTarget, TrustArticle.OptionUsage]}
                 activeArticle={activeArticle}
-                onArticleClick={article => activeEnterprise(article)}
+                onArticleClick={article => {
+                    activeEnterprise();
+                    switchArticle(article);
+                }}
                 isExpand={isOptionTrustExpand}
                 onExpand={() => setOptionTrustExpand(!isOptionTrustExpand)} />
             <li
