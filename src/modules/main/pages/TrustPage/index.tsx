@@ -14,41 +14,43 @@ import customerMedicalSvg from 'assets/img/trust/customer-medical.svg';
 import customerTechSvg from 'assets/img/trust/customer-technology.svg';
 import customerNetworkSvg from 'assets/img/trust/customer-network.svg';
 import { useWindowSize } from '@shared/hooks/useWindowSize';
+import { BreakPoint } from '@shared/enums/common.enum';
 
 const TrustPage = () => {
     const { t } = useTranslation();
-    const { width } = useWindowSize();
+    const { breakpoint } = useWindowSize();
     const service = useRef<HTMLDivElement>(null);
     const advance = useRef<HTMLDivElement>(null);
-    const headerHeight: number = useMemo(() => width < 1440 ? 60 : 100, [width]);
+    const headerHeight: number = useMemo(() => breakpoint !== BreakPoint.Desktop ? 60 : 100, [breakpoint]);
     return <ContentLayout classes='page-trust' testId="TrustPage">
         <section className='d-flex flex-column justify-content-start justify-content-sm-center px-5 pt-12 pb-14 page-trust__banner'>
             <h1 className='text-orange-1 text-start text-sm-center'>{t('pages.trust.banner.title')}</h1>
             <h1 className='text-white-1 text-start text-sm-center'>{t('pages.trust.banner.subtitle')}</h1>
         </section>
-        <section ref={service} className='d-none d-sm-block pt-sm-20 pt-lg-30'>
-            <TrustArticleList
-                goTop={(offset?: number) => {
-                    if (width >= 768) {
-                        window.scrollTo({
-                            top: offset ?? service.current?.offsetTop! - headerHeight,
+        {
+            breakpoint !== BreakPoint.Mobile ?
+                <section ref={service} className='d-none d-sm-block pt-sm-20 pt-lg-30'>
+                    <TrustArticleList
+                        goTop={(offset?: number) => {
+                            window.scrollTo({
+                                top: offset ?? service.current?.offsetTop! - headerHeight,
+                                behavior: 'smooth'
+                            });
+                        }}
+                        onSkip={() => window.scrollTo({
+                            top: advance.current?.offsetTop! - headerHeight,
                             behavior: 'smooth'
-                        });
-                    }
-                }}
-                onSkip={() => window.scrollTo({
-                    top: advance.current?.offsetTop! - headerHeight,
-                    behavior: 'smooth'
-                })} />
-        </section>
-        <section className='d-block d-sm-none px-5 pt-10 pb-20'>
-            <TrustArticleListMobile
-                onSkip={() => window.scrollTo({
-                    top: advance.current?.offsetTop! - headerHeight,
-                    behavior: 'smooth'
-                })}
-            />
-        </section>
+                        })} />
+                </section> :
+                <section className='d-block d-sm-none px-5 pt-10 pb-20'>
+                    <TrustArticleListMobile
+                        onSkip={() => window.scrollTo({
+                            top: advance.current?.offsetTop! - headerHeight,
+                            behavior: 'smooth'
+                        })}
+                    />
+                </section>
+        }
         <section ref={advance} className='page-trust__advance'>
             <h3 className='text-white-1 text-center'>{t('pages.trust.advance.title')}</h3>
             <ul className='d-flex flex-column flex-sm-row mt-7 mt-sm-7_5 mt-lg-15 flex-wrap mx-auto align-items-stretch justify-content-center'>

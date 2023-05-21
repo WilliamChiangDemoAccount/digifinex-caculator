@@ -6,27 +6,37 @@ import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LanguageDropdown from '@shared/components/LanguageDropdown';
 import { useEffect, useRef, useState } from 'react';
-import { Direction } from '@shared/enums/common.enum';
+import { BreakPoint, Direction } from '@shared/enums/common.enum';
 import { useDynamicBoxSize } from '@shared/hooks/useDynamicBoxSize';
+import { useWindowSize } from '@shared/hooks/useWindowSize';
 
 
 const Header = () => {
     const { pathname } = useLocation();
     const navigate = useNavigate();
     const { t } = useTranslation();
+    const { breakpoint } = useWindowSize();
     const [isMobileMenuOpen, setMenuOpen] = useState(false);
     const headerRef = useRef<HTMLElement | null>(null);
     const { height: mobileMenuHeight } = useDynamicBoxSize({ excludesRef: [headerRef] });
 
     useEffect(() => isMobileMenuOpen ?
         document.children[0].classList.add('overflow-hidden') :
-        document.children[0].classList.remove('overflow-hidden'), [isMobileMenuOpen]);
+        document.children[0].classList.remove('overflow-hidden'),
+        [isMobileMenuOpen]);
+
+    useEffect(() => {
+        if (breakpoint !== BreakPoint.Mobile) {
+            setMenuOpen(false);
+        }
+    }, [breakpoint]);
 
     return <>
         <header
             ref={headerRef}
             data-testid='header'
-            className='bg-white-1 component-header py-3_5 py-sm-4 py-lg-6 layer-important'
+            className={`bg-white-1 component-header py-3_5 py-sm-4 py-lg-6 layer-important ${isMobileMenuOpen ? 'position-fixed w-100' : 'position-sticky'}`}
+            style={isMobileMenuOpen ? { top: 0, left: 0 } : undefined}
         >
             <section className='component-header__container mx-auto d-flex flex-row align-items-center justify-content-between px-4 px-sm-5 px-lg-10 h-100'>
                 <div className='d-flex flex-row align-items-center h-100'>
@@ -47,8 +57,8 @@ const Header = () => {
                                 >
                                     <NavLink
                                         className={`text-black-1--hover font-xs-lg font-lg-xl border-0 ${isCurrentPage ?
-                                                'text-black-1 border-bottom-2 border-black-1 fw-bold' :
-                                                'text-gray-2'
+                                            'text-black-1 border-bottom-2 border-black-1 fw-bold' :
+                                            'text-gray-2'
                                             }`}
                                         to={path}
                                     >

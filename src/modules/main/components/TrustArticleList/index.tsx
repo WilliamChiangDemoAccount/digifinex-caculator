@@ -7,6 +7,7 @@ import Article from '@modules/main/components/TrustArticle';
 
 import './style.scss';
 import { useWindowSize } from '@shared/hooks/useWindowSize';
+import { BreakPoint } from '@shared/enums/common.enum';
 
 interface Props {
     onSkip: () => void;
@@ -19,9 +20,9 @@ interface Props {
 
 const TrustArticleList = ({ onSkip, goTop }: Props) => {
     const { t } = useTranslation();
-    const { width } = useWindowSize();
+    const { breakpoint } = useWindowSize();
     const { serviceType, article } = useParams();
-    const headerHeight: number = useMemo(() => width < 1440 ? 60 : 100, [width]);
+    const headerHeight: number = useMemo(() => breakpoint !== BreakPoint.Desktop ? 60 : 100, [breakpoint]);
     const [isOptionTrustExpand, setOptionTrustExpand] = useState(true);
     const [isFamilyTrustExpand, setFamilyTrustExpand] = useState(false);
     const enterpriseService = useRef<HTMLLIElement>(null);

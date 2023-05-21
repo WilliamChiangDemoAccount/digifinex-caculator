@@ -4,10 +4,11 @@ import { Trans, useTranslation } from 'react-i18next';
 import Expand from '@shared/components/Expand';
 import { getSrc } from '@shared/helpers/file.helper';
 import { useWindowSize } from '@shared/hooks/useWindowSize';
+import { BreakPoint } from '@shared/enums/common.enum';
 
 const EsopPage = () => {
     const { t, i18n: { language } } = useTranslation();
-    const { width } = useWindowSize();
+    const { breakpoint } = useWindowSize();
     return <ContentLayout classes='page-esop' testId="EsopPage">
         <section className='page-esop__banner d-flex flex-column justify-content-sm-center justify-content-start'>
             <h1 className='text-orange-1 text-start text-sm-center'>{t('pages.esop.banner.title-1')}</h1>
@@ -54,13 +55,13 @@ const EsopPage = () => {
             </div>
         </section>
         <h2 className='text-center mt-7 mt-sm-0 px-5 px-sm-11 px-lg-30_5'>{t('pages.esop.service.title')}</h2>
-        <section className={`page-esop__service ${width >= 768 ? 'bg-white-1' : ''} px-5 px-sm-11 px-lg-30_5`}>
+        <section className={`page-esop__service ${breakpoint !== BreakPoint.Mobile ? 'bg-white-1' : ''} px-5 px-sm-11 px-lg-30_5`}>
             <ul className='d-flex flex-column flex-sm-row align-items-start justify-content-center'>
                 {
                     ['participent', 'admin', 'manager'].map((service, index) => (<li
                         key={service}
                         className='d-flex flex-column layer-cover'>
-                        <img src={getSrc(`service-${index + 1}-icon${width < 1440 ? '-table' : ''}`, 'esop')} alt="" />
+                        <img src={getSrc(`service-${index + 1}-icon${breakpoint === BreakPoint.Desktop ? '' : `-${breakpoint}`}`, 'esop')} alt="" />
                         <p className='text-blue-2 text-center mb-1 mb-sm-0 font-lg font-sm-xl font-lg-3xl fw-bold'>
                             {t(`pages.esop.service.${service}.title`)}
                         </p>
@@ -101,7 +102,7 @@ const EsopPage = () => {
             </div>
             <img
                 className='position-absolute w-100 layer-cover'
-                src={getSrc(`bg${width < 1440 && width >= 768 ? '-table' : width < 768 ? '-mobile' : ''}`, 'esop')}
+                src={getSrc(`bg${breakpoint === BreakPoint.Desktop ? '' : `-${breakpoint}`}`, 'esop')}
                 alt=""
             />
         </section>
