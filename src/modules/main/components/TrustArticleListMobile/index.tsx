@@ -16,26 +16,31 @@ interface Prop {
 
 const TrustArticleListMobile = ({ onSkip }: Prop) => {
     const { t } = useTranslation();
-    const { serviceType } = useParams();
+    const { serviceType, article } = useParams();
     const enterprise = useRef<HTMLDivElement>(null);
     const personal = useRef<HTMLDivElement>(null);
     useEffect(() => {
-        switch (serviceType) {
-            case TrustService.Enterprise:
-                window.scrollTo({
-                    top: enterprise.current?.offsetTop,
-                    behavior: 'smooth'
-                });
-                break;
-            case TrustService.Personal:
-                window.scrollTo({
-                    top: personal.current?.offsetTop,
-                    behavior: 'smooth'
-                });
-                break;
-            default: break;
+        if (!article) {
+            // scroll after content layout initial
+            setTimeout(() => {
+                switch (serviceType) {
+                    case TrustService.Enterprise:
+                        window.scrollTo({
+                            top: enterprise.current?.offsetTop! - 60,
+                            behavior: 'smooth'
+                        });
+                        break;
+                    case TrustService.Personal:
+                        window.scrollTo({
+                            top: personal.current?.offsetTop! - 60,
+                            behavior: 'smooth'
+                        });
+                        break;
+                    default: break;
+                }
+            }, 0);
         }
-    }, [serviceType]);
+    }, [serviceType, article]);
     return <>
         <div ref={enterprise} className='d-flex flex-row align-items-start justify-content-between'>
             <h3 className='font-xl d-flex flex-row align-items-center text-orange-1'>
@@ -75,7 +80,11 @@ const TrustArticleListMobile = ({ onSkip }: Prop) => {
         <h4 className='font-lg mt-12 fw-bold text-blue-1'>{t('pages.trust.service.charitableTrust')}</h4>
         <TrustArticleMobile articles={[TrustArticle.CharitableIntroduction, TrustArticle.CharitableUsage]} />
         <h4 className='font-lg mt-12 fw-bold text-blue-1'>{t('pages.trust.service.familyOffice')}</h4>
-        <TrustArticleMobile articles={[TrustArticle.FamilyOfficeIntroduction, TrustArticle.FamilyOfficeUsage, TrustArticle.FamilyOthers]} />
+        <TrustArticleMobile articles={[
+            TrustArticle.FamilyOfficeIntroduction,
+            TrustArticle.FamilyOfficeUsage,
+            // TrustArticle.FamilyOthers
+        ]} />
     </>
 }
 

@@ -1,17 +1,21 @@
 import { TrustArticle } from '@shared/enums/trust.enum';
 import './style.scss';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { getSrc } from '@shared/helpers/file.helper';
 import { useTouchMove } from '@shared/hooks/useTouchMove';
 import { Direction } from '@shared/enums/common.enum';
+import { useParams } from 'react-router-dom';
 
 interface Props {
     articles: TrustArticle[];
 }
 
 const TrustArticleMobile = ({ articles }: Props) => {
+    const { t } = useTranslation();
+    const { article } = useParams();
     const [showIndex, setShowIndex] = useState(0);
+    const articleRef = useRef<Array<HTMLLIElement | null>>([]);
     const { ref } = useTouchMove({
         offset: 50,
         onTouchMove: direction => {
@@ -30,15 +34,23 @@ const TrustArticleMobile = ({ articles }: Props) => {
             }
         }
     });
-    const { t } = useTranslation();
+
+    useEffect(() => {
+        const anchor = articleRef.current[articles.findIndex(e => e === article)];
+        if (anchor) {
+            window.scrollTo({ top: anchor.offsetTop - 100, behavior: 'smooth' });
+        }
+    }, [article, articles]);
+
     return <section
         className='compnent-trust-article-mobile mt-3'
         ref={ref}
     >
         <ul className='d-flex flex-row flex-nowrap align-items-stretch mb-22'>
             {
-                articles.map(article =>
+                articles.map((article, index) =>
                     <li
+                        ref={e => articleRef.current![index] = e}
                         key={article}
                         className='compnent-trust-article-mobile__card position-relative me-4'
                         style={{ transform: `translateX(calc(${-100 * showIndex}% - ${1 * showIndex}rem))` }}
