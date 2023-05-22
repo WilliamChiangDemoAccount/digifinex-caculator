@@ -8,7 +8,7 @@ import { ProductModule } from "@shared/enums/modules.enum";
 
 interface Props { }
 
-const Guideline = (props: Props) => <ContentLayout testId="Guideline">
+const Guideline = (props: Props) => <ContentLayout classes="mx-5 py-3" testId="Guideline">
   <header className="d-flex flex-row align-items-center justify-content-between">
     <h1>開發概覽</h1>
   </header>

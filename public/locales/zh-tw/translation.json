@@ -262,6 +262,13 @@
       "insight": "行業洞察",
       "ipo": "IPO分銷",
       "propagate": "資本市場傳播"
+    },
+    "announcement": {
+      "privacy-policy": "私隱政策",
+      "terms-of-use": "Terms of Use",
+      "cookie-policy": "Cookie Policy",
+      "announcementDate": "發布日期:",
+      "effectiveDate": "生效日期:"
     }
   },
   "footer": {

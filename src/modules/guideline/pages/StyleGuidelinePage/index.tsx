@@ -9,7 +9,7 @@ interface Props {
 
 }
 
-const StyleGuidelinePage = (props: Props) => (<ContentLayout testId="StyleGuidelinePage" classes="page-style-guideline">
+const StyleGuidelinePage = (props: Props) => (<ContentLayout testId="StyleGuidelinePage" classes="page-style-guideline mx-5 py-3">
     <article>
         <h3 className="text-black-1">使用規範</h3>
         <p>系統樣式分為以下三大類</p>

@@ -3,7 +3,7 @@ import ContentLayout from '@shared/components/ContentLayout';
 
 interface Props {
 }
-const CardUsagePage = (props: Props) => (<ContentLayout testId="CardUsagePage">
+const CardUsagePage = (props: Props) => (<ContentLayout testId="CardUsagePage" classes='px-5 py-3'>
     <article>
         <h3>用處</h3>
         <p className='text-start'>使用於各頁面，用於內容劃分並適性調整版型內的可用空間</p>

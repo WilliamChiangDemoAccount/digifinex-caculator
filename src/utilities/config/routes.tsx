@@ -3,6 +3,7 @@ import { Navigate, Route, useLocation } from 'react-router-dom';
 import React from 'react';
 import { useAuthGuard } from '@shared/hooks/useAuthGuard';
 import { canGuidelineModuleActive } from '@utilities/auth/canGuidelineModuleActive';
+import { Announcement } from '@shared/enums/common.enum';
 
 export type RouteConfig = {
   path: string;
@@ -90,6 +91,14 @@ export const routeMap = new Map<ProductModule, RouteConfig>([
         }
       ]
     } as RouteConfig
+  ],
+  [
+    ProductModule.Announcement,
+    {
+      path: ':announcementType',
+      i18n: 'pages.announcement',
+      component: React.lazy(() => import(`@modules/announcement/pages/AnnouncementPage`)),
+    } as RouteConfig
   ]
 ]);
 
@@ -119,7 +128,7 @@ export const NestRoute = (
     key={currentPath}
     path={currentPath}
     element={
-      enabled ? <Component /> : <Navigate to='/' state={{ from: location }} replace />
+      enabled && Component ? <Component /> : <Navigate to='/' state={{ from: location }} replace />
     } />
   ];
 };

@@ -50,3 +50,9 @@ export enum BreakPoint {
 export enum LocalStorageItem {
   Language = 'language'
 }
+
+export enum Announcement {
+  PrivacyPolicy = 'privacy-policy',
+  TermsofUse = 'terms-of-use',
+  CookiePolicy = 'cookie-policy'
+}

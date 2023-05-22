@@ -17,7 +17,7 @@ const OverlayUsagePage = (props: Props) => {
     const [backdrop, setBackdrop] = useState(false);
     const [backdropClose, setBackdropClose] = useState(false);
 
-    return <ContentLayout testId="OverlayUsagePage">
+    return <ContentLayout testId="OverlayUsagePage" classes='px-5 py-3'>
         <article>
             <h3>用處</h3>
             <p className='text-start'>使用於各頁面，透過<small className='mx-1 code-snippet'>toggleOverlay</small>觸發彈出視窗顯示額外資訊，依照情境可分為以下彈窗種類:</p>

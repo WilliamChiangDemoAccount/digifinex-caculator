@@ -1,4 +1,7 @@
 @import "~styles/variables";
 
 .page-style-guideline {
+    ul, ol {
+        list-style-position: inside !important;
+    }
 }

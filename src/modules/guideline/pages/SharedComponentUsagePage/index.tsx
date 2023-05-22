@@ -5,7 +5,7 @@ import { ProductModule } from '@shared/enums/modules.enum';
 import { routeMap } from '@utilities/config/routes';
 import { Link } from 'react-router-dom';
 
-const SharedComponentUsagePage = () => (<ContentLayout testId="SharedComponentUsagePage">
+const SharedComponentUsagePage = () => (<ContentLayout testId="SharedComponentUsagePage" classes='px-5 py-3'>
   <ul className='row'>
     {
       routeMap.get(ProductModule.Guideline)!.children![1].children!.map(({ path, i18n }) =>

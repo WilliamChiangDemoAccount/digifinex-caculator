@@ -4,5 +4,6 @@ export enum ProductModule {
    */
   Guideline = "guideline",
   Main = '',
-  Services = 'services'
+  Services = 'services',
+  Announcement = 'announcement'
 }

@@ -7,6 +7,8 @@ import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 import { routeMap } from '@utilities/config/routes';
 import { ProductModule } from '@shared/enums/modules.enum';
+import { Announcement } from '@shared/enums/common.enum';
+import { footerAnnouncement } from '@modules/announcement/constants/announcement-config';
 
 interface Props extends IBaseComponentProp { }
 
@@ -103,9 +105,24 @@ const Footer = (prop: Props) => {
             <section className='border-top-1 border-gray-1 d-flex flex-column-reverse flex-sm-row align-items-center justify-content-between pt-4 mt-26 mt-sm-0'>
                 <span className='d-block text-gray-1 font-xs-xs font-sm-md font-lg-lg mt-sm-0 mt-2_5'>Copyright © 2023 PS GROUP. All Rights Reserved</span>
                 <ul className='d-flex flex-row align-items-center'>
-                    <li className='pe-5 border-right-1 border-gray-1 text-gray-1 font-xs-xs font-sm-md font-lg-lg cursor-pointer'>Privacy Policy</li>
-                    <li className='px-5 border-right-1 border-gray-1 text-gray-1 font-xs-xs font-sm-md font-lg-lg cursor-pointer'>Terms of Use</li>
-                    <li className='ps-5 text-gray-1 font-xs-xs font-sm-md font-lg-lg cursor-pointer'>Cookie Policy</li>
+                    {
+                        footerAnnouncement.map(
+                            (announcement, index) =>
+                                <li
+                                    key={announcement}
+                                    className={
+                                        `${index === 0 ? 'pe-5' :
+                                            index === footerAnnouncement.length - 1 ? 'ps-5' : 'px-5'} ${index !== footerAnnouncement.length - 1 ?
+                                                'border-right-1 border-gray-1' : ''}`
+                                    }>
+                                    <NavLink
+                                        className='text-gray-1 font-xs-xs font-sm-md font-lg-lg'
+                                        to={`${ProductModule.Announcement}/${announcement}`}>
+                                        {t(`${routeMap.get(ProductModule.Announcement)!.i18n}.${announcement}`)}
+                                    </NavLink>
+                                </li>
+                        )
+                    }
                 </ul>
             </section>
         </section>
