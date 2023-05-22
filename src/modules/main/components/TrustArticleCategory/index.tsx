@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { TrustArticle } from '@shared/enums/trust.enum';
 import { useTranslation } from 'react-i18next';
 import { IBaseComponentProp } from '@shared/interfaces/base-component.interface';
@@ -52,8 +52,9 @@ const TrustArticleCategory = ({
     }, [onArticleClick, article, initialization, initial, isExpand, articles]);
     return <>
         <li className={`mt-10 d-flex fw-bold flex-row align-items-start ${hideBorder ?
-            'compnent-trust-article-category--last bg-white-2__after' : ''} ${isActive ? 'bg-blue-2__before text-blue-2' :
-                hideArrow ? 'bg-blue-1__before text-blue-1' : 'bg-gray-1__before text-gray-1'} ${classes ?? ''}`}
+            'compnent-trust-article-category--last bg-white-2__after' : ''} ${isActive ?
+                (!hideArrow ? 'bg-blue-2__before text-blue-2' : 'bg-blue-1__before text-blue-1')
+                : 'bg-gray-1__before text-gray-1'} ${classes ?? ''}`}
         >
             <span
                 className={`d-flex flex-row align-items-center ${hideArrow ? 'cursor-pointer' : ''}`}

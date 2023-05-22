@@ -7,7 +7,6 @@ import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 import { routeMap } from '@utilities/config/routes';
 import { ProductModule } from '@shared/enums/modules.enum';
-import { Announcement } from '@shared/enums/common.enum';
 import { footerAnnouncement } from '@modules/announcement/constants/announcement-config';
 
 interface Props extends IBaseComponentProp { }

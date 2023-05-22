@@ -9,7 +9,7 @@ type AnnouncementConfig = {
 export const footerAnnouncement = [
     Announcement.PrivacyPolicy,
     Announcement.TermsofUse,
-    Announcement.CookiePolicy,
+    // Announcement.CookiePolicy,
 ];
 
 export const announcementConfig: Map<Announcement, AnnouncementConfig> = new Map([
