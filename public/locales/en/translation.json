@@ -264,11 +264,11 @@
       "propagate": "資本市場傳播"
     },
     "announcement": {
-      "privacy-policy": "私隐政策",
+      "privacy-policy": "Privacy Policy",
       "terms-of-use": "Terms of Use",
       "cookie-policy": "Cookie Policy",
-      "announcementDate": "发布日期:",
-      "effectiveDate": "生效日期:"
+      "announcementDate": "Publish Date:",
+      "effectiveDate": "Effective Date:"
     }
   },
   "footer": {
