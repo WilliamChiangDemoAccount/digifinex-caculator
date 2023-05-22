@@ -1,4 +1,92 @@
-body {
-    overflow: hidden;
-    margin: -20px 0 0 0 !important;
+body,
+p,
+h1,
+h2,
+ol,
+ul {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style-position: inside;
+  padding-left: 20px;
+}
+
+section > ul,
+section > ol {
+  padding-left: 0;
+}
+
+ol {
+  counter-reset: list;
+  list-style-type: none;
+}
+
+.list-style-lower-roman {
+  list-style: lower-roman;
+}
+
+.list-style-lower-latin {
+  list-style: lower-latin;
+}
+
+ul > li::before {
+  content: none;
+}
+
+li::before {
+  counter-increment: list;
+  content: counters(list, ".") ".";
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+section,
+p,
+li {
+  font-size: 18px;
+  line-height: 29.2px;
+}
+
+p:not(:empty),
+section:not(:empty) {
+  margin-top: 28px;
+}
+
+article:not(:empty) {
+  margin-top: 64px;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  p,
+  li {
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  p:not(:empty),
+  section:not(:empty) {
+    margin-top: 16px;
+  }
+
+  article:not(:empty) {
+    margin-top: 36px;
+  }
 }
