@@ -81,6 +81,11 @@ article:not(:empty) {
     line-height: 17px;
   }
 
+  ol,
+  ul {
+    padding-left: 12px;
+  }
+
   p:not(:empty),
   section:not(:empty) {
     margin-top: 16px;
