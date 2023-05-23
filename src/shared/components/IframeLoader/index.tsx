@@ -23,8 +23,9 @@ const IframeLoader = ({ htmlFile, classes }: Props) => {
             .getElementsByTagName('html')[0]
             .getElementsByTagName('head')[0]
             .appendChild(link);
-
-        setHeight(ref.current!.contentWindow!.document.body.scrollHeight);
+        setTimeout(() => {
+            setHeight(ref.current!.contentWindow!.document.body.scrollHeight);
+        }, 10);
     };
 
     const windowSize = useWindowSize();
