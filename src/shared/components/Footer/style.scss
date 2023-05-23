@@ -11,7 +11,6 @@
 @include generateStyleByBreakpoint("sm") {
   .component-footer {
     &__container {
-      height: 42.3125rem;
       padding: 4.375rem 1.25rem 1.125rem;
       img {
         height: 3.5rem;
@@ -27,7 +26,6 @@
 @include generateStyleByBreakpoint("lg") {
   .component-footer {
     &__container {
-      height: 45.25rem;
       padding: 4.375rem 6.5rem 3.5rem;
     }
 
