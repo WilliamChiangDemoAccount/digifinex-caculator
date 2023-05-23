@@ -37,14 +37,14 @@ const AnnouncementPage = () => {
                                         {formatLocaleDateString(language, config.announcementDate)}
                                     </td>
                                 </tr>
-                                <tr>
+                                {/*<tr>
                                     <th className='font-xs font-sm-sm text-gray-2'>
                                         {t('pages.announcement.effectiveDate')}
                                     </th>
                                     <td className='font-xs font-sm-sm text-gray-2 text-end ps-1'>
                                         {formatLocaleDateString(language, config.effectiveDate)}
                                     </td>
-                                </tr>
+                                </tr>*/}
                             </tbody>
                         </table>
                     </div>
