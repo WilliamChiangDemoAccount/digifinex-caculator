@@ -40,18 +40,18 @@ const Footer = (prop: Props) => {
                                 <em className='icon-address me-3 me-sm-4 font-xs-md font-sm-lgx'></em>
                                 {t('footer.address')}
                             </li>
-                            <li className='mt-3 font-xs-xs font-sm-lg text-white-1 d-flex flex-row align-items-top'>
+                            {/* <li className='mt-3 font-xs-xs font-sm-lg text-white-1 d-flex flex-row align-items-top'>
                                 <em className='icon-phone me-3 me-sm-4 font-xs-md font-sm-lgx'></em>
                                 {t('footer.phone')}
-                            </li>
+                            </li>*/}
                             <li className='mt-3 font-xs-xs font-sm-lg text-white-1 d-flex flex-row align-items-top'>
                                 <em className='icon-email me-3 me-sm-4 font-xs-md font-sm-lgx'></em>
                                 {t('footer.email')}
                             </li>
-                            <li className='mt-3 font-xs-xs font-sm-lg text-white-1 d-flex flex-row align-items-top'>
+                            {/* <li className='mt-3 font-xs-xs font-sm-lg text-white-1 d-flex flex-row align-items-top'>
                                 <em className='icon-time me-3 me-sm-4 font-xs-md font-sm-lgx'></em>
                                 {t('footer.worktime')}
-                            </li>
+                            </li>*/}
                         </ul>
                         {/* <span className='d-block mt-15 mt-sm-10_5 text-white-1 text-bold font-xs-sm font-sm-md'>{t('footer.moreInfo')}</span>
                         <Button
