@@ -102,7 +102,7 @@ const Footer = (prop: Props) => {
                 </section>
             </div>
             <section className='border-top-1 border-gray-1 d-flex flex-column-reverse flex-sm-row align-items-center justify-content-between pt-4 mt-26 mt-sm-0'>
-                <span className='d-block text-gray-1 font-xs-xs font-sm-md font-lg-lg mt-sm-0 mt-2_5'>Copyright © 2023 PS GROUP. All Rights Reserved</span>
+                <span className='d-block text-gray-1 font-xs-xs font-sm-md font-lg-lg mt-sm-0 mt-2_5'>© 2023 PS GROUP &nbsp;&nbsp;&nbsp;All Rights Reserved.</span>
                 <ul className='d-flex flex-row align-items-center'>
                     {
                         footerAnnouncement.map(
