@@ -13,6 +13,7 @@ import Breadcrumb from "@shared/components/Breadcrumb";
 import { Language, LocalStorageItem } from "@shared/enums/common.enum";
 import { useTranslation } from "react-i18next";
 import { setHtmlLang } from "@shared/components/LanguageDropdown";
+import { getLanguage } from "@utilities/config/i18n";
 
 
 function App() {
@@ -21,10 +22,7 @@ function App() {
 
   useEffect(() => {
     if (!localStorage.getItem(LocalStorageItem.Language)) {
-      const defaultLan = /^zh-/.test(navigator.language) ?
-        navigator.language.toLocaleLowerCase().includes('tw') ?
-          Language.MandarinTraditional : Language.MandarinSimplified
-        : Language.English;
+      const defaultLan = getLanguage(navigator.language);
       localStorage.setItem(LocalStorageItem.Language, defaultLan);
     }
     changeLanguage(localStorage.getItem(LocalStorageItem.Language)!);

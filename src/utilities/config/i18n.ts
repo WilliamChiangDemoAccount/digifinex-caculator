@@ -1,25 +1,12 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import Backend from "i18next-http-backend";
+import Backend, { HttpBackendOptions } from "i18next-http-backend";
+import { Language } from "@shared/enums/common.enum";
 
-// i18n
-//     // 使用 i18next-http-backend
-//     .use(Backend)
-//     // 將 i18next 傳入 react-i18next 裡面
-//     .use(initReactI18next)
-//     // 實例化 initReactI18next
-//     .init({
-//         fallbackLng: 'en',
-//         debug: true,
-//         resources,
-//         interpolation: {
-//             escapeValue: false, // not needed for react as it escapes by default
-//         },
-
-//         react: {
-//             useSuspense: false,
-//         },
-//     });
+export const getLanguage = (lan: string) => /^zh/.test(lan) ?
+    lan.toLocaleLowerCase().includes('tw') ?
+        Language.MandarinTraditional : Language.MandarinSimplified
+    : Language.English;
 
 i18n
     .use(Backend)
@@ -30,7 +17,9 @@ i18n
         interpolation: {
             escapeValue: false
         },
-        backend: { loadPath: "/locales/{{lng}}/translation.json" }
+        backend: {
+            loadPath: ([lan]: string[]) => `/locales/${getLanguage(lan)}/translation.json`
+        } as HttpBackendOptions
     });
 
 export default i18n;
