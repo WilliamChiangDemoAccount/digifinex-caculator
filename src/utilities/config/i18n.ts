@@ -29,7 +29,8 @@ i18n
         fallbackLng: 'en',
         interpolation: {
             escapeValue: false
-        }
+        },
+        backend: { loadPath: "/locales/{{lng}}/translation.json" }
     });
 
 export default i18n;
