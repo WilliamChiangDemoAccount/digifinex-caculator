@@ -50,13 +50,13 @@
           @include generateStyleByPseudoClass {
             #{$prop}: $color !important;
           }
-          @include generateStyleByPseudoElement {
-            #{$prop}: $color !important;
-            @include generateOpacityStyle($prop, $color);
-            @include generateStyleByPseudoClass {
-              #{$prop}: $color !important;
-            }
-          }
+          // @include generateStyleByPseudoElement {
+          //   #{$prop}: $color !important;
+          //   @include generateOpacityStyle($prop, $color);
+          //   @include generateStyleByPseudoClass {
+          //     #{$prop}: $color !important;
+          //   }
+          // }
         }
       }
     }
