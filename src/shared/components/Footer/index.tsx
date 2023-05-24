@@ -101,17 +101,17 @@ const Footer = (prop: Props) => {
                     </div>
                 </section>
             </div>
-            <section className='border-top-1 border-gray-1 mt-30 mt-sm-17 mt-lg-20 pt-4 pt-sm-6 pb-5 pb-sm-6 px-6 px-sm-0'>
+            <section className='border-top-1 border-gray-1 mt-30 mt-sm-17 mt-lg-20 py-4 py-sm-6 px-6 px-sm-0'>
                 <p className='font-xs text-gray-1'>{t('footer.disclaimer.title')}</p>
                 <Trans
                     i18nKey={'footer.disclaimer.content'}
                     components={{
                         1: <p className='font-xs text-gray-1' />,
-                        2: <p className='mt-3 font-xs text-gray-1' />
+                        2: <p className='mt-3 mt-sm-4 font-xs text-gray-1' />
                     }}
                 />
             </section>
-            <section className='border-top-1 border-gray-1 d-flex flex-column-reverse flex-sm-row align-items-center justify-content-between px-6 px-sm-0 pt-4 mt-26 mt-sm-0'>
+            <section className='border-top-1 border-gray-1 d-flex flex-column-reverse flex-sm-row align-items-center justify-content-between px-6 px-sm-0 pt-4'>
                 <span className='d-block text-gray-1 font-xs-xs font-sm-md font-lg-lg mt-sm-0 mt-2_5'>© 2023 PS GROUP &nbsp;&nbsp;&nbsp;All Rights Reserved.</span>
                 <ul className='d-flex flex-row align-items-center'>
                     {
