@@ -5,85 +5,85 @@
       "menu": "Home Page",
       "banner": {
         "title": "PS GROUP",
-        "subtitle": "Professional ESOP and Trust Services Provider"
+        "subtitle": "Professional ESOP and Trust Services You Can Count On"
       },
       "esop": {
-        "title": "ESOP Service",
+        "title": "ESOP Solutions",
         "system": {
-          "title": "ESOP Management System",
-          "content": "PS Group's ESOP Management system has multiple functions, covering grant data management, agreements online signing, exercise and tax services, rule management, withdrawal services, financial statement support, etc.",
+          "title": "ESOP Management Platform",
+          "content": "PS Group's ESOP Management platform provides comprehensive solutions, covering grant data management, electronic signing capability, automatized tax calculation on exercised options, compliance management, withdrawal services, GAAP accounting approved financial statements, etc.",
           "button": "Learn More"
         },
         "service": {
-          "title": "ESOP Management Services",
-          "content": "PS Group has the licenses and qualification of trust, brokerage, system service and other services. Customers do not need to purchase multi-party single service provider, which gives customers ideal solution compared to heavy workload and high communication cost under the traditional service mode. The key staff of PS Group have more than 10 years of experience in the ESOP management industry. PS team provide quick respond and flexibly customized solutions, such as formulating relevant operating rules, and pay attention to the changes and implementation of relevant regulations and policies such as taxation and administration of foreign exchange.",
+          "title": "ESOP Management",
+          "content": "With the trust and securities licenses, and our authenticated and state-of-art ESOP system in place, our clients can save time and effort from dealing with different vendors, and focus on what is truly important to them. Majority of PS Group team have more than 10 years of experience in the industry. Our experience in the field allows us to provide quick and accurate response to our clients’ needs. Our customized solutions, such as formulating relevant operating guidelines, and implementing relevant changes on taxation and administration of foreign exchanges, give our clients a peace of mind.",
           "button": "Learn More"
         }
       },
       "trust": {
         "title": "Trust Services",
         "enterprise": {
-          "title": "Enterprise Services",
-          "content": "PS Group mainly provides ESOP trust services for enterprises. Companies with overseas structure to be listed, listed or H-share companies can set up ESOP trusts based on various management needs to assist their ESOP plans management.",
+          "title": "Corporate Services",
+          "content": "PS Group specializes in ESOP trust services for enterprises. Our professional team will assist companies with overseas structure to set up ESOP trusts according to the different ESOP schemes.",
           "button": "Learn More"
         },
         "personal": {
-          "title": "Private Services",
+          "title": "Tailor-Made Private Services",
           "familyTrust": {
             "title": "Family Trust",
-            "content": "PS Group sets up family trusts for settlors, and the settlors transfers part of their personal assets into the trusts for various trust purposes such as asset preservation, asset integration, tax planning and family inheritance."
+            "content": "PS Group focuses on setting up tailored family trusts for our affluent clients. We offer a complete trust solutions to protect your family’s financial security, and bring your legacy to the next generation."
           },
           "familyOffice": {
             "title": "Family Office",
-            "content": "PS Group assists clients in the design and construction of family offices, provides comprehensive family services, optimizes the governance of family, improves the risk planning and investment management of family wealth, establishes family cultural inheritance, and strengthens family cohesion.",
+            "content": "PS Group provides professional guidance to our affluent clients in designing and forming family offices. Trust in our proven expertise to build a wealth management strategy designed to help you and your family achieve the family inheritance in generations to come.",
             "button": "Learn More"
           }
         }
       }
     },
     "esop": {
-      "menu": "ESOP Services",
+      "menu": "ESOP Solutions",
       "introduction": "Introduction",
       "banner": {
         "title-1": "PS Group",
         "title-2": "One-Stop ESOP Management Solution"
       },
       "stable-system": {
-        "title": "A Stable and Powerful Management System",
+        "title": "A State-of-Art and accredited ESOP Management Platform",
         "online-esop": {
-          "title": "Handling ESOP Management Process Online",
-          "content": "After determining the incentive plan and the beneficiaries, you can use the one-stop platform of PS Group to complete comprehensive online processing, such as grant document signing, information change, exercise transaction, tax calculation and income repatriation."
+          "title": "Online ESOP Management",
+          "content": "After finalizing the incentive plan and the beneficiaries, our clients can utilize the one-stop platform by PS Group to complete comprehensive online processing, including grant documents electronic signing, information update, order execution, tax calculation, and income repatriation."
         },
         "detail": {
-          "title": "Focus on Key Points, Attention to Details",
-          "content-1": "Online Signing Function: Supports efficient and convenient online signing, downloading agreement related documents in multiple links such as granting and exercising rights.",
-          "content-2": "Exercising Transaction Management: Diversified management can be carried out on the quantity, price, time, exercise transaction method and other elements of the designated object in the exercise transaction from multiple latitudes such as participants, grant, and ownership.",
-          "content-3": "Calculation and Reporting of Amortization Expenses: Based on SBC, amortization of expenses and generation of disclosure reports in compliance with GAAP and IFRS."
+          "title": "Focus on the “Needs”. Attention to Details",
+          "content-1": "Electronic Signing Function: Allow our clients to efficiently and conveniently complete the electronic signing. With one click, our clients can easily download the agreements such as grant documents and right-exercising documents.",
+          "content-2": "Order Execution Management: According to various elements, including number of participants, grant restrictions, and vesting schedules, order executions can be managed and carried out based on the preset rules.",
+          "content-3": "Calculation and Reporting of Amortization Expenses: Based on SBC, expense amortization and subsequent disclosure statements will be generated in compliance with GAAP and IFRS."
         },
         "custimize": {
-          "title": "Support Full Self-service Management Needs",
-          "content": "Through the flexible authority distribution function, each module of the platform can authorize administrators to perform self-service queries, information update, transaction processing and report generation at any time."
+          "title": "Support Full Automated Management Needs",
+          "content": "With the flexible authorization functions on the different modules, each module’s authorized administrators can perform self-service queries, information update, and reports generation at any time."
         }
       },
       "service": {
-        "title": "The Considerate Service",
+        "title": "Excellent Service",
         "participent": {
-          "title": "Participant Services",
-          "content-1": "Detailed and convenient online guide",
-          "content-2": "Professional and Passionate 24/7 customer service",
-          "content-3": "Various training for participants"
+          "title": "Participants",
+          "content-1": "Detailed and convenient online instruction",
+          "content-2": "Professional  24/7 customer service",
+          "content-3": "Various training sessions for participants"
         },
         "admin": {
-          "title": "Administrator Services",
+          "title": "Administrators",
           "content-1": "Comprehensive guidance and assistance from system launch to daily operation",
-          "content-2": "Assist in connecting with other relevant third parties in the ESOP operation process",
-          "content-3": "Based on extensive experience and professional knowledge to give advice on specific scenarios"
+          "content-2": "Assist in connecting with relevant third parties in the ESOP operation",
+          "content-3": "Based on extensive experience and professional knowledge to give advice on any situations"
         },
         "manager": {
           "title": "Executives Services",
           "content-1": "Form 144 Filing",
           "content-2": "10b5-1 Plan",
-          "content-3": "Algorithmic order and Trader services"
+          "content-3": "Algorithmic order execution and around-the-clock professional trader services"
         }
       },
       "keep-notice": {
@@ -105,14 +105,14 @@
     "about": {
       "menu": "About us",
       "introduction": "About PS Group",
-      "title": "Learn PS Group",
-      "content": "<1>Based in Hong Kong, PS Group is a professional equity incentive and trust services provider under Valuable Capital Limited. Leveraging the advantages of the Hong Kong International Financial Center and the group's strong technology research and development capabilities, PS Group is committed to providing customers with higher quality financial value-added services. PS Group integrates licensed professional institutions in various related fields and solves pain points in cross-border services through comprehensive and coordinated service teams in Hong Kong, Taipei, Beijing, Shanghai, Shenzhen, Changsha, Singapore, and other locations. With rich industry experience, agile response speed, and professional service level, PS Group provides customers with comprehensive corporate services that are forward-looking, flexible, and operational, including equity incentives, offshore trusts, digital management of corporate capital, and capital market communication.</1><2>Valuable Capital Limited is a leading technology financial comprehensive enterprise and has provided efficient, accurate, comprehensive, and high-quality services to millions of retail individuals, institutions, and corporate customers worldwide. Currently, the group has established branches in mainland China, Hong Kong, Singapore, New Zealand, the United States, and Saudi Arabia, and its services cover mainstream financial markets worldwide.</2><2>The subsidiaries of Valuable Capital Limited hold licenses numbered 1, 2, 4, 5, and 9 issued by the Hong Kong Securities and Futures Commission (CE No.: AUL711), which qualify them to provide securities trading, futures contract trading, advice on securities, advice on futures contracts, and asset management.</2>"
+      "title": "More about PS Group",
+      "content": "<1>Based in Hong Kong, PS Group is a professional equity incentive and trust services provider under Valuable Capital Limited. Leveraging the advantages of the Hong Kong International Financial Center and the group's strong technology research and development capabilities, PS Group is committed to providing clients with high quality financial value-added services. PS Group integrates licensed professional institutions in various related fields and solves pain points in cross-border services through comprehensive and coordinated service teams in Hong Kong, Taipei, Beijing, Shanghai, Shenzhen, Changsha, Singapore, and other locations. With rich industry experience, agile response speed, and industry leading professional service level, PS Group provides clients with comprehensive corporate services, including equity incentives, offshore trusts, digital management of corporate capital, and capital market communication, that are forward-looking, flexible, and practical.</1><2>Valuable Capital Limited is a leading global fintech company and has provided efficient, accurate, comprehensive, and high-quality services to millions of retail individuals, institutions, and corporate clients worldwide. Currently, the group has established branches in mainland China, Hong Kong, Singapore, New Zealand, the United States, and Saudi Arabia, and its services cover mainstream financial markets worldwide.</2><2>The subsidiaries of Valuable Capital Limited hold licenses numbered 1, 2, 4, 5, and 9 issued by the Hong Kong Securities and Futures Commission (CE No.: AUL711), which qualify them to provide dealing in securities, dealing in futures contracts, advising on securities, advising on futures contracts, and asset management.</2>"
     },
     "trust": {
       "menu": "Trust Services",
       "banner": {
         "title": "PS TRUST",
-        "subtitle": "Expertise You Can Trust, Results You Can Depend On"
+        "subtitle": "Expertise You Can Trust, Results You Can Count On"
       },
       "skipService": "Skip service introduction",
       "service": {
@@ -129,81 +129,81 @@
       },
       "article": {
         "optionScene": {
-          "label": "Application Scenario",
-          "content": "Based on the needs of flexible management and entrusted shareholding, Listed Company or Pre-IPO Company in Hong Kong or in the U.S. established ESOP Trust to hold equity/stock on behalf of the incentive objects. After the conditions are met, according to the company's confirmation and relevant documents, PS Trust arranges the sale of stocks and income distribution."
+          "label": "Case Study",
+          "content": "In order to satisfy the needs to manage the respective ESOP plans flexibly,, listed Companies or Pre-IPO Companies in Hong Kong or in the U.S. would often choose to establish ESOP Trust so the trustee can become the custodian of the  equity/stock on behalf of the participants. After certain conditions are met, according to the company's confirmation along with the relevant documents, PS Trust can help arrange the sale of shares and distribute the proceeds to the relevant participants."
         },
         "optionTarget": {
-          "label": "Target Users",
-          "content-1": "Companies going to list and already setting up an overseas structure",
-          "content-2": "Companies listed in the US or Hong Kong"
+          "label": "We serve",
+          "content-1": "Companies that are going to go public and already setup an overseas structure",
+          "content-2": "Companies that are already listed in the US or Hong Kong"
         },
         "optionUsage": {
           "label": "Purpose of ESOP Trust",
-          "content-1": "Combined with PS Group equity incentive management system, to provide one-stop equity incentive services",
-          "content-2": "Professional trust services, providing solutions for various management pain points of ESOP management",
-          "content-3": "Ensure the safety of company assets, taking into account company control and employee incentives"
+          "content-1": "Combined with PS Group ESOP management platform, to provide one-stop ESOP solutions",
+          "content-2": "Professional trust services, providing solutions for ESOP management",
+          "content-3": "Ensure the security of assets under the ESOP plan"
         },
         "rightIntroduction": {
-          "label": "Learn about Reserved Powers Trust",
-          "content": "As trust jurisdictions, Hong Kong, Singapore and some other countries or regions allow the establishment of retained power trusts. Compared with discretionary trusts, reserved power trusts can reserve the investment power of trust assets to the settlor without compromising the validity of the trust itself."
+          "label": "About Reserved Powers Trust",
+          "content": "As trust jurisdictions, Hong Kong, Singapore and some other countries or regions allow the establishment of reserved power trusts. Compared with discretionary trusts, reserved power trusts can reserve the investment power of trust assets to the settlor without compromising the validity of the trust itself."
         },
         "rightUsage": {
           "label": "Purpose of Reserved Powers Trust",
           "usage-1": {
             "title": "Asset Protection",
-            "content": "Through a reasonable trust structure arrangement, the assets placed in the trust can be exempted from creditors' recourse and legal inheritance restrictions, and undistributed trust assets can also be exempted from the beneficiary's creditors' recourse and marital property claims."
+            "content": "Through a legitimate trust structure, the trust assets  can be exempted from creditors' recourse and legal inheritance restrictions, and undistributed trust assets can also be exempted from the beneficiary's creditors' recourse and marital property claims."
           },
           "usage-2": {
-            "title": "Integrate Asset",
-            "content": "Based on the circumstances and background of the trust settlor and the beneficiary, we can provide a reasonable structure based on the professional opinions of relevant expert consultants, so as to realize the holding of different types of overseas assets and integrate family wealth into one structure. After death, family members can continue to invest under the trust."
+            "title": "Asset Consolidation",
+            "content": "Based on the circumstances and background of the trust settlor and the beneficiary, we can provide a legitimate structure according to the professional opinions internally and externally. The goal is to put different assets into a single trust and consolidate family wealth into one structure. Upon the passing of the settlor, family members can continue to invest under the same trust."
           },
           "usage-3": {
-            "title": "Family Heritage",
-            "content": "Through reasonable trust arrangements, the collection of ownership and control rights of family businesses can be achieved, avoiding mandatory inheritance regulations, avoiding the process of probate and will disputes, and realizing the proper inheritance of family assets"
+            "title": "Family Inheritance",
+            "content": "Through our expertise in trust arrangements, the collection of ownership and control rights of family businesses can be achieved, avoiding complex inheritance procedures, and also minimize the risk in the process of probate and will disputes."
           },
           "usage-4": {
-            "title": "High Confidentiality",
-            "content": "Under the premise of legal compliance, the assets in the trust (asset type and total amount) can realize privacy protection, and the identities and interests of the relevant parties of the trust are also highly confidential"
+            "title": "Confidentiality",
+            "content": "Under the premise of legal compliance, the assets in the trust (asset type and total amount) can be bounded by privacy protection, and the identities and interests of the relevant parties of the trust are also highly confidential."
           }
         },
         "insuranceIntroduction": {
-          "label": "Learn about Insurance Trust",
-          "content": "The settlor and the trustee sign an insurance trust deed. When an insured event occurs, the insurance company will deliver the claims to the trustee, and the trustee will manage it according to the contract, and distribute the trust assets to the beneficiary according to the settlor's wishes during the trust period."
+          "label": "About Insurance Trust",
+          "content": "The settlor and the trustee sign an insurance trust deed. When an insured event occurs, the insurance company will deliver the claims to the trustee, and the trustee will manage it according to the deed, and distribute the trust assets to the beneficiary according to the settlor's wishes during the trust period."
         },
         "insuranceUsage": {
           "label": "Purpose of Insurance Trust",
           "content": "Combining trust with life insurance products, while enjoying the protection of life insurance products, it also endows trust assets with flexible management, inheritance of intention, privacy and confidentiality and other characteristics."
         },
         "foreignGrantorIntroduction": {
-          "label": "Learn about Foreign Grantor Trust",
-          "content": "The definition of the U.S. tax law needs to meet the two conditions of a non-U.S. trust (Foreign Trust) and a grantor trust (Grantor Trust). If a trust is recognized as a non-U.S. Income is subject to U.S. tax, and distributions from the trust to beneficiaries are also exempt from U.S. tax."
+          "label": "About Foreign Grantor Trust",
+          "content": "The definition of the U.S. tax law needs to meet the two conditions of a non-U.S. trust (Foreign Trust) and a grantor trust (Grantor Trust). If a trust is recognized as a non-U.S trustee trust, income generated from the trust asset is not subject to U.S. tax, and distributions from the trust to beneficiaries can also be exempted from U.S. tax."
         },
         "foreignGrantorUsage": {
           "label": "Purpose of Foreign Grantor Trust",
-          "content": "Established by a non-U.S. tax resident as grantor, foreign grantor Trust provides wealth and inheritance planning for U.S. Beneficiaries. Such trusts are set up with the tax advice of a U.S. tax attorney and are structured to help one or more U.S. beneficiaries with U.S. tax liabilities reasonably plan for future issues to reasonably minimize their potential U.S. gift and inheritance tax."
+          "content": "Established by a non-U.S. tax resident as grantor, foreign grantor Trust provides wealth and inheritance planning for U.S. Beneficiaries. Such trusts are set up with the tax advice from a U.S. tax attorney and are structured to help one or more U.S. beneficiaries with U.S. tax liabilities reasonably plan for future issues to reasonably minimize their potential U.S. gift and inheritance tax."
         },
         "charitableIntroduction": {
-          "label": "Learn about Charitable Trust",
+          "label": "About Charitable Trust",
           "content": "Individuals and families can realize their charitable wishes by establishing a Charitable Trust and applying for tax incentives."
         },
         "charitableUsage": {
           "label": "Purpose of Charitable Trust",
           "usage-1": {
             "title": "Achieve tax optimization",
-            "content": "Charitable Trust can apply for tax incentives"
+            "content": "Charitable Trust can apply for tax benefits."
           },
           "usage-2": {
             "title": "Achieve Charitable Wishes",
-            "content": "A well-run family Charitable Trust can allow family members and future generations to participate in the management of family philanthropy, enable posterity to understand family culture and values through participation in family philanthropy, provide methods for family governance, and cultivate a society for family members and future generations responsibility"
+            "content": "A well-run family Charitable Trust can allow family members and future generations to participate in the management of family philanthropy, enable posterity to understand family culture and values through participation in family philanthropy, provide ways for family governance, and cultivate a sense of responsibility for family members and future generations."
           }
         },
         "familyOfficeIntroduction": {
-          "label": "Learn about Family Office",
-          "content": "According to the needs of customers, we will integrate professional institutions such as investment consultants, lawyers and tax consultants, tailor a full range of comprehensive family services for customers, assist customers in building equity structures and Family Office, and optimize the governance and wealth planning of customers' families."
+          "label": "About Family Office",
+          "content": "To cater with clients’ sophisticated needs, we will coordinate and collaborate with  professionals including investment consultants, lawyers and tax consultants. tailored a full range of uniquely designed family services for clients, assist clients in building equity structures of the Family Office, and optimize the governance and wealth planning of clients' families."
         },
         "familyOfficeUsage": {
           "label": "Purpose of Family Office",
-          "content": "Assist clients in designing and building Family Office, provide a full range of comprehensive family services, optimize client family governance, strengthen risk planning and investment management of family wealth, establish family cultural heritage, and reach consensus on family unity."
+          "content": "Assist clients in designing and building Family Office, provide a full range of comprehensive family services, optimize client family governance, strengthen risk management and wealth management, establish family cultural heritage, and achieve family harmony."
         },
         "familyOthers": {
           "label": "Related Articles",
@@ -214,31 +214,31 @@
       "advance": {
         "title": "Advantages of PS Group",
         "advance-1": {
-          "title": "Comprehensive Services",
-          "content": "The PS ESOP management system and trading system are interconnected, providing one-stop equity incentive management, vesting in trust, exercise, trading and other full-process services, reducing the company's workload and improving the experience of enterprises and employees."
+          "title": "Comprehensive Solutions",
+          "content": "The interconnected PS ESOP management platform and trading platform provide one-stop ESOP management solutions to our clients, Functions like trust assets vesting, exercise,  and order executions will help increase the efficiency of the company, and improve the user experience of enterprises and employees."
         },
         "advance-2": {
-          "title": "Efficient Response",
-          "content": "PS Trust has service teams in mainland China, Hong Kong and Singapore which can respond to various needs of customers efficiently."
+          "title": "Professional Service Team",
+          "content": "PS Trust has dedicated services teams in mainland China, Hong Kong and Singapore which can serve the various needs of clients efficiently."
         },
         "advance-3": {
           "title": "Experienced",
-          "content": "The members of PS team are from well-known consulting and financial institutions with experience in providing customized  trust solutions for hundreds of companies covering well-known enterprises in various industries."
+          "content": "The members of PS team are from well-known consulting and financial institutions with experience in providing customized trust solutions for hundreds of multinational corporations in various industries."
         },
         "advance-4": {
           "title": "Regulatory Compliance",
-          "content": "PS Trust Limited is a trust company with company service provider license (TCSP: TC006201) under the Hong Kong Anti-Money Laundering and Counter-Terrorism Financing Ordinance (Chapter 615)."
+          "content": "PS Trust Limited is a Trust or Company Service Provider License (TCSP) licensed trust company (TCSP: TC006201) under the Hong Kong Anti-Money Laundering and Counter-Terrorism Financing Ordinance (Chapter 615)."
         }
       },
       "security": {
-        "title": "Safety and Compliance",
+        "title": "Security and Compliance",
         "assets": {
           "title": "Security of Assets",
-          "content": "The trust assets are entrusted to the licensed trust company and protected by the trust law. The trust assets are not subject to risks such as bankruptcy, liquidation and debt of the trustee."
+          "content": "The trust assets are entrusted to the licensed trust company and protected by the relevant trust law. The trust assets are not subject to bankruptcy, liquidation and debt of the trustee."
         },
         "data": {
-          "title": "Security Data",
-          "content": "Identify confidential data in service data and build a special isolation safe room to ensure the security of confidential data transmission and storage."
+          "title": "Data Protection",
+          "content": "Identify confidential data and build a special isolation safe room to ensure the security of confidential data transmission and storage."
         }
       },
       "customer": {
